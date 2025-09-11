@@ -1,0 +1,11 @@
+*.pyc
+.cache/
+/.idea/
+/.vscode/
+/venv/
+/env/
+/.env/
+/htmlcov/
+/tmp/
+.env
+.cache/

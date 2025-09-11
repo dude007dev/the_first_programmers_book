@@ -1,0 +1,45 @@
+# File format: https://pre-commit.com/#plugins
+# Supported hooks: https://pre-commit.com/hooks.html
+repos:
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.13.2
+    hooks:
+      - id: isort
+        additional_dependencies: [toml]
+  - repo: https://github.com/ambv/black
+    rev: 24.4.2
+    hooks:
+      - id: black
+  - repo: https://github.com/PyCQA/flake8
+    rev: 7.0.0
+    hooks:
+      - id: flake8
+        additional_dependencies:
+          - flake8-raise # Find improvements for raise statements
+          - flake8-bandit # Security checks
+          - flake8-bugbear # Assorted opinionated checks
+          - flake8-comprehensions # Write better list/set/dict comprehensions.
+          - flake8-docstrings # Uses pydocstyle to check docstrings
+          - flake8-implicit-str-concat # Detect implicit string concatenation
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: check-json # Checks json files for parseable syntax
+      - id: check-merge-conflict # Check for files that contain merge conflict strings
+      - id: check-toml # Checks toml files for parseable syntax
+      - id: check-yaml # Checks yaml files for parseable syntax
+      - id: debug-statements # Check for debugger imports and py37+ `breakpoint()` calls
+      - id: detect-private-key # Detects the presence of private keys
+      - id: end-of-file-fixer # Ensures that a file is either empty, or ends with one newline
+      - id: trailing-whitespace # trims trailing whitespace
+        args: [--markdown-linebreak-ext=md]
+      - id: check-docstring-first # Checks a common error of defining a docstring after code
+  - repo: https://github.com/pre-commit/pygrep-hooks
+    rev: v1.10.0 # Use the ref you want to point at
+    hooks:
+      - id: python-check-blanket-noqa # Enforce that noqa annotations always occur with specific codes
+      - id: python-no-eval # A quick check for the eval() built-in function
+      - id: python-no-log-warn # A quick check for the deprecated .warn() method of python loggers
+      - id: rst-backticks # Detect common mistake of using single backticks when writing rst
+      - id: rst-directive-colons # Detect mistake of rst directive not ending with double colon
+      - id: rst-inline-touching-normal # Detect mistake of inline code touching normal text in rst
