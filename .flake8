@@ -1,0 +1,90 @@
+[flake8]
+# A = builtins
+# B = bugbear
+# C4 = comprehensions
+# D = docstrings
+# E = pycodestyle errors, rst
+# F = flake8 pyflakes, rst
+# G = logging-format
+# P = str-format
+# RST = rst-docstrings
+# S = bandit
+# T = print
+# W = pycodestyle warnings
+# B9 = bugbear opinions
+# ISC = implicit-str-concat
+ban-relative-imports = True
+max-line-length = 120
+max-complexity = 10
+docstring-convention = google
+statistics = True
+; select = A, B, C4, D, E, F, G, P, RST, S, T, W, B9, ISC
+doctests = True
+extend-ignore =
+    # Do not perform function calls in argument defaults. (FastApi Depends)
+    B008,
+    # D100  Missing docstring in public module
+    D100,
+    # Missing docstring in public package
+    D104,
+    # Missing docstring in magic method
+    D105,
+    # D106 Missing docstring in public nested class
+    D106,
+    # Docstring should must end with the period
+    D415,
+    # E203  Black may add spaces in slice[func(v) : end] syntax
+    E203,
+    # E231  Black leaves commas after combining lines
+    E231,
+    # F403  Allow import * (for settings)
+    F403,
+    # F405  Allow import * (for settings)
+    F405,
+    # Logging statement uses f-string
+    G004,
+    # E731  Allow lambdas:
+    # E731,
+    # R102  Allow raise Exception()
+    # R102,
+    # S106 Possible hardcoded password
+    # S106,
+    # S101 Use of assert detected
+    # S101,
+    # B023 Function definition does not bind loop variable
+    # B023,
+    # S404
+    # S404,
+    # S602,
+    # S602,
+per-file-ignores =
+    # Use of assert detected.
+    # Missing docstring in public class, method, function, package, nested class, __init__
+    tests/**: S101,D101,D102,D103,D104,D105,D106,D107
+exclude =
+    .git,
+    docs,
+    .cache,
+    .eggs,
+    __pycache__,
+    build,
+    dist,
+    .venv,
+    venv,
+    scripts
+    chapters/07/*
+    chapters/12/*
+    chapters/13/*
+    chapters/14/*
+    chapters/16/*
+    chapters/18/*
+    chapters/19/*
+    chapters/21/*
+    chapters/22/*
+    chapters/23/*
+    chapters/24/*
+    chapters/25/*
+    chapters/26/*
+    chapters/27/*
+    chapters/27/*
+    chapters/29/*

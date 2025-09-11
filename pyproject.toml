@@ -1,0 +1,64 @@
+[tool.poetry]
+name = "first_programmers_book"
+version = "1.0.0"
+description = ""
+authors = ["Dude007Dev <dude007dev@gmail.com>"]
+readme = "README.md"
+
+[[tool.poetry.source]]
+name = "pypi"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+poetry = "2.1.4"
+
+[tool.poetry.group.quality_checks.dependencies]
+# Flake8 + extensions: code analyses
+flake8 = "^7.3.0"
+flake8-bandit = "^4.1.1"
+flake8-bugbear = "^24.12.12"
+flake8-comprehensions = "^3.14.0"
+flake8-docstrings = "^1.7.0"
+flake8-implicit-str-concat = "^0.5.0"
+# Other
+black = "^25.1.0"          # code formatting
+isort = "^6.0.1"           # code formatting: sort imports
+pre-commit = "^4.3.0"      # perform code checks before the commit
+types-requests = "^2.31.0" # code analyses: typse hints for requests
+
+[tool.isort]
+profile = "black"
+line_length = 120
+src_paths = ["./"]
+
+[tool.black]
+line-length = 120
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | \.env
+  | venv
+  | env
+  | _build
+  | build
+  | dist
+  | .*16_code_samples\.py
+  | .*23_code_samples\.py
+  | .*28_code_samples\.py
+)/
+'''
+
+[tool.mypy]
+exclude = [".venv", "venv", "env", ".env"]
+plugins = ["pydantic.mypy"]
+ignore_missing_imports = true
