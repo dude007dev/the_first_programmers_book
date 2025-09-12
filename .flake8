@@ -72,3 +72,4 @@ exclude =
     .venv,
     venv,
     scripts
+    chapters/07/*
