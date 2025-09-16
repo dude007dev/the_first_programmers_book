@@ -25,6 +25,8 @@ It is aimed at complete beginners who want to learn programming step by step usi
 - [Chapter 09](chapters/09/) → _The Magic 8 Ball_
 - [Chapter 10](chapters/10/) → _Bugs_
 - [Chapter 11](chapters/11/) → _Numeric Types_
+- [Chapter 12](chapters/12/) → _Converting Basic Data Types _
+- [Chapter 13](chapters/13/) → _Operators_
 
 _(More chapters will be added as editing progresses.)_
 
