@@ -27,6 +27,7 @@ It is aimed at complete beginners who want to learn programming step by step usi
 - [Chapter 11](chapters/11/) → _Numeric Types_
 - [Chapter 12](chapters/12/) → _Converting Basic Data Types _
 - [Chapter 13](chapters/13/) → _Operators_
+- [Chapter 14](chapters/14/) → _Block try...except..._
 
 _(More chapters will be added as editing progresses.)_
 
