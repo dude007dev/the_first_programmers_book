@@ -169,7 +169,7 @@ finally:
 
 print("This is the end of the program")
 
-# розрахунок депозиту з використанням try..except...
+# 14.8 Приклад: розрахунок депозиту з використанням try..except...
 
 try:
     d = int(input("Enter the deposit amount: "))
