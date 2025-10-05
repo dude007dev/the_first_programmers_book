@@ -27,7 +27,7 @@ flake8-docstrings = "^1.7.0"
 flake8-implicit-str-concat = "^0.5.0"
 # Other
 black = "^25.1.0"          # code formatting
-isort = "^6.0.1"          # code formatting: sort imports
+isort = "^6.0.1"           # code formatting: sort imports
 pre-commit = "^4.3.0"      # perform code checks before the commit
 types-requests = "^2.31.0" # code analyses: typse hints for requests
 
@@ -52,6 +52,7 @@ exclude = '''
   | _build
   | build
   | dist
+  | **\16_code_samples.py
 )/
 '''
 
