@@ -52,7 +52,7 @@ exclude = '''
   | _build
   | build
   | dist
-  | **\16_code_samples.py
+  | 16_code_samples.py
 )/
 '''
 
