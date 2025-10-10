@@ -36,8 +36,8 @@
 
 ## Корисні посилання
 
-- [for and while loops (Python docs)](https://docs.python.org/3/tutorial/controlflow.html#for-statements)
-- [break and continue statements (Python docs)](https://docs.python.org/3/tutorial/controlflow.html#break-and-continue-statements)
+- [`for` and `while` loops (Python docs)](https://docs.python.org/3/tutorial/controlflow.html#for-statements)
+- [`break` and `continue` statements (Python docs)](https://docs.python.org/3/tutorial/controlflow.html#break-and-continue-statements)
 
 **Навігація**
 

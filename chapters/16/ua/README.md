@@ -38,7 +38,7 @@
 ## Корисні посилання
 
 - [String methods](https://docs.python.org/3/library/stdtypes.html#string-methods)
-- [String format specification (Python docs)](https://docs.python.org/3/library/string.html#format-specification-mini-language)
+- [String `format` specification (Python docs)](https://docs.python.org/3/library/string.html#format-specification-mini-language)
 
 **Навігація**
 

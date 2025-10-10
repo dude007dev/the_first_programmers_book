@@ -30,8 +30,8 @@ python3 19_guess_the_number_game.py
 
 ## Корисні посилання
 
-- [random — Generate pseudo-random numbers (Python docs)](https://docs.python.org/3/library/random.html)
-- [ValueError (Python docs)](https://docs.python.org/3/library/exceptions.html#ValueError)
+- [`random` — Generate pseudo-random numbers (Python docs)](https://docs.python.org/3/library/random.html)
+- [`ValueError` (Python docs)](https://docs.python.org/3/library/exceptions.html#ValueError)
 
 **Навігація**
 
