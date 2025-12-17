@@ -174,7 +174,7 @@ for letter in word:
 
 print("All letters guessed:", all_letters_guessed)
 
-# виправоений приклад перевірки наявності всіх букв у вгаданих буквах
+# виправлений приклад перевірки наявності всіх букв у вгаданих буквах
 word = "apple"
 guessed_letters = "rep"
 
