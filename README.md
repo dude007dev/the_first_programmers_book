@@ -1,20 +1,20 @@
 # The First Programmer's Book
 
-📘 _The First Programmer's Book_ is an educational non-fiction project written in Ukrainian (with plans for English translation).  
-It is aimed at complete beginners who want to learn programming step by step using Python.
+📘 _The First Programmer's Book_ is an educational non-fiction project, initially written in Ukrainian and later translated into English.
+It is aimed at complete beginners who want to learn programming step-by-step using Python.
 
-## What’s inside the Book?
+## What’s inside the book?
 
-- Basics of programming explained in simple language
-- Python fundamentals: variables, data types, loops, functions, error handling
+- Programming basics explained in plain language
+- Python fundamentals: variables, data types, loops, functions and error handling
 - Small projects and games (e.g., Guess the Number, Magic 8 Ball, Hangman)
-- Pop art illustrations and a bit of humor 🙂
+- Pop art illustrations and a touch of of humor 🙂
 
-## What’s inside the Repo?
+## What’s inside the repository?
 
 - Code samples from the book
 - Directories are numbered by chapter (e.g. `01`, `02`, …)
-- Each directory contains the code from that chapter
+- Each directory contains the code for that chapter
 
 ### Table of Contents (Code Samples)
 
@@ -48,21 +48,26 @@ It is aimed at complete beginners who want to learn programming step by step usi
 
 ## Status
 
-🚀 Preparing for publication: main text completed, editing and final proofreading in progress.
+🚀 Published (self-published). The Ukrainian edition was published in December 2025.
 
 ## Future Plans
 
-- English translation
 - Online course based on the book
 
 ## Author
 
 Written by **Dude007Dev**
 
-- Threads: [@dude007dev](https://www.instagram.com/dude007dev/)
-- X: [@dude007dev](https://x.com/Dude007Dev)
-- Instagram: [@dude007dev](https://www.threads.net/@dude007dev)
-- Facebook page: [@dude007dev](https://www.facebook.com/profile.php?id=61578435568875)
+Social networks in English:
+- X (en): [@dude007dev](https://x.com/Dude007Dev)
+- Instagram (en): [@dude007dev](https://www.instagram.com/dude007dev/)
+- Facebook page (en): [@dude007dev](https://www.facebook.com/profile.php?id=61578435568875)
+
+Social networks in Ukrainian:
+- Threads (ua): [@dude007dev](https://www.threads.net/@dude007dev)
+- Telegram (ua): [@dude007dev](https://t.me/dude007dev)
+
+Other:
 - GitHub: [github.com/dude007dev/the_first_programmers_book](https://github.com/dude007dev/the_first_programmers_book)  
 
 ---
