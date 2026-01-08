@@ -14,7 +14,7 @@ We introduce variables in Python: what they are, how they look, common types, ho
 
 ## Contents of examples
 
-- **7.1 What is a variable** → creating a variable.  
+- **7.1 What is a variable** → creating a variable.
 - **7.2 How to choose a variable name** → examples of good and bad names.  
 - **7.3 Variable types** → examples of basic types (int, float, str, bool, None).  
 - **7.4 Reassigning a variable** → examples of changing a variable's type.  

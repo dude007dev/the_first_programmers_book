@@ -67,7 +67,4 @@ Social networks in Ukrainian:
 - Threads (ua): [@dude007dev](https://www.threads.net/@dude007dev)
 - Telegram (ua): [@dude007dev](https://t.me/dude007dev)
 
-Other:
-- GitHub: [github.com/dude007dev/the_first_programmers_book](https://github.com/dude007dev/the_first_programmers_book)  
-
 ---
