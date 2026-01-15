@@ -16,7 +16,7 @@ name = input_value.title()  # "Some Name"
 
 # Або коротший варіант
 name = "some name".title()  # "Some Name"
-# те самше що й
+# те саме що й
 name = "Some Name"
 
 # 7.2 Як обрати ім’я змінної

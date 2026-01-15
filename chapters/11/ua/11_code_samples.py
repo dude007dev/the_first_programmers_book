@@ -22,7 +22,7 @@ x = -1.0
 y = 1
 print(x + y)  # 0.0
 
-# -, віднімання(substraction
+# -, віднімання (subtraction)
 print(5 - 3)  # 2
 print(2.1 - 7)  # -4.9
 print(-1 - 2)  # -3

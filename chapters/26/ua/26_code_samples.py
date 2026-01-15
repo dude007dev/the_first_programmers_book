@@ -39,7 +39,7 @@ my_en_ua_dict = {
 my_en_ua_dict["experience"] = "нове значення"
 print(my_en_ua_dict["experience"])  # нове значення
 
-# прикоад звернення до неіснуючого ключа
+# приклад звернення до неіснуючого ключа
 my_en_ua_dict = {
     "knowledge": "досвід",
     "knowledge": "знання",

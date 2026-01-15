@@ -1,4 +1,4 @@
-# 4. Перша пргограма
+# 4. Перша програма
 
 input_value = input("What is your name?")
 name = input_value.title()
