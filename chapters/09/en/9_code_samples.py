@@ -14,7 +14,7 @@ answers = [
 question = input("Enter your question: ")
 print(question)  # temporary line for checking, debugging
 
-print(1, 2, "c")  # result: 1 2 c
+print(1, 2, "c")  # output: 1 2 c
 
 # 9.3 Selecting an element from the list of answers
 answers = [
@@ -50,5 +50,5 @@ print(answers[1])  # 'You may rely on it'
 # 9.5 Random number selection
 from random import randint
 
-index = randint(0, 5)  # gives a number from 0 to 5 inclusive
+index = randint(0, 5)  # generates a number from 0 to 5 inclusive
 print(index)

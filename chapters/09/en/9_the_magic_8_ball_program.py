@@ -12,5 +12,5 @@ answers = [
 
 question = input("Enter your question: ")
 
-index = randint(0, 5)  # gives a number from 0 to 5 inclusive
+index = randint(0, 5)  # generates a number from 0 to 5 inclusive
 print(answers[index])
