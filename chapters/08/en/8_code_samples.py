@@ -97,11 +97,11 @@ text.append("Anna")  # error, exception
 text = "My name is"
 text = text + " John"
 print(text)  # My name is John
-# or
+# or using f-string
 text = "My name is"
 text = f"{text} John"
 print(text)  # My name is John
-# or
+# or using % operator
 text = "My name is %s"
 text = text % ("John")
 print(text)  # My name is John
