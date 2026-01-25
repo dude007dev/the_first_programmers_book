@@ -42,6 +42,9 @@ Running a separate program (from the appropriate directory, for example from `..
 python3 11_deposit_profit_program.py
 ```
 
+## Useful links
+
+- [`15: Floating Point Arithmetic: Issues and Limitations` (Python docs)](https://docs.python.org/3/tutorial/floatingpoint.html)
 
 **Navigation**
 

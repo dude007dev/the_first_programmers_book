@@ -42,6 +42,9 @@
 python3 11_deposit_profit_program.py
 ```
 
+## Корисні посилання
+
+- [`15: Floating Point Arithmetic: Issues and Limitations` (Python docs)](https://docs.python.org/3/tutorial/floatingpoint.html)
 
 **Навігація**
 
