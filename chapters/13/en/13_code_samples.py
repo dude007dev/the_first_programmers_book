@@ -1,47 +1,47 @@
-# 13. Оператори
+# 13. Operators
 
-# 13.2 Оператори присвоєння
+# 13.2 Assignment Operators
 
-# для відображення результати на екрані - використовуйте print()
+# to display results on screen - use print()
 
-# = — звичайне присвоєння (assign)
-x = 5  # x присвоїли значення 5
+# = — simple assignment (assign)
+x = 5  # x assigned value 5
 
-# += — додавання та присвоєння
+# += — addition and assignment
 x = 1  # 1
 x += 3  # 4
 
 x = 2  # 2
 y = 3  # 3
-y += x  # y тепер дорівнює 5
+y += x  # y now equals 5
 
-# -= — віднімання та присвоєння
+# -= — subtraction and assignment
 x = 5
 x -= 2  # 3, x = x - 2
 
-# *= — множення та присвоєння
+# *= — multiplication and assignment
 x = 5
 x *= 5  # 25, x = x * 5
 
-# /= — ділення та присвоєння
+# /= — division and assignment
 x = 30
 x /= 6  # 5, x = x / 6
 
-# %= — остача від ділення та присвоєння
+# %= — modulo and assignment
 x = 5
 x %= 3  # 2, x = x % 3
 
-# //= — ділення націло та присвоєння
+# //= — floor division and assignment
 x = 24
 x //= 5  # 4, x = x // 5
 
-# **= — піднесення до степеня та присвоєння
+# **= — exponentiation and assignment
 x = 2
 x **= 4  # 16, x = x ** 4
 
-# 13.3 Оператори порівняння (Comparison Operators)
+# 13.3 Comparison Operators
 
-# == — дорівнює (equals)
+# == — equals
 x = 5
 y = 10
 print(x == y)  # False
@@ -50,7 +50,7 @@ x = 3
 y = 3
 print(x == y)  # True
 
-# != — не дорівнює (not equals)
+# != — not equals
 x = 5
 y = 10
 print(x != y)  # True
@@ -59,7 +59,7 @@ x = 3
 y = 3
 print(x != y)  # False
 
-# > — більше (greater)
+# > — greater
 x = 5
 y = 10
 print(x > y)  # False
@@ -68,7 +68,7 @@ x = 3
 y = 3
 print(x > y)  # False
 
-# < — менше (less)
+# < — less
 x = 5
 y = 10
 print(x < y)  # True
@@ -77,7 +77,7 @@ x = 3
 y = 3
 print(x < y)  # False
 
-# >= — більше або дорівнює (greater or equal)
+# >= — greater or equal
 x = 5
 y = 10
 print(x >= y)  # False
@@ -86,7 +86,7 @@ x = 3
 y = 3
 print(x >= y)  # True
 
-# <= — менше або дорівнює (less or equal)
+# <= — less or equal
 x = 5
 y = 10
 print(x <= y)  # True
@@ -95,16 +95,16 @@ x = 3
 y = 3
 print(x <= y)  # True
 
-# 13.4 Програма з використанням оператора порівняння
+# 13.4 Program using comparison operator
 programming_language = input("Enter the name of your favorite programming language: ")
 if programming_language.lower() != "python":
     print("Oops, unexpected answer!")
 else:
     print("I knew it! Good choice!")
 
-# 13.5 Логічні оператори (Logical Operators)
+# 13.5 Logical Operators
 
-# and — і (та)
+# and — and
 x = 5
 y = 10
 print(x >= 5 and y != 10)  # True and False => False
@@ -113,7 +113,7 @@ x = 3
 y = 3
 print(x >= y and x < 5)  # True and True => True
 
-# or — або (чи)
+# or — or
 x = 5
 y = 10
 print(x >= 5 or y != 10)  # True or False => True
@@ -122,7 +122,7 @@ x = 3
 y = 3
 print(x != y or x > 5)  # False or False => False
 
-# not — заперечення (не)
+# not — negation
 x = 5
 y = 10
 print(not (x >= 5 or y != 10))  # not(True) => False
@@ -143,13 +143,13 @@ else:  # True
     # will be called
     exit()
 
-# Комбінування логічних операторів
+# Combining logical operators
 city = "Amsterdam"
 minimum_population = 1_000_000
 big_city = True
 print((big_city and city == "Amsterdam") or minimum_population > 10_000)  # True
 
-# Читабельність коду
+# Code readability
 x = 3
 y = 5
 
@@ -159,7 +159,7 @@ print(all([x > 5, y != 3]))  # False
 print(any([x > 10, y < 1]))  # False
 print(any([x > 5, y != 3]))  # True
 
-# 13.6 Програма для оцінювання за шкалою A–F
+# 13.6 Program for Grading on an A–F Scale
 value = input("Enter the percentage of correct answers of the test: ")
 value = int(value)
 if value >= 90:
@@ -175,13 +175,13 @@ else:
 
 print(f"Your grade is: {grade}")
 
-# 13.7 Оператори особистості (Identity Operators)
+# 13.7 Identity Operators
 some_variable = "some text"
 print(some_variable is None)  # False
 
 
-# опис функції не було наведено в книжці
-# функції розглядаються в кінці книжки
+# function description was not provided in the book
+# functions are covered at the end of the book
 def some_function():
     return None
 
@@ -190,9 +190,9 @@ result = some_function()  # returns None
 print(result is not None)  # False
 
 
-# ще один приклад перевірки на None
-# опис функції не було наведено в книжці
-# функції розглядаються в кінці книжки
+# another example of checking for None
+# function description was not provided in the book
+# functions are covered at the end of the book
 def get_points():
     return 99
 
@@ -205,7 +205,7 @@ if points == 100:
 if grade is None:
     print("Error")
 
-# Приклад із простими типами
+# Example with simple types
 x = "John"
 y = "John"
 print(x is y)  # True
@@ -217,7 +217,7 @@ y = "John"
 print(x is y)  # True
 
 
-# Приклад із користувацьким типом
+# Example with custom type
 class Person:
     def __init__(self, name):
         self.name = name
@@ -227,7 +227,7 @@ a = Person(name="John")
 b = Person(name="John")
 print(a is b)  # False
 
-# 13.8 Оператори приналежності (Membership Operators)
+# 13.8 Membership Operators
 
 # in
 name = "John"
@@ -237,7 +237,7 @@ print("oh" in name)  # True
 grades = ["A", "B", "C", "D", "F"]
 print("Q" not in grades)  # True
 
-# 13.10 Оператори пріоритету
+# 13.10 Operator Precedence
 print(5 * (3 + 6) - 10 / 2)  # 40.0
 print(2**3)  # 8
 
@@ -245,7 +245,7 @@ x = 10
 print(x > 5 and x < 15 or str(x) == "10")  # True
 
 
-# коротке замикання
+# short-circuit evaluation
 def my_func(a):
     print("I am here")
     print(a)
@@ -254,23 +254,23 @@ def my_func(a):
 x = 10
 print(x > 5 and x < 15 or my_func(x))  # True
 
-# 13.12 Самостійна робота
+# 13.12 Independent Practice
 
-# Виконайте перевірку та поясніть результат:
+# Complete the check and explain the result:
 a = 5
 b = 8
 print(a > 3 and b < 10)
 print(a > 10 or b == 8)
 print(not (a < b))
 
-# Що виведе наступний код?
+# What will the following code output?
 a = None
 print(a is None)
 print(a is not None)
 
-# список
+# list
 languages = ["Python", "JavaScript", "C++"]
 
-# Передбачте результат виразу
+# Predict the result of the expression
 result = 5 + 3 * 2**2
 print(result)
