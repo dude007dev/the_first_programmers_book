@@ -1,38 +1,38 @@
-# Розділ 19. Гра “Вгадай число”
+# Chapter 19. "Guess the Number" Game
 
-Цей розділ містить приклади з книги **"Перша книга програміста"**.  
-У ньому ми пишемо гру “Вгадай число” і детально розглядаємо всі аспекти її реалізації: цикли, перевірку введення, обробку помилок і логіку завершення гри.
-
----
-
-## Структура папки
-
-- [**`19_code_samples.py`**](./19_code_samples.py) — усі приклади коду з підрозділів книги, зібрані в одному файлі.  
-- [**`19_guess_the_number_game.py`**](./19_guess_the_number_game.py) — фінальний код програми.
+This chapter contains examples from the book **"The First Programmer's Book"**.  
+We write a "Guess the Number" game and cover all aspects of its implementation: loops, input validation, error handling, and game termination logic.
 
 ---
 
-## Зміст прикладів
+## Folder Structure
 
-- **19.2 Базовий варіант гри** → реалізація гри з використанням циклу `for` і випадкових чисел.
+- [**`19_code_samples.py`**](./19_code_samples.py) — all code examples from the book sections collected in one file.  
+- [**`19_guess_the_number_game.py`**](./19_guess_the_number_game.py) — final program code.
 
 ---
 
-## Як запускати приклади
+## Contents of Examples
 
-У цьому розділі наведені як короткі приклади, так і готові програми.  
-Для запуску використовуйте Python у терміналі (або онлайн-інтерпретатор).  
+- **19.2 Basic Game Version** → game implementation using a `for` loop and random numbers.
 
-Запуск окремої програми:
+---
+
+## How to Run Examples
+
+This chapter contains both short examples and complete programs.  
+Use Python in the terminal (or in an online interpreter) to run them.  
+
+Running a program:
 ```bash
 python3 19_guess_the_number_game.py
 ```
 
-## Корисні посилання
+## Useful Links
 
 - [`random` — Generate pseudo-random numbers (Python docs)](https://docs.python.org/3/library/random.html)
 - [`ValueError` (Python docs)](https://docs.python.org/3/library/exceptions.html#ValueError)
 
-**Навігація**
+**Navigation**
 
-⬅️ [Розділ 18](../../18/ua) | ➡️ [Розділ 20](../../20/ua)
+⬅️ [Chapter 18](../../18/en) | ➡️ [Chapter 20](../../20/en)

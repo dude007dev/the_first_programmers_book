@@ -1,45 +1,45 @@
-# Розділ 25. Word Game: Hangman
+# Chapter 25. Word Game: Hangman
 
-Цей розділ містить приклади з книги **"Перша книга програміста"**.  
-У ньому ми створюємо фінальну версію гри **“Hangman”** — розширену гру “Вгадай слово”, що об’єднує всі теми, розглянуті раніше: цикли, умовні оператори, множини, кортежі, генерацію випадкових значень і роботу з введенням користувача.
-
----
-
-## Структура папки
-
-- [**`25_code_samples.py`**](./25_code_samples.py) — усі приклади коду з підрозділів книги, зібрані в одному файлі.
-  ⚠️ Деякі приклади є фрагментами з контексту та використовуються лише для демонстрації окремих частин гри.
-- [**`25_word_game_hangman.py`**](./25_word_game_hangman.py) — фінальний, робочий код гри “Hangman”.
+This chapter contains examples from the book **"The First Programmer's Book"**.  
+We create the final version of the **"Hangman"** game — an expanded "Guess the Word" game that combines all topics covered so far: loops, conditional statements, sets, tuples, random number generation, and user input handling.
 
 ---
 
-## Зміст прикладів
+## Folder Structure
 
-- **25. Word Game: Hangman** → огляд і порівняння з попередньою грою “Вгадай слово”.
-- **25.1 Зображення повішеного чоловіка** → створення графічного зображення гри у вигляді кортежу (tuple) з 7 етапів.
-- **25.2 Вибір слова для гри** → використання модуля `random` та методу `choice()` для випадкового вибору слова.
-- **25.3 Запис введених значень** → використання типу даних `set` для зберігання унікальних введених значень (букв або слів).
-- **25.4 Оновлений спосіб перевірки закінчення гри** → застосування **list comprehension** і функції **`all()`** для перевірки, чи слово повністю вгадане.
-- **25.7 Самостійна робота** → вправи для розширення функціональності гри: зміна набору слів, кількості етапів, використання генераторних виразів тощо.
+- [**`25_code_samples.py`**](./25_code_samples.py) — all code examples from the book sections collected in one file.
+  ⚠️ Some examples are fragments with context and are used only to demonstrate individual parts of the game.
+- [**`25_word_game_hangman.py`**](./25_word_game_hangman.py) — final, working code of the "Hangman" game.
 
 ---
 
-## Як запускати приклади
+## Contents of Examples
 
-У цьому розділі наведені як короткі приклади, так і готові програми.  
-Для запуску використовуйте Python у терміналі (або онлайн-інтерпретатор).  
+- **25. Word Game: Hangman** → overview and comparison with the previous "Guess the Word" game.
+- **25.1 Hangman Drawing** → creating a graphical representation of the game as a tuple (tuple) with 7 stages.
+- **25.2 Choosing a Word for the Game** → using the `random` module and `choice()` method to randomly select a word.
+- **25.3 Recording Entered Values** → using the `set` data type to store unique entered values (letters or words).
+- **25.4 Updated Way of Checking Game End** → applying **list comprehension** and the **`all()`** function to check if a word has been fully guessed.
+- **25.7 Self-Check Work** → exercises for expanding game functionality: changing word set, number of stages, using generator expressions, etc.
 
-Запуск окремої програми:
+---
+
+## How to Run Examples
+
+This chapter contains both short examples and complete programs.  
+Use Python in the terminal (or in an online interpreter) to run them.  
+
+Running a program:
 ```bash
 python3 25_word_game_hangman.py
 ```
 
-## Корисні посилання
+## Useful Links
 
 - [`random` — Generate pseudo-random numbers (Python docs)](https://docs.python.org/3/library/random.html)
 - [`all()` — Built-in Functions (Python docs)](https://docs.python.org/3/library/functions.html#all)
 - [`f-string` — Formatted string literals (Python docs)](https://docs.python.org/3/reference/lexical_analysis.html#f-strings)
 
-**Навігація**
+**Navigation**
 
-⬅️ [Розділ 24](../../24/ua) | ➡️ [Розділ 26](../../26/ua)
+⬅️ [Chapter 24](../../24/en) | ➡️ [Chapter 26](../../26/en)

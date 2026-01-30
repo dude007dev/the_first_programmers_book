@@ -1,41 +1,41 @@
-# Розділ 15. Блоки та відступи: як Python читає ваш код
+# Chapter 15. Blocks and Indentation: How Python Reads Your Code
 
-Цей розділ містить приклади з книги **"Перша книга програміста"**.  
-Ми детально розглядаємо правила відступів у Python та пояснюємо, як інтерпретатор визначає межі блоків коду.
-
----
-
-## Структура папки
-
-- [**`15_code_samples.py`**](./15_code_samples.py) — усі уривки коду з підрозділів книги, зібрані в одному файлі.  
-  ⚠️ Цей файл не завжди виконується повністю: частина прикладів показує помилки навмисно.
+This chapter contains examples from the book **"The First Programmer's Book"**.  
+We explore code blocks and indentation rules in Python in detail, explaining how the interpreter determines the boundaries of code blocks.
 
 ---
 
-## Зміст прикладів
+## Folder Structure
 
-- **15. Блоки та відступи** → приклади створення блоків коду (`if`, `try...except`) та відступів.
-- **15.1 Правила відступів** → приклади правильних і неправильних відступів, пояснення помилок.
+- [**`15_code_samples.py`**](./15_code_samples.py) — all code snippets from the book's subsections, collected in one file.  
+  ⚠️ This file does not always run completely: some examples intentionally demonstrate errors.
 
 ---
 
-## Як запускати приклади
+## Content of Examples
 
-У цьому розділі наведені лише короткі приклади, без готових програм.  
-Щоб їх перевірити:  
+- **15. Blocks and Indentation** → examples of creating code blocks (`if`, `try...except`) and indentation rules.
+- **15.1 Indentation Rules** → examples of correct and incorrect indentation, error explanations.
 
-1. Скопіюйте потрібний блок коду.  
-2. Вставте його у файл (наприклад, `example.py`) або в онлайн-інтерпретатор.  
-3. Запустіть файл у терміналі:  
+---
+
+## How to Run the Examples
+
+This chapter contains only short examples, without complete programs.  
+To test them:  
+
+1. Copy the required code block.  
+2. Paste it into a file (for example, `example.py`) or an online interpreter.  
+3. Run the file in the terminal:  
     ```bash
     python3 example.py
     ```
-    або запустіть програму в онлайн-інтерпретаторі.
+    or run the program in an online interpreter.
 
-## Корисні посилання
+## Helpful Links
 
 - [PEP 8: Indentation and Code Layout](https://peps.python.org/pep-0008/#indentation)
 
-**Навігація**
+**Navigation**
 
-⬅️ [Розділ 14](../../14/ua) | ➡️ [Розділ 16](../../16/ua)
+⬅️ [Chapter 14](../../14/en) | ➡️ [Chapter 16](../../16/en)

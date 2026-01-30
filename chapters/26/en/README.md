@@ -1,48 +1,47 @@
-# Розділ 26. Тип даних словник (dictionary)
+# Chapter 26. Dictionary Data Type
 
-Цей розділ містить приклади з книги **"Перша книга програміста"**.  
-Ми детально розглядаємо тип даних **`dict`** — як створювати словники, їхні властивості, методи, а також як ефективно використовувати їх на практиці.
-
----
-
-## Структура папки
-
-- [**`26_code_samples.py`**](./26_code_samples.py) — усі уривки коду з підрозділів книги, зібрані в одному файлі.
-  ⚠️ Деякі приклади демонструють помилки навмисно (наприклад, `TypeError`, `KeyError`), щоб показати особливості поведінки словників у Python.
+This chapter contains examples from the book **"The First Programmer's Book"**.  
+We cover the **`dict`** data type in detail — how to create dictionaries, their properties, methods, and efficient practical usage.
 
 ---
 
-## Зміст прикладів
+## Folder Structure
 
-- **26. Тип даних словник (dictionary)** → створення словників, доступ до елементів, додавання і зміна пар ключ–значення, перевірка ключів, дублікати, порядок елементів, типи даних ключів і значень, перебір у циклах `for` і робота з `items()`.
-- **26.1 Методи типу даних словник** → детальні приклади роботи з методами.
-- **26.2 Dict comprehension** → створення словників у компактній формі (словникові включення), фільтрація пар за умовою.
-- **26.4 Самостійна робота** → елементи коду з завдань самостійної роботи.
+- [**`26_code_samples.py`**](./26_code_samples.py) — all code snippets from the book sections collected in one file.
+  ⚠️ Some examples intentionally demonstrate errors (like `TypeError`, `KeyError`) to show dictionary behavior in such situations.
 
 ---
 
-## Як запускати приклади
+## Contents of Examples
 
-У цьому розділі наведені лише короткі приклади, без готових програм.  
-Щоб їх перевірити:  
+- **26. Dictionary Data Type** → creating dictionaries, accessing elements, adding and changing key-value pairs, checking keys, duplicates, element order, key and value data types, iteration in `for` loops, and working with `items()`.
+- **26.1 Dictionary Data Type Methods** → detailed examples of working with methods.
+- **26.2 Dict Comprehension** → creating dictionaries in compact form (dictionary comprehensions), filtering pairs by condition.
+- **26.4 Self-Check Work** → code elements from self-check assignments.
 
-1. Скопіюйте потрібний блок коду.  
-2. Вставте його у файл (наприклад, `example.py`) або в онлайн-інтерпретатор.  
-3. Запустіть файл у терміналі:  
+---
+
+## How to Run Examples
+
+This chapter contains only short examples, without complete programs.  
+To test them:  
+
+1. Copy the required code block.  
+2. Paste it into a file (for example, `example.py`) or in an online interpreter.  
+3. Run the file in the terminal:  
     ```bash
     python3 example.py
     ```
-    або запустіть програму в онлайн-інтерпретаторі.
+    or run the program in an online interpreter.
 
-⚠️ Деякі приклади демонструють помилки (`KeyError`, `TypeError`) навмисно — це нормально, адже вони показують поведінку словників у таких ситуаціях.
+⚠️ Some examples intentionally show errors (`KeyError`, `TypeError`) — this is normal, as they demonstrate dictionary behavior in such situations.
 
-## Корисні посилання
+## Useful Links
 
 - [`dict` — Python Docs](https://docs.python.org/3/library/stdtypes.html#mapping-types-dict)
 - [Dictionary Comprehensions (Python Docs)](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
 - [`copy.deepcopy()` — Python Docs](https://docs.python.org/3/library/copy.html#copy.deepcopy)
 
+**Navigation**
 
-**Навігація**
-
-⬅️ [Розділ 25](../../25/ua) | ➡️ [Розділ 27](../../27/ua)
+⬅️ [Chapter 25](../../25/en) | ➡️ [Chapter 27](../../27/en)

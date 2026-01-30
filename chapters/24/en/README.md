@@ -1,48 +1,47 @@
-# Розділ 24. Тип даних множина (set)
+# Chapter 24. Set Data Type
 
-Цей розділ містить приклади з книги **"Перша книга програміста"**.  
-Ми детально розглядаємо тип даних **`set`** — як створювати множини, їхні властивості, методи та практичне використання.
-
----
-
-## Структура папки
-
-- [**`24_code_samples.py`**](./24_code_samples.py) — усі уривки коду з підрозділів книги, зібрані в одному файлі.
-  ⚠️ Деякі приклади демонструють помилки навмисно (наприклад, `TypeError`, `KeyError`), щоб показати особливості поведінки множин у Python.
+This chapter contains examples from the book **"The First Programmer's Book"**.  
+We cover the **`set`** data type in detail — how to create sets, their properties, methods, and practical usage.
 
 ---
 
-## Зміст прикладів
+## Folder Structure
 
-- **24. Тип даних множина (set)** → створення множини, особливості унікальності елементів, порядок збереження, змінюваність та обмеження щодо типів елементів. Приклади роботи з порожніми множинами (`set()`), перевірки приналежності (`in`), хешування (`hash()`), і демонстрація помилки `TypeError` при додаванні змінних типів даних.
-- **24.1 Comprehension множин (set comprehension)** → приклади створення множин за допомогою comprehension, фільтрації елементів і генерації унікальних значень.
-- **24.2 Методи типу даних множина (set)** → детальні приклади роботи з методами.
-- **24.3 Практичне використання множин** → приклади застосування множин у реальних задачах.
+- [**`24_code_samples.py`**](./24_code_samples.py) — all code snippets from the book sections collected in one file.
+  ⚠️ Some examples intentionally demonstrate errors (like `TypeError`, `KeyError`) to show set behavior in such situations.
 
 ---
 
-## Як запускати приклади
+## Contents of Examples
 
-У цьому розділі наведені лише короткі приклади, без готових програм.  
-Щоб їх перевірити:  
+- **24. Set Data Type** → creating sets, properties of uniqueness and element order, mutability and restrictions on element types. Examples of empty sets (`set()`), membership checking (`in`), hashing (`hash()`), and demonstrating `TypeError` when adding mutable types.
+- **24.1 Set Comprehension** → examples of creating sets with comprehension, filtering elements, and generating unique values.
+- **24.2 Set Data Type Methods** → detailed examples of working with methods.
+- **24.3 Practical Use of Sets** → examples of applying sets in real tasks.
 
-1. Скопіюйте потрібний блок коду.  
-2. Вставте його у файл (наприклад, `example.py`) або в онлайн-інтерпретатор.  
-3. Запустіть файл у терміналі:  
+---
+
+## How to Run Examples
+
+This chapter contains only short examples, without complete programs.  
+To test them:  
+
+1. Copy the required code block.  
+2. Paste it into a file (for example, `example.py`) or in an online interpreter.  
+3. Run the file in the terminal:  
     ```bash
     python3 example.py
     ```
-    або запустіть програму в онлайн-інтерпретаторі.
+    or run the program in an online interpreter.
 
-⚠️ Деякі приклади демонструють помилки (`KeyError`, `TypeError`) навмисно — це нормально, адже вони показують поведінку множин у таких ситуаціях.
+⚠️ Some examples intentionally show errors (`KeyError`, `TypeError`) — this is normal, as they demonstrate set behavior in such situations.
 
-## Корисні посилання
+## Useful Links
 
 - [`set`, `frozenset` — Python Docs](https://docs.python.org/3/library/stdtypes.html#set)
 - [Set Methods (Python Docs)](https://docs.python.org/3/library/stdtypes.html#frozenset.update)
 - [`hash()` — Python Docs](https://docs.python.org/3/library/functions.html#hash)
 
+**Navigation**
 
-**Навігація**
-
-⬅️ [Розділ 23](../../23/ua) | ➡️ [Розділ 25](../../25/ua)
+⬅️ [Chapter 23](../../23/en) | ➡️ [Chapter 25](../../25/en)

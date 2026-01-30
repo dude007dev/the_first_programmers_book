@@ -1,45 +1,44 @@
-# Розділ 23. Тип даних кортеж (tuple)
+# Chapter 23. Tuple Data Type
 
-Цей розділ містить приклади з книги **"Перша книга програміста"**.  
-Ми детально розглядаємо тип даних **`tuple`** — як створювати кортежі, у чому полягає їхня незмінність, та як їх використовувати на практиці.
-
----
-
-## Структура папки
-
-- [**`23_code_samples.py`**](./23_code_samples.py) — усі уривки коду з підрозділів книги, зібрані в одному файлі.
+This chapter contains examples from the book **"The First Programmer's Book"**.  
+We cover the **`tuple`** data type in detail — how to create tuples, their immutability, and practical usage.
 
 ---
 
-## Зміст прикладів
+## Folder Structure
 
-- **23. Тип даних кортеж (tuple)** → створення кортежів, особливості дужок, кортеж із одним елементом, зміна елементів усередині списку, що є частиною кортежу.
-- **23.1 Методи типу даних кортеж** → приклади методів `count()` і `index()`, демонстрація помилки `ValueError` при пошуку відсутнього елемента.
-- **23.2 Приклад використання кортежу** → приклад програми **“The Magic 8 Ball”** із кортежем відповідей замість списку.
-- **23.4 Самостійна робота** → завдання для самоперевірки: робота з кортежами, підрахунок елементів, перевірка типів і практика з незмінністю.
+- [**`23_code_samples.py`**](./23_code_samples.py) — all code snippets from the book sections collected in one file.
 
 ---
 
-## Як запускати приклади
+## Contents of Examples
 
-У цьому розділі наведені лише короткі приклади, без готових програм.  
-Щоб їх перевірити:  
+- **23. Tuple Data Type** → creating tuples, parentheses properties, single-element tuples, modifying elements inside lists that are part of tuples.
+- **23.1 Tuple Data Type Methods** → examples of `count()` and `index()` methods, demonstrating `ValueError` when searching for missing elements.
+- **23.2 Example of Using Tuple** → example of the **"The Magic 8 Ball"** program using a tuple of answers instead of a list.
+- **23.4 Self-Check Work** → assignments for self-verification: working with tuples, counting elements, checking types, and practicing immutability.
 
-1. Скопіюйте потрібний блок коду.  
-2. Вставте його у файл (наприклад, `example.py`) або в онлайн-інтерпретатор.  
-3. Запустіть файл у терміналі:  
+---
+
+## How to Run Examples
+
+This chapter contains only short examples, without complete programs.  
+To test them:  
+
+1. Copy the required code block.  
+2. Paste it into a file (for example, `example.py`) or in an online interpreter.  
+3. Run the file in the terminal:  
     ```bash
     python3 example.py
     ```
-    або запустіть програму в онлайн-інтерпретаторі.
+    or run the program in an online interpreter.
 
-## Корисні посилання
+## Useful Links
 
 - [Tuples — Python Docs](https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences)
 - [`tuple.count()` — Python Docs](https://docs.python.org/3/library/stdtypes.html#tuple.count)
 - [`tuple.index()` — Python Docs](https://docs.python.org/3/library/stdtypes.html#tuple.index)
 
+**Navigation**
 
-**Навігація**
-
-⬅️ [Розділ 22](../../22/ua) | ➡️ [Розділ 24](../../24/ua)
+⬅️ [Chapter 22](../../22/en) | ➡️ [Chapter 24](../../24/en)

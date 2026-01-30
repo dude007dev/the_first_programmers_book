@@ -1,45 +1,45 @@
-# Розділ 20. Гра “Вгадай слово”
+# Chapter 20. "Guess the Word" Game
 
-Цей розділ містить приклади з книги **"Перша книга програміста"**.  
-У ньому ми створюємо повну версію гри “Вгадай слово” — підсумковий проєкт, що об’єднує знання про змінні, типи даних, цикли, умовні оператори та обробку введення користувача.
-
----
-
-## Структура папки
-
-- [**`20_guess_the_word_game.py`**](./20_guess_the_word_game.py) — повний, робочий код гри “Вгадай слово”.  
+This chapter contains examples from the book **"The First Programmer's Book"**.  
+We create a complete version of the "Guess the Word" game — a culminating project that combines knowledge about variables, data types, loops, conditional statements, and user input handling.
 
 ---
 
-## Зміст прикладів
+## Folder Structure
 
-- **Вибір слова для гри** → створення змінної `word` та базових параметрів (`attempts`, `guessed_letters`).  
-- **Цикл гри** → реалізація логіки повторних спроб за допомогою `while`.  
-- **Перевірка введення** → перевірка коректності введеної літери, використання `continue`.  
-- **Обробка вгаданих і невгаданих літер** → зменшення кількості спроб, відображення прогресу.  
-- **Перевірка завершення гри** → перевірка, чи вгадано всі літери, або закінчились спроби.
+- [**`20_guess_the_word_game.py`**](./20_guess_the_word_game.py) — complete, working code of the "Guess the Word" game.  
 
 ---
 
-## Як запускати програму
+## Contents of Examples
 
-1. Перейдіть у відповідну директорію:
+- **Choosing a Word for the Game** → creating the `word` variable and basic parameters (`attempts`, `guessed_letters`).  
+- **Game Loop** → implementing retry logic with `while`.  
+- **Input Validation** → checking the correctness of the entered letter, using `continue`.  
+- **Handling Guessed and Missed Letters** → reducing attempts, displaying progress.  
+- **Game Completion Check** → checking if all letters have been guessed or attempts have run out.
+
+---
+
+## How to Run the Program
+
+1. Navigate to the corresponding directory:
    ```bash
-   cd chapters/20/ua
+   cd chapters/20/en
    ```
 
-2. Запустіть програму у терміналі:
+2. Run the program in the terminal:
     ```bash
     python3 20_guess_the_word_game.py
     ```
 
-## Корисні посилання
+## Useful Links
 
 - [`while` statement (Python docs)](https://docs.python.org/3/tutorial/controlflow.html#for-statements)
 - [`break` and `continue` statements (Python docs)](https://docs.python.org/3/tutorial/controlflow.html#break-and-continue-statements)
 - [`input()` — reading user input (Python docs)](https://docs.python.org/3/library/functions.html#input)
 - [`f-string` — formatted string literals (Python docs)](https://docs.python.org/3/reference/lexical_analysis.html#f-strings)
 
-**Навігація**
+**Navigation**
 
-⬅️ [Розділ 19](../../19/ua) | ➡️ [Розділ 21](../../21/ua)
+⬅️ [Chapter 19](../../19/en) | ➡️ [Chapter 21](../../21/en)

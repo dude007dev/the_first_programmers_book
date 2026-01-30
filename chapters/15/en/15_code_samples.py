@@ -1,6 +1,6 @@
-# 15. Блоки та відступи: як Python читає ваш код
+# 15. Blocks and Indentation: How Python Reads Your Code
 
-# Що таке блок коду
+# What is a code block
 favorite_language = "Python"
 if favorite_language == "Python":
     print("Nice choice!")
@@ -10,21 +10,21 @@ try:
 except ValueError:
     print("Please enter a valid number")
 
-# помилка синтаксису: IndentationError: expected an indented block after 'try'
+# syntax error: IndentationError: expected an indented block after 'try'
 try:
 d = int(input("Enter the deposit amount: "))
 except ValueError:
     print("Please enter a valid number")
 
-# 15.1 Правила відступів
+# 15.1 Indentation Rules
 
-# Відступ має складатися щонайменше з одного пробілу
+# Indentation must consist of at least one space
 try:
  d = int(input("Enter the deposit amount: "))
 except ValueError:
     print("Please enter a valid number")
 
-# помилка синтаксису: IndentationError: unexpected indent
+# syntax error: IndentationError: unexpected indent
 try:
  d = int(input("Enter the deposit amount: "))
      print(f"Deposit amount: {d}")  # IndentationError

@@ -1,42 +1,42 @@
-# Розділ 27. Song Words Counter
+# Chapter 27. Song Words Counter
 
-Цей розділ містить приклади з книги **"Перша книга програміста"**.  
-У ньому ми створюємо програму **“Song Words Counter”** — застосунок, який аналізує текст пісні та визначає найчастіше вживане слово.  
-Розділ демонструє практичне використання словників, циклів, умовних операторів, модулів `collections` та `re`.
-
----
-
-## Структура папки
-
-- [**`27_code_samples.py`**](./27_code_samples.py) — усі приклади коду з підрозділів книги, зібрані в одному файлі.
-  ⚠️ Деякі приклади є фрагментами з контексту та використовуються лише для демонстрації окремих частин програми.
-- [**`27_song_words_counter_program.py`**](./27_song_words_counter_program.py) — фінальний, робочий код програми.
+This chapter contains examples from the book **"The First Programmer's Book"**.  
+We create the **"Song Words Counter"** program — an application that analyzes song text and determines the most frequently used word.  
+This chapter demonstrates practical usage of dictionaries, loops, conditional statements, the `collections` and `re` modules.
 
 ---
 
-## Зміст прикладів
+## Folder Structure
 
-- **27. Song Words Counter** → покрокове створення програми для підрахунку слів у тексті пісні “Ніч яка місячна”.
-- **27.1 Інші способи вирішення задачі** → альтернативні варіанти розв’язку з використанням:
-  - **`defaultdict`** — автоматичне створення початкових значень у словнику;
-  - **`Counter`** — тип даних “лічильник” для спрощення підрахунків;
-  - **`sorted()`** — сортування словника за значеннями;
-  - **`re.findall()`** — застосування регулярних виразів для виділення слів із тексту.
-- **27.3 Самостійна робота** → вправи для вдосконалення програми.
+- [**`27_code_samples.py`**](./27_code_samples.py) — all code examples from the book sections collected in one file.
+  ⚠️ Some examples are fragments with context and are used only to demonstrate individual parts of the program.
+- [**`27_song_words_counter_program.py`**](./27_song_words_counter_program.py) — final, working code of the program.
 
 ---
 
-## Як запускати приклади
+## Contents of Examples
 
-У цьому розділі наведені як короткі приклади, так і готові програми.  
-Для запуску використовуйте Python у терміналі (або онлайн-інтерпретатор).  
+- **27. Song Words Counter** → step-by-step creation of a program for counting words in song text "Nich yaka misyachna".
+- **27.1 Other Ways to Solve the Problem** → alternative solution options using:
+  - **`defaultdict`** — automatic creation of initial values in a dictionary;
+  - **`Counter`** — "counter" data type for simplifying counts;
+  - **`sorted()`** — sorting a dictionary by values;
+  - **`re.findall()`** — using regular expressions to extract words from text.
+- **27.3 Self-Check Work** → exercises for improving the program.
 
-Запуск окремої програми:
+---
+
+## How to Run Examples
+
+This chapter contains both short examples and complete programs.  
+Use Python in the terminal (or in an online interpreter) to run them.  
+
+Running a program:
 ```bash
 python3 27_song_words_counter_program.py
 ```
 
-## Корисні посилання
+## Useful Links
 
 - [`collections.defaultdict` — Python Docs](https://docs.python.org/3/library/collections.html#collections.defaultdict)
 - [`collections.Counter` — Python Docs](https://docs.python.org/3/library/collections.html#collections.Counter)
@@ -44,6 +44,6 @@ python3 27_song_words_counter_program.py
 - [`re.findall()` — Regular Expressions (Python Docs)](https://docs.python.org/3/library/re.html#re.findall)
 - [`string` methods — Python Docs](https://docs.python.org/3/library/stdtypes.html#string-methods)
 
-**Навігація**
+**Navigation**
 
-⬅️ [Розділ 26](../../26/ua) | ➡️ [Розділ 28](../../28/ua)
+⬅️ [Chapter 26](../../26/en) | ➡️ [Chapter 28](../../28/en)

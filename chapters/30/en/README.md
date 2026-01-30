@@ -1,38 +1,38 @@
-# Розділ 30. Що далі?
+# Chapter 30. What's Next?
 
-Цей розділ містить завершальну частину книги **"Перша книга програміста"**.  
-Ми підсумовуємо пройдений шлях і даємо поради, як продовжити вивчення Python та програмування загалом.
+This chapter contains the final part of the book **"The First Programmer's Book"**.  
+We summarize the journey and provide advice on how to continue studying Python and programming in general.
 
 ---
 
-## Зміст розділу
+## Contents of Chapter
 
-- **30.1 Продовжити вивчати Python** → рекомендації щодо подальшого навчання, безкоштовні курси та онлайн-платформи.
+- **30.1 Continue Learning Python** → recommendations for further learning, free courses and online platforms.
 
-  Курси та платформи
-  - [Learn Python 3 на Codecademy](https://www.codecademy.com/learn/learn-python-3)
-  - [Python Developer на Sololearn](https://www.sololearn.com/en/learn/courses/python-developer)
-  - [Interactive Python частина 1](https://www.coursera.org/learn/interactive-python-1)
-  - [Interactive Python частина 2](https://www.coursera.org/learn/interactive-python-2)
-  - [Python Programmer Career Track на DataCamp](https://app.datacamp.com/learn/career-tracks/python-programmer)
-  - [Python Fundamentals на DataCamp](https://app.datacamp.com/learn/skill-tracks/python-fundamentals)
+  Courses and Platforms
+  - [Learn Python 3 on Codecademy](https://www.codecademy.com/learn/learn-python-3)
+  - [Python Developer on Sololearn](https://www.sololearn.com/en/learn/courses/python-developer)
+  - [Interactive Python Part 1](https://www.coursera.org/learn/interactive-python-1)
+  - [Interactive Python Part 2](https://www.coursera.org/learn/interactive-python-2)
+  - [Python Programmer Career Track on DataCamp](https://app.datacamp.com/learn/career-tracks/python-programmer)
+  - [Python Fundamentals on DataCamp](https://app.datacamp.com/learn/skill-tracks/python-fundamentals)
 
-  Відеокурси
+  Video Courses
   - [Learn Python — Full Course for Beginners](https://www.youtube.com/watch?v=rfscVS0vtbw)
   - [Python Full Course for Beginners](https://www.youtube.com/watch?v=_uQrJ0TkZlc)
 
-- **30.2 Прощальне слово** → підсумок книги, подальші кроки для розвитку та способи залишатися на зв’язку з автором.  
+- **30.2 Farewell Message** → book summary, next steps for development, and ways to stay in touch with the author.  
 
 ---
 
-## Зворотній зв’язок
+## Feedback
 
-Цю книгу ми створюємо разом.  
-Ваші зауваження, пропозиції та приклади можна надіслати на адресу:
+We create this book together.  
+Your remarks, suggestions, and examples can be sent to:
 
 📧 **dude007dev@gmail.com**
 
-Або долучайтеся до спільноти в соцмережах:
+Or join the community on social networks:
 
 - **GitHub:** [github.com/dude007dev/the_first_programmers_book](https://github.com/dude007dev/the_first_programmers_book)  
 - **Instagram:** [instagram.com/dude007dev](https://www.instagram.com/dude007dev)  
@@ -42,5 +42,5 @@
 
 ---
 
-**Навігація**  
-⬅️ [Розділ 29](../../29/ua)
+**Navigation**  
+⬅️ [Chapter 29](../../29/en)

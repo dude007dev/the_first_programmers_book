@@ -1,42 +1,42 @@
-# Розділ 29. Word Game: Hangman з використанням функцій
+# Chapter 29. Word Game: Hangman Using Functions
 
-Цей розділ містить приклади з книги **"Перша книга програміста"**.  
-У ньому ми переписуємо гру **“Hangman”** з використанням функцій — розбиваємо код на логічні частини, щоб зробити його зрозумілішим, гнучкішим і ближчим до реальних програмних проєктів.
-
----
-
-## Структура папки
-
-- [**`29_code_samples.py`**](./29_code_samples.py) — усі приклади коду з підрозділів книги, зібрані в одному файлі.
-  ⚠️ Деякі приклади є фрагментами з контексту та використовуються лише для демонстрації окремих частин програми.
-- [**`29_hangman_game.py`**](./29_hangman_game.py) — фінальний, робочий код гри **Hangman**.
+This chapter contains examples from the book **"The First Programmer's Book"**.  
+We rewrite the **"Hangman"** game using functions — breaking the code into logical parts to make it clearer, more flexible, and closer to real software projects.
 
 ---
 
-## Зміст прикладів
+## Folder Structure
 
-- **29. Word Game: Hangman з використанням функцій** → шаблон головної функції `game_hangman()`.
-- **29.1 Функція отримання малюнка шибениці** → функція `get_hangman_drawing(stage_number)`, що повертає зображення поточного етапу гри. Малюнок зберігається у вигляді **кортежу рядків**.
-- **29.2 Оновлений варіант ініціалізації гри** → оновлення функції `game_hangman()` після винесення малюнка у функцію; використання змінної `current_attempt` замість негативних індексів.
-- **29.3 Функція початкових привітань** → функція `print_welcome_message(num_attempts, word)` для відображення вітального тексту.  
-- **29.4 Функція перевірки введеного значення** → функція `is_guess_valid(input_value, guessed_values)`, що перевіряє коректність введення гравця.
-- **29.5 Функція відображення поточного стану слова** → функція `display_word_progress(word, guessed_values)` для показу вже вгаданих літер.
-- **29.6 Фінальний вигляд головної функції** → зібрана логіка гри: введення користувача, перевірка, оновлення стану, відображення малюнка та завершення гри.
-- **29.8 Самостійна робота** → фрагменти коду з завдань для самостійної роботи.
+- [**`29_code_samples.py`**](./29_code_samples.py) — all code examples from the book sections collected in one file.
+  ⚠️ Some examples are fragments with context and are used only to demonstrate individual parts of the program.
+- [**`29_hangman_game.py`**](./29_hangman_game.py) — final, working code of the **Hangman** game.
 
 ---
 
-## Як запускати приклади
+## Contents of Examples
 
-У цьому розділі наведені як короткі приклади, так і готові програми.  
-Для запуску використовуйте Python у терміналі (або онлайн-інтерпретатор).  
+- **29. Word Game: Hangman Using Functions** → main function template `game_hangman()`.
+- **29.1 Function for Getting Hangman Drawing** → the `get_hangman_drawing(stage_number)` function that returns the drawing for the current game stage. The drawing is stored as a **tuple of strings**.
+- **29.2 Updated Game Initialization** → updating the `game_hangman()` function after separating the drawing into its own function; using the `current_attempt` variable instead of negative indices.
+- **29.3 Welcome Message Function** → the `print_welcome_message(num_attempts, word)` function for displaying greeting text.  
+- **29.4 Input Validation Function** → the `is_guess_valid(input_value, guessed_values)` function that checks the correctness of the player's input.
+- **29.5 Function for Displaying Current Word State** → the `display_word_progress(word, guessed_values)` function to show already guessed letters.
+- **29.6 Final Form of Main Function** → assembled game logic: user input, validation, state update, drawing display, and game completion.
+- **29.8 Self-Check Work** → code fragments from self-check assignments.
 
-Запуск окремої програми:
+---
+
+## How to Run Examples
+
+This chapter contains both short examples and complete programs.  
+Use Python in the terminal (or in an online interpreter) to run them.  
+
+Running a program:
 ```bash
 python3 29_hangman_game.py
 ```
 
-## Корисні посилання
+## Useful Links
 
 - [PEP 8 — Function and Variable Names](https://peps.python.org/pep-0008/#function-and-variable-names)
 - [Functions — Python Tutorial](https://docs.python.org/3/tutorial/controlflow.html#defining-functions)
@@ -44,6 +44,6 @@ python3 29_hangman_game.py
 - [`tuple` — Python Docs](https://docs.python.org/3/library/stdtypes.html#tuple)
 - [`set` — Python Docs](https://docs.python.org/3/library/stdtypes.html#set)
 
-**Навігація**
+**Navigation**
 
-⬅️ [Розділ 28](../../28/ua) | ➡️ [Розділ 30](../../30/ua)
+⬅️ [Chapter 28](../../28/en) | ➡️ [Chapter 30](../../30/en)

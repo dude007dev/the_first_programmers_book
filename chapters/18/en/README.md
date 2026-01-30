@@ -1,44 +1,45 @@
-# Розділ 18. Цикли (loops)
+# Chapter 18. Loops
 
-Цей розділ містить приклади з книги **"Перша книга програміста"**.  
-Ми детально розглядаємо цикли `while` та `for`, а також ключові слова break та continue.
----
-
-## Структура папки
-
-- [**`18_code_samples.py`**](./18_code_samples.py) — усі уривки коду з підрозділів книги, зібрані в одному файлі.
-  ⚠️ Цей файл не завжди виконується повністю: частина прикладів показує помилки навмисно.
+This chapter contains examples from the book **"The First Programmer's Book"**.  
+We cover `while` and `for` loops in detail, as well as the break and continue keywords.
 
 ---
 
-## Зміст прикладів
+## Folder Structure
 
-- **18.1 Цикл while** → базовий приклад створення циклу `while` та пояснення нескінченного циклу.
-- **18.2 Ключові слова break та continue** → приклади використання `break` і `continue` для керування потоком виконання.
-- **18.3 Цикл while у грі “Вгадай слово”** → реалізація ігрової логіки через цикл `while` із перевірками введення користувача.
-- **18.4 Цикл for** → приклади створення циклу `for`, проходження по рядках та списках, використання `break` і `continue`.
-- **18.5 Цикл for у грі “Вгадай слово”** → приклади використання циклу `for` для перевірки й виведення вгаданих літер.
+- [**`18_code_samples.py`**](./18_code_samples.py) — all code snippets from the book sections collected in one file.
+  ⚠️ This file is not always executed completely: some examples intentionally show errors.
 
 ---
 
-## Як запускати приклади
+## Contents of Examples
 
-У цьому розділі наведені лише короткі приклади, без готових програм.  
-Щоб їх перевірити:  
+- **18.1 While Loop** → basic example of creating a `while` loop and explanation of an infinite loop.
+- **18.2 break and continue Keywords** → examples of using `break` and `continue` to control program flow.
+- **18.3 While Loop in the "Guess the Word" Game** → implementation of game logic through a `while` loop with user input validation.
+- **18.4 For Loop** → examples of creating a `for` loop, iterating through strings and lists, using `break` and `continue`.
+- **18.5 For Loop in the "Guess the Word" Game** → examples of using a `for` loop to check and display guessed letters.
 
-1. Скопіюйте потрібний блок коду.  
-2. Вставте його у файл (наприклад, `example.py`) або в онлайн-інтерпретатор.  
-3. Запустіть файл у терміналі:  
+---
+
+## How to Run Examples
+
+This chapter contains only short examples, without complete programs.  
+To test them:  
+
+1. Copy the required code block.  
+2. Paste it into a file (for example, `example.py`) or in an online interpreter.  
+3. Run the file in the terminal:  
     ```bash
     python3 example.py
     ```
-    або запустіть програму в онлайн-інтерпретаторі.
+    or run the program in an online interpreter.
 
-## Корисні посилання
+## Useful Links
 
 - [`for` and `while` loops (Python docs)](https://docs.python.org/3/tutorial/controlflow.html#for-statements)
 - [`break` and `continue` statements (Python docs)](https://docs.python.org/3/tutorial/controlflow.html#break-and-continue-statements)
 
-**Навігація**
+**Navigation**
 
-⬅️ [Розділ 17](../../17/ua) | ➡️ [Розділ 19](../../19/ua)
+⬅️ [Chapter 17](../../17/en) | ➡️ [Chapter 19](../../19/en)

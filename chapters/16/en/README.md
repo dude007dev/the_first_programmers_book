@@ -1,45 +1,45 @@
-# Розділ 16. Текстовий тип даних
+# Chapter 16. String Data Type
 
-Цей розділ містить приклади з книги **"Перша книга програміста"**.  
-Ми детально розглядаємо текстовий тип даних у Python, роботу з рядками, їх нарізку, форматування та основні методи.
-
----
-
-## Структура папки
-
-- [**`16_code_samples.py`**](./16_code_samples.py) — усі уривки коду з підрозділів книги, зібрані в одному файлі.  
+This chapter contains examples from the book **"The First Programmer's Book"**.  
+We cover the string data type in Python in detail, including working with strings, slicing, formatting, and basic methods.
 
 ---
 
-## Зміст прикладів
+## Folder Structure
 
-- **16. Текстовий тип даних** → приклади створення текстових змінних, багаторядкових рядків і символів екранування.
-- **16.1 Текст як послідовність символів** → приклади індексації, перевірки належності символів до рядка (`in`, `not in`).
-- **16.2 Нарізка рядків (slicing)** → приклади зрізів і вибірки частин рядка.
-- **16.3 Функції й методи для тексту** → приклади використання функції `len()` та методів типу `str`.
-- **16.4 Кодування і декодування тексту** → приклади використання методів `encode()` та `decode()`.
-- **16.6 Підготовка до гри “вгадай слово”** → початковий блок коду для гри, що демонструє роботу з текстовими рядками.
+- [**`16_code_samples.py`**](./16_code_samples.py) — all code snippets from the book sections collected in one file.  
 
 ---
 
-## Як запускати приклади
+## Contents of Examples
 
-У цьому розділі наведені лише короткі приклади, без готових програм.  
-Щоб їх перевірити:  
+- **16. String Data Type** → examples of creating string variables, multi-line strings, and escape sequences.
+- **16.1 Text as a Sequence of Characters** → examples of indexing, checking character membership in a string (`in`, `not in`).
+- **16.2 String Slicing** → examples of slices and selecting parts of a string.
+- **16.3 Functions and Methods for Text** → examples of using the `len()` function and `str` type methods.
+- **16.4 Text Encoding and Decoding** → examples of using `encode()` and `decode()` methods.
+- **16.6 Preparation for the "Guess the Word" Game** → initial code block for the game demonstrating work with text strings.
 
-1. Скопіюйте потрібний блок коду.  
-2. Вставте його у файл (наприклад, `example.py`) або в онлайн-інтерпретатор.  
-3. Запустіть файл у терміналі:  
+---
+
+## How to Run Examples
+
+This chapter contains only short examples, without complete programs.  
+To test them:  
+
+1. Copy the required code block.  
+2. Paste it into a file (for example, `example.py`) or in an online interpreter.  
+3. Run the file in the terminal:  
     ```bash
     python3 example.py
     ```
-    або запустіть програму в онлайн-інтерпретаторі.
+    or run the program in an online interpreter.
 
-## Корисні посилання
+## Useful Links
 
 - [String methods](https://docs.python.org/3/library/stdtypes.html#string-methods)
 - [String `format` specification (Python docs)](https://docs.python.org/3/library/string.html#format-specification-mini-language)
 
-**Навігація**
+**Navigation**
 
-⬅️ [Розділ 15](../../15/ua) | ➡️ [Розділ 17](../../17/ua)
+⬅️ [Chapter 15](../../15/en) | ➡️ [Chapter 17](../../17/en)

@@ -1,41 +1,41 @@
-# Розділ 17. Блок if...else
+# Chapter 17. if...else Block
 
-Цей розділ містить приклади з книги **"Перша книга програміста"**.  
-Ми детально розглядаємо блок `if...else` у Python.
-
----
-
-## Структура папки
-
-- [**`17_code_samples.py`**](./17_code_samples.py) — усі уривки коду з підрозділів книги, зібрані в одному файлі.  
+This chapter contains examples from the book **"The First Programmer's Book"**.  
+We cover the `if...else` block in Python in detail.
 
 ---
 
-## Зміст прикладів
+## Folder Structure
 
-- **17.1 Як працює блок if...else... у Python** → приклад створення блоку `if...else`.
-- **17.2 Блок if...else... в програмі для оцінювання за шкалою A–F** → приклад використання блоку `if...else` в програмі для оцінювання за шкалою A–F.
-- **17.3 Блок if…else… у грі “Вгадай слово”** → приклад використання блоку `if...else` у грі “Вгадай слово”.
+- [**`17_code_samples.py`**](./17_code_samples.py) — all code snippets from the book sections collected in one file.  
 
 ---
 
-## Як запускати приклади
+## Contents of Examples
 
-У цьому розділі наведені лише короткі приклади, без готових програм.  
-Щоб їх перевірити:  
+- **17.1 How the if...else Block Works in Python** → example of creating an `if...else` block.
+- **17.2 if...else Block in an A–F Grading Program** → example of using the `if...else` block in an A–F grading program.
+- **17.3 if…else… Block in the "Guess the Word" Game** → example of using the `if...else` block in the "Guess the Word" game.
 
-1. Скопіюйте потрібний блок коду.  
-2. Вставте його у файл (наприклад, `example.py`) або в онлайн-інтерпретатор.  
-3. Запустіть файл у терміналі:  
+---
+
+## How to Run Examples
+
+This chapter contains only short examples, without complete programs.  
+To test them:  
+
+1. Copy the required code block.  
+2. Paste it into a file (for example, `example.py`) or in an online interpreter.  
+3. Run the file in the terminal:  
     ```bash
     python3 example.py
     ```
-    або запустіть програму в онлайн-інтерпретаторі.
+    or run the program in an online interpreter.
 
-## Корисні посилання
+## Useful Links
 
 - [`if` statements (Python tutorial)](https://docs.python.org/3/tutorial/controlflow.html#if-statements)
 
-**Навігація**
+**Navigation**
 
-⬅️ [Розділ 16](../../16/ua) | ➡️ [Розділ 18](../../18/ua)
+⬅️ [Chapter 16](../../16/en) | ➡️ [Chapter 18](../../18/en)
