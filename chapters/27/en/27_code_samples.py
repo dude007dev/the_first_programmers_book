@@ -1,6 +1,6 @@
 # 27. Song Words Counter
 
-# змінна з текстом пісні
+# variable with song text
 text = """
 Ніч яка місячна,
 Зоряна, ясная,
@@ -12,31 +12,31 @@ text = """
 ...
 """
 
-# заміна символів нового рядка на пробіли
+# replacing newline characters with spaces
 text = text.replace("\n", " ")
 
-# проходимо по елементах тексту
+# iterating through text elements
 for el in text:
     print(el)  # "Н"
 
-# розбиваємо текст на слова
+# splitting text into words
 text = text.replace("\n", " ")
 words_list = text.split(" ")
 for word in words_list:
     print(word)  # Ніч
 
-# альтернативний варіант
+# alternative option
 text = text.replace("\n", " ")
 for word in text.split(" "):
     print(word)  # Ніч
 
 
-# виводимо слово та його довжину
+# printing word and its length
 text = text.replace("\n", " ")
 for word in text.split(" "):
     print(word, len(word))  # Ніч 3
 
-# фільтруємо зайві символи та порожні рядки
+# filtering unnecessary characters and empty lines
 text = """
 Ніч яка місячна,
 Зоряна, ясная,
@@ -54,22 +54,22 @@ for word in text.split(" "):
     if len(word) > 2:
         print(word, len(word))  # Ніч 3
 
-# словник для підрахунку слів
+# dictionary for counting words
 words_dict = {}
 
-# заповнюємо словник
+# filling the dictionary
 if words_dict.get(word):
     words_dict[word] += 1
 else:
     words_dict[word] = 1
 
-# альтернативний варіант
+# alternative option
 if word in words_dict:
     words_dict[word] += 1
 else:
     words_dict[word] = 1
 
-# проміжний код програми
+# intermediate code of program
 text = """
 Ніч яка місячна,
 Зоряна, ясная,
@@ -93,7 +93,7 @@ for word in text.split(" "):
 
 print(words_dict)
 
-# знаходимо слово-лідер
+# finding the leading word
 target_word = ""
 counter = 0
 for word, count in words_dict.items():
@@ -103,9 +103,9 @@ for word, count in words_dict.items():
 
 print(target_word, counter)  # Ніч 1
 
-# 27.1 Інші способи вирішення задачі
+# 27.1 Other Ways to Solve the Problem
 
-# 1) використовуючи defaultdict
+# 1) using defaultdict
 from collections import defaultdict
 
 words_dict = defaultdict(int)
@@ -115,7 +115,7 @@ print(words_dict["example"])  # 0
 words_dict["example"] += 1
 print(words_dict["example"])  # 1
 
-# оновлений код програми з використанням defaultdict
+# updated code of program using defaultdict
 from collections import defaultdict
 
 text = """
@@ -168,7 +168,7 @@ for word, count in words_dict.items():
 
 print(target_word, counter)  # під 3
 
-# 2) за допомогою типу даних "лічильник"
+# 2) using "Counter" data type
 
 from collections import Counter, defaultdict
 
@@ -216,21 +216,21 @@ for word in text.split(" "):
 counter = Counter(words_dict)
 print(counter.most_common(3))  # [('під', 3), ('лякайся', 3), ('Сядемо', 2)]
 
-# 3) за допомогою сортування словника
+# 3) using dictionary sorting
 
-# приклад функції сортування з типом даних кортеж
+# example of sorting function with tuple data type
 my_tuple = (5, 2, 1)
 print(sorted(my_tuple))  # [1, 2, 5]
 
-# приклад функції сортування з використанням параметру `key`
+# example of sorting function using `key` parameter
 my_tuple = (("a", 33), ("b", 1), ("c", 2))
 print(sorted(my_tuple, key=lambda item: item[1]))  # [('b', 1), ('c', 2), ('a', 33)]
 
-# приклад сортування словника за значенням
+# example of sorting dictionary by value
 sorted_words = sorted(words_dict.items(), key=lambda item: item[1], reverse=True)
 print(sorted_words[0])
 
-# повний код програми з використанням сортування словника
+# full code of program using dictionary sorting
 from collections import defaultdict
 
 text = """
@@ -277,7 +277,7 @@ for word in text.split(" "):
 sorted_words = sorted(words_dict.items(), key=lambda item: item[1], reverse=True)
 print(sorted_words[0])  # ('під', 3)
 
-# 4) виділення слів за допомогою регулярних виразів
+# 4) extracting words using regular expressions
 
 import re
 
@@ -285,7 +285,7 @@ text = """Ніч яка місячна, Зоряна, ясная,"""
 words_list = re.findall(r"\w+", text)
 print(words_list)  # ['Ніч', 'яка', 'місячна', 'Зоряна', 'ясная']
 
-# 27.3 Самостійна робота
+# 27.3 Independent Work
 
-# фільтрація службових слів
+# filtering of service words
 service_words = {"і", "та", "але", "в", "на", "до", "що", "як"}

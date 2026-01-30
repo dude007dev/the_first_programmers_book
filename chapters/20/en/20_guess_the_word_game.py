@@ -1,4 +1,4 @@
-# 20. Гра “Вгадай слово”
+# 20. Word Guessing Game
 
 word = "apple"
 
@@ -20,7 +20,7 @@ while attempts > 0:
         print("You've already guessed that letter.")
         continue
 
-    guessed_letters = f"{guessed_letters}{guess}"  # або guessed_letters += guess
+    guessed_letters = f"{guessed_letters}{guess}"  # or guessed_letters += guess
 
     if guess not in word:
         attempts -= 1

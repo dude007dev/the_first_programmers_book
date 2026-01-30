@@ -1,61 +1,61 @@
-# 24. Тип даних множина (set)
+# 24. Set Data Type
 
-# створення множини
+# Creating a set
 my_set = {"apple", "banana", "strawberry"}
 print(my_set)  # {'apple', 'banana', 'strawberry'}
 
-# створення та додавання елементів до множини
+# creating and adding elements to a set
 my_set = set()
 my_set.add(1)
 my_set.add(2)
 my_set.add(5)
 print(my_set)  # {1, 2, 5}
 
-# створення словника, а не множини
+# creating a dictionary, not a set
 my_set = {}
 print(type(my_set))  # <class 'dict'>
 
-# множина не зберігає порядок елементів і не дозволяє дублікати
+# set does not preserve order of elements and does not allow duplicates
 my_set = {"apple", "banana", "kiwi", "apple", "banana"}
 print(my_set)  # {'banana', 'kiwi', 'apple'}
 
-# елементи множини мають бути хешованими (не змінюваними)
+# set elements must be hashable (immutable)
 my_set = {"apple", ["banana", "kiwi"], "apple", "banana"}
 print(my_set)  # TypeError: unhashable type: 'list'
 
-# приклад множини з різними типами даних
+# example of set with different data types
 my_set = {"apple", 1, True, False, "apple", True, ("a", "b"), 5.33}
 print(my_set)  # {False, 1, 5.33, 'apple', ('a', 'b')}
 
-# перевірка наявності елемента в множині (швидка операція, O(1))
+# checking if element exists in set (fast operation, O(1))
 my_set = {"apple", "banana", "kiwi"}
 print("kiwi" in my_set)  # True
 
-# 24.1 Comprehension множин (set comprehension)
+# 24.1 Set Comprehension
 
-# створення множини квадратів чисел від 0 до 5
+# creating set of squares of numbers from 0 to 5
 squares = {x**2 for x in range(6)}
 print(squares)  # {0, 1, 4, 9, 16, 25}
 
-# парні квадрати від 0 до 10
+# even squares from 0 to 10
 even_squares = {x**2 for x in range(11) if x % 2 == 0}
 print(even_squares)  # {0, 4, 16, 36, 64, 100}
 
-# 24.2 Методи типу даних множина (set)
+# 24.2 Set Data Type Methods
 
-# add() - додавання елемента
+# add() - adding element
 s = {1, 2, 3}
 s.add(4)
 print(s)  # {1, 2, 3, 4}
 
-# remove() - видалення елемента (викидає KeyError, якщо елемента немає)
+# remove() - removing element (raises KeyError if element doesn't exist)
 s = {1, 2, 3}
 s.remove(2)
 print(s)  # {1, 3}
 
 s.remove(2)  # KeyError: 2 not in {1, 3}
 
-# discard() - видалення елемента (не викидає помилку, якщо елемента немає)
+# discard() - removing element (does not raise error if element doesn't exist)
 s = {1, 2, 3}
 s.discard(2)
 print(s)  # {1, 3}
@@ -63,18 +63,18 @@ print(s)  # {1, 3}
 s.discard(2)
 print(s)  # {1, 3}
 
-# pop() - видалення і повернення випадкового елемента
+# pop() - removing and returning random element
 s = {1, 2, 3}
 elem = s.pop()
-print(elem)  # Один з елементів множини, наприклад 1
-print(s)  # Залишилися два елементи, наприклад {2, 3}
+print(elem)  # One of the set elements, for example 1
+print(s)  # Two elements remained, for example {2, 3}
 
-# clear() - очищення множини
+# clear() - clearing the set
 s = {1, 2, 3}
 s.clear()
 print(s)  # set()
 
-# union() - об'єднання множин
+# union() - union of sets
 s1 = {1, 2, 3}
 s2 = {3, 4, 5}
 s3 = s1.union(s2)
@@ -86,7 +86,7 @@ print(s3)  # {1, 2, 3, 4, 5}
 s4 = s1 | s2
 print(s4)  # {1, 2, 3, 4, 5}
 
-# update() - додавання елементів з іншої множини
+# update() - adding elements from another set
 s1 = {1, 2, 3}
 s2 = {3, 4, 5}
 s1.update(s2)
@@ -96,7 +96,7 @@ s3 = {6, 7, 8}
 s1 |= s3
 print(s1)  # {1, 2, 3, 4, 5, 6, 7, 8}
 
-# intersection() - перетин множин
+# intersection() - intersection of sets
 s1 = {1, 2, 3}
 s2 = {2, 3, 4}
 s3 = {3, 2, 5}
@@ -106,7 +106,7 @@ print(s4)  # {2, 3}
 s5 = s1 & s2 & s3
 print(s5)  # {2, 3}
 
-# intersection_update() - оновлення множини перетином з іншими
+# intersection_update() - updating set with intersection from others
 s1 = {1, 2, 3}
 s2 = {2, 3, 4}
 s3 = {3, 2, 5}
@@ -117,7 +117,7 @@ s4 = {5, 6, 7}
 s4 &= s3
 print(s4)  # {5}
 
-# difference() - різниця множин
+# difference() - difference of sets
 s1 = {1, 2, 3}
 s2 = {2, 3, 4}
 s3 = s1.difference(s2)
@@ -128,7 +128,7 @@ s4 = {2, 3, 4}
 s5 = s3 - s4
 print(s5)  # {5}
 
-# difference_update() - оновлення множини різницею з іншою
+# difference_update() - updating set with difference from another
 s1 = {1, 2, 3}
 s2 = {2, 3, 4}
 s1.difference_update(s2)
@@ -139,7 +139,7 @@ s4 = {2, 3, 4}
 s3 -= s4
 print(s3)  # {5}
 
-# symmetric_difference() - симетрична різниця множин
+# symmetric_difference() - symmetric difference of sets
 x = {"apple", "banana", "cherry"}
 y = {"google", "microsoft", "apple"}
 z = x.symmetric_difference(y)
@@ -160,7 +160,7 @@ s2 = {2, 3, 4}
 s3 = s1 ^ s2
 print(s3)  # {1, 4}
 
-# symmetric_difference_update() - оновлення множини симетричною різницею з іншою
+# symmetric_difference_update() - updating set with symmetric difference from another
 x = {"apple", "banana", "cherry"}
 y = {"google", "microsoft", "apple"}
 x.symmetric_difference_update(y)
@@ -181,7 +181,7 @@ s2 = {2, 3, 4}
 s1 ^= s2
 print(s1)  # {1, 4}
 
-# issubset() - перевірка підмножини
+# issubset() - checking subset
 s1 = {1, 2}
 s2 = {1, 2, 3}
 
@@ -189,7 +189,7 @@ print(s1.issubset(s2))  # True
 print(s1 < s2)  # True
 print(s1 <= s2)  # True
 
-# issuperset() - перевірка надмножини
+# issuperset() - checking superset
 s1 = {1, 2, 3}
 s2 = {1, 2}
 
@@ -197,18 +197,18 @@ print(s1.issuperset(s2))  # True
 print(s1 > s2)  # True
 print(s1 >= s2)  # True
 
-# isdisjoint() - перевірка на відсутність спільних елементів
+# isdisjoint() - checking for no common elements
 s1 = {1, 2, 3}
 s2 = {4, 5, 6}
 print(s1.isdisjoint(s2))  # True
 
-# 24.3 Практичне використання множин
+# 24.3 Practical use of sets
 
 my_list = [1, 2, 1, 3, 4, 5, 3, 5]
 my_set = set(my_list)
 
 print(my_set)  # {1, 2, 3, 4, 5}
-print(5 in my_set)  # True, перевірка виконується за O(1)
+print(5 in my_set)  # True, check is performed in O(1)
 
 for item in my_set:
     # do something with item

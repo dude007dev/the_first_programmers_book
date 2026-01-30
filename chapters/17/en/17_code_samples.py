@@ -1,8 +1,8 @@
-# 17. Блок if...else...
+# 17. if...else... block
 
-# 17.1 Як працює блок if...else... у Python
+# 17.1 How the if...else... block works in Python
 
-# Приклад 1
+# Example 1
 forecast = ["rain", "sun"]
 
 if "storm" in forecast:
@@ -14,7 +14,7 @@ elif "rain" in forecast:
 elif "sun" in forecast:
     print("Take sunglasses.")
 
-# 17.2 Блок if...else... в програмі для оцінювання за шкалою A–F
+# 17.2 if...else... block in a program for grading on an A–F scale
 
 value = input("Enter the percentage of correct answers of the test: ")
 value = int(value)
@@ -31,7 +31,7 @@ else:
 
 print(f"Your grade is: {grade}")
 
-# 17.3 Блок if…else… у грі “вгадай слово”
+# 17.3 if...else... block in the 'Guess the Word' game
 
 word = "apple"
 attempts = 6
@@ -43,12 +43,12 @@ print("Try to guess the word.")
 print("_ " * len(word))
 
 guess = input("Guess a letter: ").lower()
-# перший блок if...else...
+# first if...else... block
 if not guess.isalpha() or len(guess) > 1:
     print("Please try again. Enter a correct letter.")
     exit()
 
-# другий блок if...else...
+# second if...else... block
 if guess not in word:
     attempts -= 1
     print(f"Oops! '{guess}' is not in the word. You have {attempts} attempts left.")

@@ -1,6 +1,6 @@
 # 25. Word Game: Hangman
 
-# початкова версія гри "Відгадай слово" (повередника Hangman)
+# Initial version of "Guess the Word" game (predecessor to Hangman)
 word = "apple"
 
 attempts = 6
@@ -21,7 +21,7 @@ while attempts > 0:
         print("You've already guessed that letter.")
         continue
 
-    guessed_letters = f"{guessed_letters}{guess}"  # або guessed_letters += guess
+    guessed_letters = f"{guessed_letters}{guess}"  # or guessed_letters += guess
 
     if guess not in word:
         attempts -= 1
@@ -52,9 +52,9 @@ while attempts > 0:
 if attempts == 0:
     print("Sorry, you ran out of attempts. The word was:", word)
 
-# 25.1 Зображення повішеного чоловіка
+# 25.1 Displaying the Hanged Man
 
-# зображення повішеного (hangman)
+# display of hanged man (hangman)
 hanged_man = (
     """
  -----
@@ -84,10 +84,10 @@ hanged_man = (
 """,
 )
 
-# кількість спроб для вгадування
+# number of attempts for guessing
 attempts = len(hanged_man) - 1
 
-# 25.2 Вибір слова для гри
+# 25.2 Selecting a Word for the Game
 
 import random
 
@@ -96,32 +96,32 @@ random_index = random.randint(0, len(words) - 1)
 word = words[random_index]
 print(word)
 
-# спрощений варіант вибору слова
+# simplified version of selecting a word
 import random
 
 words = ("apple", "banana", "strawberry")
 word = random.choice(words)
 print(word)
 
-# 25.3 Запис введених значень
+# 25.3 Recording Entered Values
 
-# попередня версія
+# previous version
 guessed_letters = ""
 ...
 guessed_letters = f"{guessed_letters}{guess}"
 ...
 
-# покращена версія
+# improved version
 guessed_values = set()
 guess = input("Guess a letter or the whole word: ").lower()
 if guess in guessed_values:
     print("You've already guessed that word/letter.")
-    # continue -> пропускаємо ітерацію, йдемо до початку циклу
+    # continue -> skip iteration, go to beginning of loop
 
 guessed_values.add(guess)
 ...
 
-# 25.4 Оновлений спосіб перевірки закінчення гри
+# 25.4 Updated Way to Check End of Game
 
 # попередня версія
 while attempts > 0:
@@ -138,34 +138,34 @@ while attempts > 0:
         print("Congratulations! You've guessed the word:", word)
         break
 
-# використання list comprehension
+# using list comprehension
 word = "banana"  # Example word for testing
 guessed_values = {"a", "b", "c"}  # Example guessed letters
 result = [letter in guessed_values for letter in word]
 print(result)  # [True, True, False, True, False, True]
 
-# перевірка повного вгадування слова
+# checking complete word guessing
 word = "banana"  # Example word for testing
 guessed_values = {"c", "a", "n", "b"}  # Example guessed letters
 result = [letter in guessed_values for letter in word]
 print(result)  # [True, True, True, True, True, True]
 
-# функція all()
+# all() function
 word = "banana"  # Example word for testing
 guessed_values = {"c", "a", "n", "b"}  # Example guessed letters
 result = [letter in guessed_values for letter in word]
 if all(result):
     print("Congratulations! You've guessed the word:", word)
 
-# запис без проміжної змінної
+# writing without intermediate variable
 word = "banana"
 guessed_values = {"c", "a", "n", "b"}
 if all([letter in guessed_values for letter in word]):
     print("Congratulations! You've guessed the word:", word)
 
-# 25.7 Самостійна робота
+# 25.7 Independent Work
 
-# подвійний цикл while для збереження кількості перемог
+# double while loop to keep track of wins
 while True:
     word = random.choice(words)
     attempts = len(hanged_man) - 1

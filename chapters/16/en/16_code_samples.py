@@ -1,16 +1,16 @@
-# 16. Текстовий тип даних
+# 16. Text data type
 
 name = 'John Smith'
 name = "John Smith"  # те саме
 
-# Багаторядковий текст. Варіант 1
+# Multi-line text. Option 1
 some_text = """Lorem ipsum dolor sit amet,
 consectetur adipiscing elit,
 sed do eiusmod tempor incididunt
 ut labore et dolore magna aliqua."""
 print(some_text)
 
-# Багаторядковий текст. Варіант 2
+# Multi-line text. Option 2
 random_text = "Lorem ipsum dolor sit amet," \
     "consectetur adipiscing elit," \
     "sed do eiusmod tempor incididunt" \
@@ -18,7 +18,7 @@ random_text = "Lorem ipsum dolor sit amet," \
 
 print(random_text)
 
-# Відображення тексту у кілька рядків
+# Displaying text on multiple lines
 random_text = "Lorem ipsum dolor sit amet,\n" \
     "consectetur adipiscing elit,\n" \
     "sed do eiusmod tempor incididunt\n" \
@@ -26,7 +26,7 @@ random_text = "Lorem ipsum dolor sit amet,\n" \
 
 print(random_text)
 
-# Багаторядковий текст. Варіант 3 (рекомендований)
+# Multi-line text. Option 3 (recommended)
 random_text = (
     "Lorem ipsum dolor sit amet,\n"
     "consectetur adipiscing elit,\n"
@@ -36,20 +36,20 @@ random_text = (
 
 print(random_text)
 
-# текст в дужках
+# text in parentheses
 random_text = ("Lorem")
 print(random_text)  # Lorem
 
 random_text = ("Lorem", "ipsum")
 print(random_text)  # ('Lorem', 'ipsum')
 
-# подвійні лапки в тексті
+# double quotes in text
 text = "Hello, \"Python!\""
 print(text)  # Hello, "Python!"
 
-# 16.1 Текст як послідовність символів
+# 16.1 Text as a sequence of characters
 
-# індексація символів в тексті
+# character indexing in text
 text = "Hello World!"
 print(text[0])  # H
 print(text[1])  # e
@@ -57,19 +57,19 @@ print(text[2])  # l
 
 print(type(text))  # <class 'str'>
 
-# належність символу до тексту
+# character membership in text
 text = "Hello World!"
 print("l" in text)  # True
 print("L" in text)  # False
 print("q" not in text)  # True
 
-# 16.2 Нарізка рядків (slicing)
+# 16.2 String slicing
 
-# нарізка тексту
+# text slicing
 text = "Hello Python!"
 print(text[6:12])  # Python
 
-# різні варіанти нарізки тексту
+# various text slicing options
 text = "Hello Python!"
 
 print(text[0:13])  # Hello Python!
@@ -78,33 +78,33 @@ print(text[0:])  # Hello Python!
 print(text[:len(text)])  # Hello Python!
 print(text[:])  # Hello Python!
 
-# нарізка з негативними індексами
+# slicing with negative indices
 text = "Hello Python!"
 print(text[-7:-1])  # Python
 
-# крок нарізки
+# slicing step
 text = "Hello Python!"
 print(text[6:12:2])  # Pto
 
-# 16.3 Функції й методи для тексту
+# 16.3 Functions and methods for text
 
-# приклад з оператором +
-"Hello " + "Python!"  # об'єднання через оператор +
-" ".join(["Hello", "Python!"])  # об'єднання через метод join
+# example with + operator
+"Hello " + "Python!"  # concatenation via + operator
+" ".join(["Hello", "Python!"])  # concatenation via join method
 
-# довжина тексту
+# text length
 text = "Hello World!"
 print(len(text))  # 12
 
-# приклад використання функції
+# example of function usage
 print("Hello, World!")
 print("Hello,", "World!")
 
-# приклад використання методу
+# example of method usage
 text = "hello world!"
 print(text.title())  # Hello World!
 
-# приклад повернення результату від методу
+# example of returning result from method
 text = "HELLO PYTHON!"
 
 print(text.lower())  # hello python!
@@ -116,18 +116,18 @@ print(new_text)  # hello python!
 text = text.lower()
 print(text)  # hello python!
 
-# Методи типу даних string (рядків тексту)
-# Методи для зміни регістру
+# String data type methods
+# Methods for changing case
 
-# capitalize() - перша літера велика
+# capitalize() - first letter uppercase
 text = "hello python!"
 print(text.capitalize())  # Hello python!
 
-# casefold() - всі літери малі
+# casefold() - all letters lowercase
 text = "HELLO PYTHON!"
 print(text.casefold())  # hello python!
 
-# lower() - всі літери малі
+# lower() - all letters lowercase
 text = "Hello Python!"
 print(text.lower())  # hello python!
 print(text)  # Hello Python!
@@ -135,19 +135,19 @@ print(text)  # Hello Python!
 lower_next = text.lower()
 print(lower_next)  # hello python!
 
-# upper() - всі літери великі
+# upper() - all letters uppercase
 txt = "Hello, Python!"
 new_txt = txt.upper()
 print(new_txt)  # HELLO, PYTHON!
 
-# title() - кожне слово з великої літери
+# title() - each word capitalized
 txt = "hello, python!"
 new_txt = txt.title()
 print(new_txt)  # Hello, Python!
 
-# Методи для перевірки вмісту рядка
+# Methods for checking string content
 
-# isalnum() - всі символи є буквено-цифровими
+# isalnum() - all characters are alphanumeric
 text = "TeslaModel3"
 print(text.isalnum())  # True
 
@@ -157,7 +157,7 @@ print(text.isalnum())  # False
 text = "221"
 print(text.isalnum())  # True
 
-# isalpha() - всі символи є літерами
+# isalpha() - all characters are letters
 name = "John"
 print(name.isalpha())  # True
 
@@ -167,7 +167,7 @@ print(name.isalpha())  # False
 text = "John T."
 print(text.isalpha())  # False
 
-# isdecimal() - всі символи є десятковими цифрами
+# isdecimal() - all characters are decimal digits
 value = "12345"
 print(value.isdigit())  # True
 
@@ -177,7 +177,7 @@ print(value.isdigit())  # False
 value = "\u0031"  # Unicode for 1
 print(value.isdigit())  # True
 
-# isdigit() - всі символи є цифрами
+# isdigit() - all characters are digits
 text = "1234"
 print(text.isdigit())  # True
 
@@ -190,7 +190,7 @@ print(text.isdigit())  # False
 text = "abcd123"
 print(text.isdigit())  # False
 
-# isidentifier() - рядок є дійсним ідентифікатором Python
+# isidentifier() - string is a valid Python identifier
 
 text = "1234"
 print(text.isidentifier())  # False
@@ -207,7 +207,7 @@ print(text.isidentifier())  # False
 text = "привіт"
 print(text.isidentifier())  # True
 
-# isnumeric() - всі символи є числовими
+# isnumeric() - all characters are numeric
 text = "hello python"
 print(text.isnumeric())  # False
 
@@ -217,25 +217,25 @@ print(text.isnumeric())  # False
 text = "1245"
 print(text.isnumeric())  # True
 
-# islower() - всі літери в рядку є малими
+# islower() - all letters in string are lowercase
 text = "hello python"
 print(text.islower())  # True
 
 text = "Hello Python"
 print(text.islower())  # False
 
-# isupper() - всі літери в рядку є великими
+# isupper() - all letters in string are uppercase
 text = "HELLO PYTHON!"
 print(text.isupper())  # True
 
 text = "Hello Python!"
 print(text.isupper())  # False
 
-# endswith() - рядок закінчується вказаним суфіксом
+# endswith() - string ends with specified suffix
 text = "Hello Python!"
 print(text.endswith("Python!"))  # True
 
-# startswith() - рядок починається з вказаного префікса
+# startswith() - string starts with specified prefix
 txt = "Hello, Python!"
 starts_with_hello = txt.startswith("Hello")
 print(starts_with_hello)  # True
@@ -244,9 +244,9 @@ txt = "Hello, Python!"
 starts_with_hello = txt.startswith("hello")
 print(starts_with_hello)  # False
 
-# Методи для форматування та з'єднання рядків
+# Methods for formatting and joining strings
 
-# format() - форматування рядка
+# format() - string formatting
 txt = "You can buy it for only {price:.2f} dollars!"
 print(txt.format(price=49))  # You can buy it for only 49.00 dollars!
 
@@ -263,11 +263,11 @@ print(text2)  # My name is Anna, and I'm 23
 text3 = "My name is {}, and I'm {}".format("Derik", 18)
 print(text3)  # My name is Derik, and I'm 18
 
-# %-форматування
+# %-formatting
 text = "My name is %s, and I'm %s" % ("Anna", 23)
 print(text)  # My name is Anna, and I'm 23
 
-# join() - об'єднання елементів ітерованого об'єкта в рядок
+# join() - joining elements of an iterable into a string
 my_list = ["123", "456", "789"]
 result = "-".join(my_list)
 print(result)  # 123-456-789
@@ -278,67 +278,67 @@ print(result)  # 123-456-789
 text = "abcd"
 print(".".join(text))  # a.b.c.d
 
-# replace() - заміна підрядка в рядку
+# replace() - replacing substring in string
 txt = "My favorite programming language is C++!"
 new_text = txt.replace("C++", "Python")
 print(new_text)  # My favorite programming language is Python!
 
-# split() - розбиття рядка на список підрядків
+# split() - splitting string into list of substrings
 text = "John, Anna, Joachim"
 names = text.split(", ")
 print(names)  # ['John', 'Anna', 'Joachim']
 
-# splitlines() - розбиття рядка на список рядків
+# splitlines() - splitting string into list of lines
 txt = "Thanks for choosing programming!\nWelcome to the jungle!"
 lines = txt.splitlines()
 print(lines)  # ['Thanks for choosing programming!', 'Welcome to the jungle!']
 
-# Методи для роботи з пробілами
+# Methods for working with whitespace
 
-# lstrip() - видалення пробілів зліва
+# lstrip() - removing spaces from the left
 txt = "     Python     "
 new_text = txt.lstrip()
 
 print(f"My favorite language is: {txt}!")
 print(f"My favorite language is: {new_text}!")
 
-# rstrip() - видалення пробілів справа
+# rstrip() - removing spaces from the right
 txt = "     Python     "
 new_text = txt.rstrip()
 
 print(f"My favorite language is: {txt}!")
 print(f"My favorite language is: {new_text}!")
 
-# strip() - видалення пробілів зліва і справа
+# strip() - removing spaces from left and right
 txt = "     Python     "
 new_text = txt.strip()
 
 print(f"My favorite language is: {txt}!")
 print(f"My favorite language is: {new_text}!")
 
-# count() - підрахунок входжень підрядка в рядок
+# count() - counting occurrences of substring in string
 text = "Hello Python!. Python is my favorite programming language."
 
 print(text.count("Python"))  # 2
 print(text.count("python"))   # 0
 print(text.count("Python", 10))  # 1
 
-# find() - пошук підрядка в рядку, повертає індекс першого входження або -1
+# find() - searching for substring in string, returns index of first occurrence or -1
 text = "Hello Python!"
 
 print(text.find("Python!"))  # 6
 print(text.find("python"))  # -1
 print(text.find("THE"))  # -1
 
-# 16.4 Кодування і декодування тексту
+# 16.4 Encoding and decoding text
 
-# кодування рядка в байти
+# encoding string to bytes
 text = "Hello Python!"
 bytes_encoded = text.encode(encoding="utf-8")
 print(type(bytes_encoded))  # <class 'bytes'>
 print(bytes_encoded)  # b'Hello Python!'
 
-# декодування байтів в рядок
+# decoding bytes to string
 text = "Hello Python!"
 bytes_encoded = text.encode()
 print(type(bytes_encoded))  # <class 'bytes'>
@@ -348,7 +348,7 @@ decoded_text = bytes_encoded.decode()
 print(type(decoded_text))  # <class 'str'>
 print(decoded_text)  # Hello Python!
 
-# кодування і декодування з ASCII
+# encoding and decoding with ASCII
 text = "Hello Python!"
 bytes_encoded = text.encode(encoding="ASCII")
 print(type(bytes_encoded))  # <class 'bytes'>
@@ -358,7 +358,7 @@ decoded_text = bytes_encoded.decode(encoding="ASCII")
 print(type(decoded_text))  # <class 'str'>
 print(decoded_text)  # Hello Python!
 
-# приклад помилки декодування
+# example of decoding error
 text = "Привіт Python!"
 bytes_encoded = text.encode(encoding="ISO 8859-5")  # Cyrillic alphabet
 print(type(bytes_encoded))  # <class 'bytes'>
@@ -368,7 +368,7 @@ decoded_text = bytes_encoded.decode(
     encoding="UTF-8"
 )
 
-# приклад декодування без помилки
+# example of decoding without error
 text = "Привіт Python!"
 bytes_encoded = text.encode(encoding="ISO 8859-5")  # Cyrillic alphabet
 print(type(bytes_encoded))  # <class 'bytes'>
@@ -377,9 +377,9 @@ print(bytes_encoded)  # b'\xbf\xe0\xd8\xd2\xf6\xe2 Python!'
 decoded_text = bytes_encoded.decode(encoding="ISO 8859-5")
 print(decoded_text)  # Привіт Python!
 
-# 16.6 Підготовка до гри “вгадай слово”
+# 16.6 Preparing for the 'Guess the Word' game
 
-# Базові змінні та початкові повідомлення
+# Basic variables and initial messages
 word = "apple"
 attempts = 6
 guessed_letters = ""
@@ -389,7 +389,7 @@ print(f"You have {attempts} attempts to guess the word.")
 print("Try to guess the word.")
 print("_ " * len(word))
 
-# Введення та перевірка введеного значення
+# Input and validation of entered value
 guess = input("Guess a letter: ").lower()
 if not guess.isalpha() or len(guess) > 1:
     print("Please try again. Enter a correct letter.")

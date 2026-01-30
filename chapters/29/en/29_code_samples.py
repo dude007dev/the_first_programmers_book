@@ -1,6 +1,6 @@
-# 29. Word Game: Hangman з використанням функцій
+# 29. Word Game: Hangman with Functions
 
-# шаблон для головної функції гри
+# template for main game function
 import random
 
 
@@ -10,7 +10,7 @@ def game_hangman():
 
 game_hangman()
 
-# 29.1 Функція отримання малюнка шибениці
+# 29.1 Function for Getting Hangman Drawing
 
 
 def get_hangman_drawing(stage_number):
@@ -36,7 +36,7 @@ def get_hangman_drawing(stage_number):
            |
        -------
        """,
-        # ... (інші малюнки шибениці) ...
+        # ... (other hangman drawings) ...
         """1""",
         """2""",
         """3""",
@@ -49,7 +49,7 @@ def get_hangman_drawing(stage_number):
 
 print(get_hangman_drawing(0))
 
-# приклад запуску функції `get_hangman_drawing` з індексами
+# example of running function `get_hangman_drawing` with indices
 attempts = 6
 hanged_man = (0, 1, 2, 3, 4, 5, 6)
 
@@ -59,7 +59,7 @@ print(get_hangman_drawing(-attempts))
 
 print(get_hangman_drawing(stage_number=-attempts))
 
-# 29.2 Оновлений варіант ініціалізації гри
+# 29.2 Updated Variant of Game Initialization
 
 
 def game_hangman():
@@ -81,9 +81,9 @@ def game_hangman():
         pass
 
 
-# 29.3 Функція початкових привітань
+# 29.3 Function for Initial Greetings
 
-# попередній код привітання
+# previous greeting code
 print("Welcome to the Word Game: Hangman!")
 print(f"You have {attempts} attempts to guess the word.")
 print("Try to guess the word.")
@@ -91,7 +91,7 @@ print(get_hangman_drawing(0))
 print("_ " * len(word))
 
 
-# нова функція привітання
+# new greeting function
 def print_welcome_message(num_attempts, word):
     """Print welcome message for the Hangman game.
 
@@ -109,9 +109,9 @@ def print_welcome_message(num_attempts, word):
     print("_ " * len(word))
 
 
-# 29.4 Функція перевірки введеного значення
+# 29.4 Function for Validating Input
 
-# попередній код перевірки введеного значення
+# previous code for checking input value
 # check if the input is a letter/word
 if not guess.isalpha():
     print("Please enter a correct letter or a word.")
@@ -123,7 +123,7 @@ if guess in guessed_values:
     continue
 
 
-# нова функція перевірки введеного значення
+# new function for validating input value
 def is_guess_valid(input_value, guessed_values):
     """Validate the player's guess.
 
@@ -145,11 +145,11 @@ def is_guess_valid(input_value, guessed_values):
     return True
 
 
-# майбутнє використання функції `is_guess_valid`
+# future usage of function `is_guess_valid`
 if not is_guess_valid(input_value=guess, guessed_values=guessed_values):
     continue
 
-# структура коду після внесених правок
+# code structure after making changes
 import random
 
 
@@ -186,9 +186,9 @@ def game_hangman():
 
 game_hangman()
 
-# 29.5 Функція відображення поточного стану слова
+# 29.5 Function for Displaying Word Progress
 
-# попередній код відображення поточного стану слова
+# previous code for displaying current word state
 # Display the current state of the word
 display_word = ""
 for letter in word:
@@ -199,7 +199,7 @@ for letter in word:
 print(display_word)
 
 
-# нова функція відображення поточного стану слова
+# new function for displaying current word state
 def display_word_progress(word, guessed_values):
     """Show the word with guessed letters revealed and underscores for the rest.
 
@@ -219,7 +219,7 @@ def display_word_progress(word, guessed_values):
     print(display_word)
 
 
-# 29.6 Фінальний вигляд головної функції
+# 29.6 Final Appearance of Main Function
 
 
 def game_hangman():
@@ -272,7 +272,7 @@ def game_hangman():
         print("Sorry, you ran out of attempts. The word was:", word)
 
 
-# 29.8 Самостійна робота
+# 29.8 Independent Work
 
 from random import randint
 

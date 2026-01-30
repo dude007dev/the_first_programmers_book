@@ -1,17 +1,17 @@
-# 28. Функції
+# 28. Functions
 
-# 28.1 Створення і виклик функції
+# 28.1 Creating and Calling a Function
 
-# приклад визначення та виклику функції
+# example of defining and calling a function
 def my_function():
     print("Hello, this is my first function!")
 
 
 my_function()  # Hello, this is my first function!
 
-# 28.2 Створення і виклик функції з параметрами
+# 28.2 Creating and Calling a Function with Parameters
 
-# приклад визначення та виклику функції з одним параметром
+# example of defining and calling a function with one parameter
 def my_second_function(first_name):
     print(f"Hello, {first_name}!")
     print("This is my second function!")
@@ -19,60 +19,60 @@ def my_second_function(first_name):
 
 my_second_function("John")
 
-# повторний виклик функції з різними параметрами
+# repeated function calls with different parameters
 my_second_function("Jane")  # Hello, Jane! ...
 my_second_function("Jack")  # Hello, Jack! ...
 
-# 28.3 Назва функції
+# 28.3 Function Name
 
-# приклад правильного стилю
+# example of correct style
 def my_function(first_name):
     print(f"Hello, {first_name}!")
 
 
 my_function("Olha")  # Hello, Olha!
 
-# робочий приклад, який не відповідає PEP-8
+# working example that does not comply with PEP-8
 def mySecondFunction(first_name):
     print(f"Hello, {first_name}!")
 
 
 mySecondFunction("Alex")  # Hello, Alex!
 
-## Використання цифр у назві функції
+## Using digits in function name
 
-# коректна назва
-def my_2_function(first_name):  # Коректно
+# correct name
+def my_2_function(first_name):  # Correct
     print(f"Hello, {first_name}!")
 
 
 my_2_function("Ivan")  # Hello, Ivan!
 
 
-# Помилка: SyntaxError
+# Error: SyntaxError
 def 2_function(first_name):
     print(f"Hello, {first_name}!")
 
 
-# коректна і практична назва
+# correct and practical name
 def calc_1208():
     print("Do some calculations.")
 
 
 calc_1208()  # Do some calculations.
 
-# 28.4 Функції з кількома параметрами
+# 28.4 Functions with Multiple Parameters
 
-# приклад функції з двома параметрами
+# example of function with two parameters
 def my_function(first_name, last_name):
     print(f"Hello, {first_name} {last_name}!")
 
 
 my_function("Alice", "Smith")  # Hello, Alice Smith!
 
-# 28.5 Кількість аргументів
+# 28.5 Number of Arguments
 
-# приклад визначення і виклику функції з двома параметрами
+# example of defining and calling function with two parameters
 def my_function(first_name, last_name):
     print(f"Hello, {first_name} {last_name}!")
 
@@ -80,27 +80,27 @@ def my_function(first_name, last_name):
 my_function("Alice", "Smith")  # Hello, Alice Smith!
 my_function("Alice")  # TypeError: my_function() missing 1 required positional argument: 'last_name'
 
-# 28.6 Позиційні аргументи
+# 28.6 Positional Arguments
 
-# визначення функції
+# function definition
 def my_function(first_name, last_name):
     print(f"Hello, {first_name} {last_name}!")
 
 
-# виклик функції з позиційними аргументами
+# calling function with positional arguments
 my_function("Alice", "Smith")  # Hello, Alice Smith!
 
-# 28.7 Іменовані аргументи
+# 28.7 Named Arguments
 
-# визначення функції, в якій перший параметр це `last_name`
+# defining function where first parameter is `last_name`
 def my_function(last_name, first_name):
     print(f"Hello, {first_name} {last_name}!")
 
 
-# виклик функції з позиційними аргументами
+# calling function with positional arguments
 my_function("Adams", "John")  # Hello, John Adams!
 
-# виклик функції за допомогою іменованих аргументів
+# calling function using named arguments
 my_function(first_name="Adams", last_name="John")  # Hello, Adams John!
 
 # порядок передавання іменованих аргументів не має значення
@@ -111,7 +111,7 @@ def my_function(first_name, last_name):
 my_function(first_name="Adams", last_name="John")  # Hello, Adams John!
 my_function(last_name="Smith", first_name="Alice")  # Hello, Alice Smith!
 
-# приклад, коли іменовані аргументи особливо корисні
+# example when named arguments especially useful
 def my_contact(first_name, last_name, middle_name, phone, mobile, work_phone):
     print(f"Person: {first_name} {middle_name} {last_name} ...")
 
@@ -126,13 +126,13 @@ my_contact(
     work_phone="123-456-8888",
 )
 
-## Змішування позиційних та іменованих аргументів
+## Mixing positional and named arguments
 
 def my_contact(first_name, last_name, middle_name, phone, mobile, work_phone):
     print(f"Person: {first_name} {middle_name} {last_name} ...")
 
 
-# OK - всі аргументи іменовані
+# OK - all arguments named
 my_contact(
     first_name="John",
     last_name="Adams",
@@ -142,7 +142,7 @@ my_contact(
     work_phone="123-456-8888",
 )
 
-# Помилка: SyntaxError - positional argument follows keyword argument
+# Error: SyntaxError - positional argument follows keyword argument
 my_contact(
     first_name="John",
     last_name="Adams",
@@ -152,7 +152,7 @@ my_contact(
     work_phone="123-456-8888",
 )
 
-# коректний приклад змішування позиційних та іменованих аргументів
+# correct example of mixing positional and named arguments
 def my_contact(first_name, last_name, middle_name, phone, mobile, work_phone):
     print(f"Person: {first_name} {middle_name} {last_name} ...")
 
@@ -166,7 +166,7 @@ my_contact(
     last_name="Smith",
 )
 
-# 28.8 Лише позиційні аргументи (/)
+# 28.8 Positional-Only Arguments (/)
 
 def my_function(first_name, last_name, /):
     print(f"Hello, {first_name} {last_name}!")
@@ -177,7 +177,7 @@ my_function("Alice", "Smith")  # Hello, Alice Smith!
 # TypeError: my_function() got some positional-only arguments passed as keyword arguments: 'first_name, last_name'
 my_function(first_name="Alice", last_name="Smith")
 
-# 28.9 Лише іменовані аргументи (*)
+# 28.9 Keyword-Only Arguments (*)
 
 def my_function(*, first_name, last_name):
     print(f"Hello, {first_name} {last_name}!")
@@ -188,7 +188,7 @@ my_function(first_name="Alice", last_name="Smith")  # Hello, Alice Smith!
 # TypeError: my_function() takes 0 positional arguments but 2 were given
 my_function("Alice", "Smith")
 
-# практичне використання лише іменованих аргументів
+# practical use of keyword-only arguments
 def my_function(*, first_name, last_name):
     print(f"Hello, {first_name} {last_name}!")
 
@@ -196,7 +196,7 @@ def my_function(*, first_name, last_name):
 input_data = {"first_name": "Alice", "last_name": "Smith"}
 my_function(**input_data)  # Hello, Alice Smith!
 
-# 28.10 Комбіновані параметри: лише позиційні (/) та лише іменовані (*) аргументи
+# 28.10 Combined Parameters: Positional-Only (/) and Keyword-Only (*) Arguments
 
 def my_function(first_name, last_name, /, *, phone_number):
     print(f"Hello, {first_name} {last_name} {phone_number}!")
@@ -204,7 +204,7 @@ def my_function(first_name, last_name, /, *, phone_number):
 
 my_function("Alice", "Smith", phone_number="123-456-789")  # Hello, Alice Smith 123-456-789!
 
-# 28.11 Передача змінної у якості параметра функції
+# 28.11 Passing Variable as Function Parameter
 
 # передача змінної `input_name` у якості параметра функції
 def my_function(first_name):
@@ -224,7 +224,7 @@ first_name = input("What is your first name? ")  # John
 my_function(first_name)  # Hello, John!
 
 
-# приклад, який доказує, що параметр та змінна `first_name` це не одна й та сама змінна
+# example proving that parameter and variable `first_name` are not the same variable
 def my_function(first_name):
     print(f"Hello, {first_name}!")
     first_name = "Alyona"
@@ -238,7 +238,7 @@ my_function(first_name)
 
 print(first_name)  # John
 
-## міні-програма "The most frequent letter"
+## Mini-program "The most frequent letter"
 
 def the_most_frequent_letter(first_name):
     letters = {}
@@ -256,9 +256,9 @@ input_name = input("What is your first name? ")  # "Dude007dev"
 input_name = input_name.lower()  # "dude007dev"
 the_most_frequent_letter(input_name)  # The most frequent letter is ('d', 3)
 
-# 28.12 Значення параметра за замовчуванням
+# 28.12 Parameter Default Value
 
-# коректний, робочий приклад
+# correct working example
 def my_function(first_name, last_name, phone_number="123-456-789"):
     print(f"Hello, {first_name} {last_name} {phone_number}!")
 
@@ -267,16 +267,16 @@ my_function("Alice", last_name="Smith")  # Hello, Alice Smith 123-456-789!
 
 my_function("John", last_name="Adams", phone_number="123-456-000")  # Hello, John Adams 123-456-000!
 
-## приклад з помилкою: неправильний порядок аргументів
+## example with error: wrong order of arguments
 
 # SyntaxError: non-default argument follows default argument
 def my_function(first_name, last_name="Example", phone_number):
    print(f"Hello, {first_name} {last_name} {phone_number}!")
 
-# не буде викликано
+# will not be called
 my_function(...)
 
-## правильний варіант
+## correct version
 
 def my_function(first_name, last_name="Example", phone_number="123-456-789"):
     print(f"Hello, {first_name} {last_name} {phone_number}!")
@@ -284,12 +284,12 @@ def my_function(first_name, last_name="Example", phone_number="123-456-789"):
 
 my_function("John", phone_number="123-456-000")  # Hello, John Example 123-456-000!
 
-# 28.13 Повернення результату функції
+# 28.13 Returning Result of Function
 
-# приклад вбудованої функції, яка повертає результат
+# example of built-in function that returns result
 print(len("456"))  # 3
 
-## ключове слово return
+## return keyword
 
 def my_sum(a, b):
     return a + b
@@ -297,7 +297,7 @@ def my_sum(a, b):
 
 print(my_sum(1, 2))  # 3
 
-## збереження результату у змінну
+## saving result in variable
 
 def my_sum(a, b):
     return a + b
@@ -306,7 +306,7 @@ def my_sum(a, b):
 result = my_sum(1, 2)
 print(result)  # 3
 
-## return без значення
+## return without value
 
 def my_sum(a, b):
     return
@@ -315,7 +315,7 @@ def my_sum(a, b):
 result = my_sum(1, 2)
 print(result)  # None
 
-# функція завжди щось повертає
+# function always returns something
 def my_function(first_name, last_name, phone_number="123-456-789"):
     print(f"Hello, {first_name} {last_name} {phone_number}!")
 
@@ -323,19 +323,19 @@ def my_function(first_name, last_name, phone_number="123-456-789"):
 result = my_function("John", last_name="Adams")  # Hello, John Adams 123-456-789!
 print(result)  # None
 
-## return не обов’язковий
+## return is not required
 
 def my_function(first_name, last_name, phone_number="123-456-789"):
     print(f"Hello, {first_name} {last_name} {phone_number}!")
 
 
-# те саме
+# the same
 def my_function(first_name, last_name, phone_number="123-456-789"):
     print(f"Hello, {first_name} {last_name} {phone_number}!")
     return
 
 
-# порожній return завжди повертає None
+# empty return always returns None
 def my_sum(a, b):
     return None
 
@@ -343,9 +343,9 @@ def my_sum(a, b):
 result = my_sum(1, 2)
 print(result)  # None
 
-## Кілька return у функції
+## Multiple return in function
 
-# приклад 1
+# example 1
 def my_custom_sum(a, b):
     if a == 1:
         return a
@@ -358,7 +358,7 @@ def my_custom_sum(a, b):
 
 print(my_custom_sum(1, 2))  # 1
 
-# приклад 2
+# example 2
 def my_function(first_name, last_name, phone_number="123-456-789"):
     if last_name == "Adams":
         print(f"Can't process {last_name}!")
@@ -373,9 +373,9 @@ def my_function(first_name, last_name, phone_number="123-456-789"):
 
 my_function("Alice", last_name="Smith", phone_number="123")  # The number is incorrect!
 
-# 28.14 Змінний тип даних в параметрі функції
+# 28.14 Mutable Data Type in Function Parameter
 
-# приклад функції з типом даних `list` у якості аргументу
+# example of function with list data type as argument
 def my_function(friends):
     for friend in friends:
         print(friend)
@@ -384,7 +384,7 @@ def my_function(friends):
 list_of_friends = ["Alice", "Bob", "Charlie"]
 my_function(list_of_friends)
 
-# змінюємо список у тілі функції
+# modifying list in function body
 def my_function(friends):
     friends.append("David")
 
@@ -403,7 +403,7 @@ my_function(list_of_friends)
 
 print(list_of_friends)  # ['Alice', 'Bob', 'Charlie', 'David', 'Eve']
 
-## Незмінні типи даних
+## Immutable data types
 
 def another_function(name):
     print(f"Value inside the function: {name}")
@@ -418,7 +418,7 @@ another_function(name=some_name)
 
 print(f"Value after the function call: {some_name}")  # Value after the function call: Alice
 
-## Схожа поведінка зі змінними типами
+## Similar behavior with mutable variable types
 
 def my_function(friends):
     friends.append("David")
@@ -442,7 +442,7 @@ my_function(list_of_friends)
 
 print(list_of_friends)  # ['Alice', 'Bob', 'Charlie', 'David']
 
-# змінюємо змінну і повертаємо її в результаті
+# modifying variable and returning it in result
 def my_function(friends):
     friends.append("David")
 
@@ -464,7 +464,7 @@ list_of_friends = my_function(friends=list_of_friends)
 
 print(list_of_friends)  # ['Alice', 'Bob', 'Charlie', 'David', 'Eve']
 
-# те саме, але змінна і параметр мають однакове ім'я
+# the same, but variable and parameter have same name
 def my_function(list_of_friends):
     list_of_friends.append("David")
 
@@ -486,7 +486,7 @@ list_of_friends = my_function(list_of_friends)
 
 print(list_of_friends)  # ['Alice', 'Bob', 'Charlie', 'David', 'Eve']
 
-## Значення за замовчуванням для параметрів зі змінним типом даних
+## Default values for parameters with mutable data types
 
 def buggy_function(friends=[]):
     friends.append("David")
@@ -497,7 +497,7 @@ def buggy_function(friends=[]):
     friends.append("Eve")
 
 
-# На перший погляд — нічого підозрілого. Функція виконується, і все працює
+# At first glance — nothing suspicious. Function executes and everything works
 def buggy_function(friends=[]):
     friends.append("David")
 
@@ -515,7 +515,7 @@ buggy_function(friends=list_of_friends)
 print(list_of_friends)  # ['Alice', 'David', 'Eve']
 
 
-# та сама функція, але параметри не передаємо
+# the same function, but parameters not passed
 def buggy_function(friends=[]):
     friends.append("David")
 
@@ -538,7 +538,7 @@ buggy_function()
 # David
 
 
-# правильний варіант
+# correct version
 def good_function(friends=None):
     if friends is None:
         friends = []
@@ -559,7 +559,7 @@ good_function()
 # ---
 # David
 
-# 28.15 Використання pass
+# 28.15 Using pass
 
 def my_function(first_name, last_name, phone_number):
     pass
@@ -567,14 +567,14 @@ def my_function(first_name, last_name, phone_number):
 
 my_function("Alice", last_name="Smith", phone_number="123")
 
-# технічно те саме
+# technically the same
 def my_function(first_name, last_name, phone_number):
     return
 
 
 my_function("Alice", last_name="Smith", phone_number="123")
 
-## `pass` у будь-якому місці
+## `pass` in any location
 
 def my_function(first_name, last_name, phone_number):
     pass
@@ -584,7 +584,7 @@ def my_function(first_name, last_name, phone_number):
 
 my_function("Alice", last_name="Smith", phone_number="123")  # The function is not yet implemented
 
-# 28.16 Вкладені функції
+# 28.16 Nested Functions
 
 def the_most_frequent_letter(name):
     letters = {}
@@ -605,7 +605,7 @@ def main():
 
 main()  # The most frequent letter is ('r', 3)
 
-## Визначення функцій усередині інших функцій
+## Defining functions inside other functions
 
 def main():
     value = "strawberry"
@@ -626,7 +626,7 @@ def main():
 
 main()  # The most frequent letter is ('r', 3)
 
-# 28.17 Документація функцій
+# 28.17 Function Documentation
 
 def my_function(first_name, last_name, phone_number):
     """Prints the full name and phone number.
@@ -646,7 +646,7 @@ my_function("Alice", last_name="Smith", phone_number="123")  # Hello, Alice Smit
 
 # 28.18 *args, **kwargs
 
-## Довільна кількість позиційних аргументів: *args
+## Arbitrary number of positional arguments: *args
 
 def custom_args(*args):
     print(args[0], args[1])
@@ -654,11 +654,11 @@ def custom_args(*args):
 
 custom_args("Alice", "Smith", "123-456-1111")  # Alice Smith
 
-# розпаковка кортежу
+# unpacking tuple
 args = ("Alice", "Smith", "123-456-1111")
 print(*args)  # Alice Smith 123-456-1111
 
-## Довільна кількість іменованих аргументів: **kwargs
+## Arbitrary number of keyword arguments: **kwargs
 
 def custom_kwargs(**kwargs):
     print(kwargs["first_name"], kwargs["last_name"])
@@ -666,7 +666,7 @@ def custom_kwargs(**kwargs):
 
 custom_kwargs(first_name="Alice", last_name="Smith", phone="123-456-1111")  # Alice Smith
 
-## Використання разом
+## Using together
 
 def my_custom_func(*args, **kwargs):
     print(args[0], kwargs["phone"])
@@ -674,7 +674,7 @@ def my_custom_func(*args, **kwargs):
 
 my_custom_func("Alice", "Smith", middle_name="John", phone="123-456-789")  # Alice 123-456-789
 
-## Практичне застосування
+## Practical application
 
 data_example = {"first_name": "Alice", "last_name": "Smith", "phone": "123-456-789"}
 new_data = {"first_name": "John", "last_name": "Adams", "phone": "123-456-000", "date_of_birth": "01-01-2000"}
@@ -692,5 +692,5 @@ my_function(**new_data)
 # John Adams 123-456-000
 # Date of birth: 01-01-2000
 
-# *args, **kwargs у вбудованій функції `print()``
+# *args, **kwargs in built-in function `print()``
 print("Hello", "world", sep=" - ", end="!\n")  # Hello - world!

@@ -1,14 +1,14 @@
-# 18. Цикли (loops)
+# 18. Loops
 
-# 18.1 Цикл while
+# 18.1 while loop
 
-# Приклад нескінченного циклу
+# Example of infinite loop
 while True:
     print("Hello Python!")
 
 print("We are outside the while loop")
 
-# Приклад нескінченного циклу з лічильником
+# Example of infinite loop with counter
 i = 1
 while True:
     print("Hello Python!", i)
@@ -16,7 +16,7 @@ while True:
 
 print("We are outside the while loop")
 
-# Приклад циклу з умовою
+# Example of loop with condition
 input_value = ""
 while input_value != "exit":
     input_value = input("Enter your name: ")
@@ -25,26 +25,26 @@ while input_value != "exit":
 
 print("We are outside the while loop")
 
-# 18.2 Ключові слова break та continue
+# 18.2 Keywords break and continue
 
-# Приклад використання break
+# Example of using break
 while True:
     input_value = input("Enter your name: ")
     if input_value == "exit":
-        break  # вихід із циклу
+        break  # exit the loop
 
     print(f"Hello, {input_value}!")
 
 print("We are outside the while loop")
 
-# неправильне використання break
+# incorrect use of break
 name = "John"
 if name == "John":
     break  # SyntaxError: 'break' outside loop
 
 print("Hello, John!")
 
-# нелогічне використання break
+# illogical use of break
 while True:
     break
     input_value = input("Enter your name: ")
@@ -58,7 +58,7 @@ while True:
 
 print("We are outside the while loop")
 
-# Приклад використання continue
+# Example of using continue
 while True:
     input_value = input("Enter your favorite programming language: ")
     if input_value.lower() == "exit":
@@ -73,7 +73,7 @@ while True:
 
 print("We are outside the while loop")
 
-# 18.3 Цикл while у грі “Вгадай слово”
+# 18.3 While loop in the game “Guess the Word”
 
 word = "apple"
 attempts = 6
@@ -105,23 +105,23 @@ while attempts > 0:
 if attempts == 0:
     print("Sorry, you ran out of attempts. The word was:", word)
 
-# 18.4 Цикл for
+# 18.4 for loop
 
-# Приклад циклу for
+# Example of for loop
 word = "example"
 for letter in word:
     print(f"This is a letter: {letter}")
 
 print("Out of the loop!")
 
-# Приклад циклу for з порожнім рядком
+# Example of for loop with empty string
 word = ""
 for letter in word:
-    print(f"This is a letter: {letter}")  # нічого не буде виведено
+    print(f"This is a letter: {letter}")  # nothing will be printed
 
 print("Out of the loop!")
 
-# Приклад циклу for з використанням break та continue
+# Example of for loop using break and continue
 word = "Poker"
 for l in word.lower():
     if l == "p":
@@ -132,9 +132,9 @@ for l in word.lower():
     if l == "k":
         break
 
-# 18.5 Цикл for у грі “Вгадай слово”
+# 18.5 For loop in the game “Guess the Word”
 
-# Приклад відображення вгаданих та невгаданих букв
+# Example of displaying guessed and not guessed letters
 word = "apple"
 guessed_letters = "rep"
 
@@ -147,7 +147,7 @@ for letter in word:
 
 print(display_word)  # Output: _ p p _ e
 
-# Приклад перевірки наявності букв у вгаданих буквах
+# Example of checking if letters are in guessed letters
 word = "apple"
 guessed_letters = "rep"
 
@@ -158,7 +158,7 @@ for letter in word:
     else:
         print(f"The letter '{letter}' is not in the guessed letters '{guessed_letters}'.")
 
-# початковий приклад перевірки наявності всіх букв у вгаданих буквах
+# initial example of checking if all letters are in guessed letters
 word = "apple"
 guessed_letters = "rep"
 
@@ -174,7 +174,7 @@ for letter in word:
 
 print("All letters guessed:", all_letters_guessed)
 
-# виправоений приклад перевірки наявності всіх букв у вгаданих буквах
+# corrected example of checking if all letters are in guessed letters
 word = "apple"
 guessed_letters = "rep"
 

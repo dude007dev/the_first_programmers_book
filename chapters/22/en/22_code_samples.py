@@ -1,25 +1,25 @@
-# 22. Тип даних діапазон (range)
+# 22. Range Data Type
 
-# приклад створення діапазону
+# Example of creating a range
 r = range(0, 5, 1)  # 0, 1, 2, 3, 4
 
-# створення діапазону та проходження по ньому за допомогою циклу for
+# creating a range and iterating through it using for loop
 for i in range(0, 3, 1):
     print(i)  # 0, 1, 2
 
-# те саме, але за замовчуванням
+# same, but by default
 for i in range(3):
     print(i)  # 0, 1, 2
 
 
-# приклади із фільтрацією чисел
-# спосіб 1: використання генератора списку
+# examples with number filtering
+# method 1: using list comprehension
 init_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 new_list = [item for item in init_list if item % 2 == 0]
 
 print(new_list)  # [2, 4, 6, 8, 10]
 
-# спосіб 2: використання range() та циклу for
+# method 2: using range() and for loop
 new_list = []
 for item in range(1, 11):
     if item % 2 == 0:
@@ -27,11 +27,11 @@ for item in range(1, 11):
 
 print(new_list)  # [2, 4, 6, 8, 10]
 
-# спосіб 3: використання range() та list comprehension
+# method 3: using range() and list comprehension
 new_list = [item for item in range(1, 11) if item % 2 == 0]
 print(new_list)  # [2, 4, 6, 8, 10]
 
-# фільтрація чисел: необов'язковий і неефективний спосіб використання range() та циклу for
+# filtering numbers: optional and inefficient way using range() and for loop
 init_range = range(1, 11)
 new_list = []
 for item in init_range:
@@ -40,27 +40,27 @@ for item in init_range:
 
 print(new_list)  # [2, 4, 6, 8, 10]
 
-# фільтрація чисел: ефективний спосіб, Pythonic way
+# filtering numbers: efficient way, Pythonic way
 new_list = [item for item in range(2, 11, 2)]
 print(new_list)  # [2, 4, 6, 8, 10]
 
-# фільтрація чисел: ефективний спосіб, Pythonic way, альтернативний
+# filtering numbers: efficient way, Pythonic way, alternative
 new_list = list(range(2, 11, 2))
 print(new_list)  # [2, 4, 6, 8, 10]
 
-# приклад з використанням іменованих аргументів (Python 3.8+)
+# example using named arguments (Python 3.8+)
 new_list = list(range(start=2, stop=11, step=2))
 print(new_list)  # [2, 4, 6, 8, 10]
 
-# 22.1 Приклад використання range для виконання N кроків
+# 22.1 Example of Using range for Performing N Steps
 
-# багаторазове повторення дій (наприклад, спроба підключення до сервера)
+# repeatedly performing actions (for example, trying to connect to server)
 from random import randint
 from time import sleep
 
 
 def try_action():
-    """Спроба виконати дію, яка може завершитися помилкою."""
+    """Attempting to perform an action that may fail."""
     if randint(0, 1):
         raise Exception("Simulated error")
     return "Success!"

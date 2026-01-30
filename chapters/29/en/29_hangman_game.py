@@ -1,4 +1,4 @@
-# 29. Word Game: Hangman з використанням функцій
+# 29. Word Game: Hangman with Functions
 
 import random
 

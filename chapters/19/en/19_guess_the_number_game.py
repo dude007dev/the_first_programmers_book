@@ -1,4 +1,4 @@
-# 19. Гра “Вгадай число”
+# 19. Number Guessing Game
 
 import random
 
@@ -8,7 +8,7 @@ print("You have 5 attempts to guess it.")
 
 secret_number = random.randint(1, 100)
 
-for attempt in "12345":  # Надаємо гравцеві 5 спроб
+for attempt in "12345":  # Giving the player 5 attempts
     guess = None
     while guess is None:
         try:

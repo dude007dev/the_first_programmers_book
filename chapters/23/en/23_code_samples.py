@@ -1,17 +1,17 @@
-# 23. Тип даних кортеж (tuple)
+# 23. Tuple Data Type
 
-# приклад кортежу
+# example of tuple
 my_friends = ("John", "Luna", "Stef")
 
-# приклад кортежу з один елементом
+# example of tuple with one element
 my_tuple = (1,)
 print(type(my_tuple))  # <class 'tuple'>
 
-# приклад не кортежу, а цілого числа
+# example not of tuple but of integer
 my_tuple = (1)
 print(type(my_tuple))  # <class 'int'>
 
-# приклади використання круглих дужок
+# examples of using parentheses
 result = (1 + 5) * (6 + 3)  # 54
 
 text = (
@@ -27,11 +27,11 @@ some_checks = (
 )
 print(some_checks)  # False
 
-# приклад кортежу з цілими числами
+# example of tuple with integers
 my_tuple = (1, 2, 3,)
 print(my_tuple)  # (1, 2, 3)
 
-# приклад кортежу з різними типами даних
+# example of tuple with different data types
 my_list = [3, "4"]
 my_tuple = (1, "2", my_list)
 print(my_tuple)  # (1, '2', [3, '4'])
@@ -39,16 +39,16 @@ print(my_tuple)  # (1, '2', [3, '4'])
 my_list.append(5)
 print(my_tuple)  # (1, '2', [3, '4', 5])
 
-# 23.1 Методи типу даних кортеж
+# 23.1 Tuple Data Type Methods
 
-# count() - підрахунок кількості елементів у кортежі
+# count() - counting number of elements in tuple
 tuple_example = (1, "2", [3, 4], True, 3, "2")
 
 print(tuple_example.count(3))  # 1
 print(tuple_example.count("2"))  # 2
 print(tuple_example.count("test"))  # 0
 
-# index() - пошук індексу елемента в кортежі
+# index() - finding index of element in tuple
 tuple_example = (1, "2", [3, 4], True, 3, "2")
 
 print(tuple_example.index(3))  # 4
@@ -56,16 +56,16 @@ print(tuple_example.index("2"))  # 1
 
 print(tuple_example.index("test"))  # ValueError: tuple.index(x): x not in tuple
 
-# кортеж займає менше пам'яті ніж список
+# tuple takes less memory than list
 from sys import getsizeof
 
 list_example = [i for i in range(1000)]
-print(getsizeof(list_example))  # Можливий результат: 8856 байт
+print(getsizeof(list_example))  # Possible result: 8856 bytes
 
 tuple_example = tuple(list_example)
-print(getsizeof(tuple_example))  # Можливий результат: 8040 байт
+print(getsizeof(tuple_example))  # Possible result: 8040 bytes
 
-# 23.2 Приклад використання кортежу
+# 23.2 Example of using tuple
 
 from random import randint
 
@@ -83,7 +83,7 @@ question = input("Enter your question: ")
 index = randint(0, 5)
 print(answers[index])
 
-# 23.4 Самостійна робота
+# 23.4 Independent work
 
 data = (3, 5, 3, 8, 3, 2, 5, 3)
 
