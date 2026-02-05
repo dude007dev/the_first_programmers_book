@@ -191,7 +191,6 @@ text = "abcd123"
 print(text.isdigit())  # False
 
 # isidentifier() - string is a valid Python identifier
-
 text = "1234"
 print(text.isidentifier())  # False
 
@@ -404,4 +403,4 @@ if guess not in word:
 else:
     print(f"Good guess! '{guess}' is in the word.")
 
-guessed_letters = f"{guessed_letters}{guess}"  # або guessed_letters += guess
+guessed_letters = f"{guessed_letters}{guess}"  # or guessed_letters += guess
