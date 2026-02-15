@@ -285,7 +285,7 @@ text = """Ніч яка місячна, Зоряна, ясная,"""
 words_list = re.findall(r"\w+", text)
 print(words_list)  # ['Ніч', 'яка', 'місячна', 'Зоряна', 'ясная']
 
-# 27.3 Independent Work
+# 27.3 Independent practice
 
 # filtering of service words
 service_words = {"і", "та", "але", "в", "на", "до", "що", "як"}

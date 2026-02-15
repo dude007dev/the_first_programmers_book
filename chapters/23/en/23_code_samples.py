@@ -83,7 +83,7 @@ question = input("Enter your question: ")
 index = randint(0, 5)
 print(answers[index])
 
-# 23.4 Independent work
+# 23.4 Independent practice
 
 data = (3, 5, 3, 8, 3, 2, 5, 3)
 

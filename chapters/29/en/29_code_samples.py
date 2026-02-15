@@ -272,7 +272,7 @@ def game_hangman():
         print("Sorry, you ran out of attempts. The word was:", word)
 
 
-# 29.8 Independent Work
+# 29.8 Independent practice
 
 from random import randint
 

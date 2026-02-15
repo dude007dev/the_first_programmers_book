@@ -163,7 +163,7 @@ guessed_values = {"c", "a", "n", "b"}
 if all([letter in guessed_values for letter in word]):
     print("Congratulations! You've guessed the word:", word)
 
-# 25.7 Independent Work
+# 25.7 Independent practice
 
 # double while loop to keep track of wins
 while True:

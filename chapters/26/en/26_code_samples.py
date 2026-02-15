@@ -281,7 +281,7 @@ for x in range(1, 11):
 
 print(my_dict)  # {2: 4, 4: 16, 6: 36, 8: 64, 10: 100}
 
-# 26.4 Independent Work
+# 26.4 Independent practice
 
 # 2 dictionaries
 dict1 = {"a": 1, "b": 2}
