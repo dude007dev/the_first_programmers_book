@@ -1,14 +1,13 @@
 # 27. Song Words Counter
 
 # variable with song text
-text = """
-Ніч яка місячна,
-Зоряна, ясная,
-Видно, хоч голки збирай
+text = """O, when the saints go marching in.
+Lord, I want to be in that number
+when the saints go marching in.
 
-Вийди, коханая
-Працею зморена
-Хоч на хвилиноньку в гай
+O when the sun refused to shine,
+Lord, I want to be in that number
+when the sun refused to shine.
 ...
 """
 
@@ -17,34 +16,34 @@ text = text.replace("\n", " ")
 
 # iterating through text elements
 for el in text:
-    print(el)  # "Н"
+    print(el)  # "O"
 
 # splitting text into words
 text = text.replace("\n", " ")
 words_list = text.split(" ")
 for word in words_list:
-    print(word)  # Ніч
+    print(word)  # O,
 
 # alternative option
 text = text.replace("\n", " ")
 for word in text.split(" "):
-    print(word)  # Ніч
+    print(word)  # O,
 
 
 # printing word and its length
 text = text.replace("\n", " ")
 for word in text.split(" "):
-    print(word, len(word))  # Ніч 3
+    print(word, len(word))  # O, 2
 
 # filtering unnecessary characters and empty lines
 text = """
-Ніч яка місячна,
-Зоряна, ясная,
-Видно, хоч голки збирай
+O, when the saints go marching in.
+Lord, I want to be in that number
+when the saints go marching in.
 
-Вийди, коханая
-Працею зморена
-Хоч на хвилиноньку в гай
+O when the sun refused to shine,
+Lord, I want to be in that number
+when the sun refused to shine.
 """
 
 text = text.replace("\n", " ")
@@ -52,7 +51,7 @@ for word in text.split(" "):
     word = word.replace(",", "")
     word = word.strip()
     if len(word) > 2:
-        print(word, len(word))  # Ніч 3
+        print(word, len(word))  # when 4
 
 # dictionary for counting words
 words_dict = {}
@@ -71,13 +70,13 @@ else:
 
 # intermediate code of program
 text = """
-Ніч яка місячна,
-Зоряна, ясная,
-Видно, хоч голки збирай
+O, when the saints go marching in.
+Lord, I want to be in that number
+when the saints go marching in.
 
-Вийди, коханая
-Працею зморена
-Хоч на хвилиноньку в гай
+O when the sun refused to shine,
+Lord, I want to be in that number
+when the sun refused to shine.
 """
 
 text = text.replace("\n", " ")
@@ -101,7 +100,7 @@ for word, count in words_dict.items():
         target_word = word
         counter = count
 
-print(target_word, counter)  # Ніч 1
+print(target_word, counter)  # when 4
 
 # 27.1 Other Ways to Solve the Problem
 
@@ -119,37 +118,25 @@ print(words_dict["example"])  # 1
 from collections import defaultdict
 
 text = """
-Ніч яка місячна,
-Зоряна, ясная,
-Видно, хоч голки збирай
+O, when the saints go marching in.
+Lord, I want to be in that number
+when the saints go marching in.
 
-Вийди, коханая
-Працею зморена
-Хоч на хвилиноньку в гай
+O when the sun refused to shine,
+Lord, I want to be in that number
+when the sun refused to shine.
 
-Сядемо вкупочці ми під калиною
-І над панами я пан
-Глянь, моя рибонько, срібною хвилею
-Стелиться в полі туман
+O when they gather 'round the throne,
+Lord, I want to be in that number
+when they gather 'round the throne.
 
-Ти не лякайся, що ніженьки босії
-Вмочиш в холодну росу
-Я ж тебе, вірную, аж до хатиноньки
-Сам на руках однесу
+O when they crown Him Lord of all,
+Lord, I want to be in that number
+when they crown Him Lord of all.
 
-Небо незміряне всипано зорями
-Перлами теж під тополями
-Що то за Божа краса?
-Грає перлиста роса
-
-Ти не лякайся, що ніженьки
-Вмочиш в холодную росу ти
-Ти не лякайся, що змерзнеш ти
-Лебедонько
-
-Сядемо вкупочці
-Ми під калиною
-І над панами ти
+And on that hallelujah day,
+Lord, I want to be in that number
+on that hallelujah day.
 """
 text = text.replace("\n", " ")
 words_dict = defaultdict(int)
@@ -166,44 +153,32 @@ for word, count in words_dict.items():
         target_word = word
         counter = count
 
-print(target_word, counter)  # під 3
+print(target_word, counter)  # when 8
 
 # 2) using "Counter" data type
 
 from collections import Counter, defaultdict
 
 text = """
-Ніч яка місячна,
-Зоряна, ясная,
-Видно, хоч голки збирай
+O, when the saints go marching in.
+Lord, I want to be in that number
+when the saints go marching in.
 
-Вийди, коханая
-Працею зморена
-Хоч на хвилиноньку в гай
+O when the sun refused to shine,
+Lord, I want to be in that number
+when the sun refused to shine.
 
-Сядемо вкупочці ми під калиною
-І над панами я пан
-Глянь, моя рибонько, срібною хвилею
-Стелиться в полі туман
+O when they gather 'round the throne,
+Lord, I want to be in that number
+when they gather 'round the throne.
 
-Ти не лякайся, що ніженьки босії
-Вмочиш в холодну росу
-Я ж тебе, вірную, аж до хатиноньки
-Сам на руках однесу
+O when they crown Him Lord of all,
+Lord, I want to be in that number
+when they crown Him Lord of all.
 
-Небо незміряне всипано зорями
-Перлами теж під тополями
-Що то за Божа краса?
-Грає перлиста роса
-
-Ти не лякайся, що ніженьки
-Вмочиш в холодную росу ти
-Ти не лякайся, що змерзнеш ти
-Лебедонько
-
-Сядемо вкупочці
-Ми під калиною
-І над панами ти
+And on that hallelujah day,
+Lord, I want to be in that number
+on that hallelujah day.
 """
 text = text.replace("\n", " ")
 words_dict = defaultdict(int)
@@ -214,7 +189,7 @@ for word in text.split(" "):
         words_dict[word] += 1
 
 counter = Counter(words_dict)
-print(counter.most_common(3))  # [('під', 3), ('лякайся', 3), ('Сядемо', 2)]
+print(counter.most_common(3))  # [('when', 8), ('Lord', 7), ('that', 7)]
 
 # 3) using dictionary sorting
 
@@ -234,37 +209,25 @@ print(sorted_words[0])
 from collections import defaultdict
 
 text = """
-Ніч яка місячна,
-Зоряна, ясная,
-Видно, хоч голки збирай
+O, when the saints go marching in.
+Lord, I want to be in that number
+when the saints go marching in.
 
-Вийди, коханая
-Працею зморена
-Хоч на хвилиноньку в гай
+O when the sun refused to shine,
+Lord, I want to be in that number
+when the sun refused to shine.
 
-Сядемо вкупочці ми під калиною
-І над панами я пан
-Глянь, моя рибонько, срібною хвилею
-Стелиться в полі туман
+O when they gather 'round the throne,
+Lord, I want to be in that number
+when they gather 'round the throne.
 
-Ти не лякайся, що ніженьки босії
-Вмочиш в холодну росу
-Я ж тебе, вірную, аж до хатиноньки
-Сам на руках однесу
+O when they crown Him Lord of all,
+Lord, I want to be in that number
+when they crown Him Lord of all.
 
-Небо незміряне всипано зорями
-Перлами теж під тополями
-Що то за Божа краса?
-Грає перлиста роса
-
-Ти не лякайся, що ніженьки
-Вмочиш в холодную росу ти
-Ти не лякайся, що змерзнеш ти
-Лебедонько
-
-Сядемо вкупочці
-Ми під калиною
-І над панами ти
+And on that hallelujah day,
+Lord, I want to be in that number
+on that hallelujah day.
 """
 text = text.replace("\n", " ")
 words_dict = defaultdict(int)
@@ -275,17 +238,17 @@ for word in text.split(" "):
         words_dict[word] += 1
 
 sorted_words = sorted(words_dict.items(), key=lambda item: item[1], reverse=True)
-print(sorted_words[0])  # ('під', 3)
+print(sorted_words[0])  # ('when', 8)
 
 # 4) extracting words using regular expressions
 
 import re
 
-text = """Ніч яка місячна, Зоряна, ясная,"""
+text = """O, when the saints go marching in."""
 words_list = re.findall(r"\w+", text)
-print(words_list)  # ['Ніч', 'яка', 'місячна', 'Зоряна', 'ясная']
+print(words_list)  # ['O', 'when', 'the', 'saints', 'go', 'marching', 'in']
 
 # 27.3 Independent practice
 
 # filtering of service words
-service_words = {"і", "та", "але", "в", "на", "до", "що", "як"}
+service_words = {"the", "and", "or", "but", "in", "on", "at", "to", "of", "a", "an", "when", "that"}

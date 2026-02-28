@@ -1,37 +1,25 @@
 # 27. Song Words Counter
 
 text = """
-Ніч яка місячна,
-Зоряна, ясная,
-Видно, хоч голки збирай
+O, when the saints go marching in.
+Lord, I want to be in that number
+when the saints go marching in.
 
-Вийди, коханая
-Працею зморена
-Хоч на хвилиноньку в гай
+O when the sun refused to shine,
+Lord, I want to be in that number
+when the sun refused to shine.
 
-Сядемо вкупочці ми під калиною
-І над панами я пан
-Глянь, моя рибонько, срібною хвилею
-Стелиться в полі туман
+O when they gather 'round the throne,
+Lord, I want to be in that number
+when they gather 'round the throne.
 
-Ти не лякайся, що ніженьки босії
-Вмочиш в холодну росу
-Я ж тебе, вірную, аж до хатиноньки
-Сам на руках однесу
+O when they crown Him Lord of all,
+Lord, I want to be in that number
+when they crown Him Lord of all.
 
-Небо незміряне всипано зорями
-Перлами теж під тополями
-Що то за Божа краса?
-Грає перлиста роса
-
-Ти не лякайся, що ніженьки
-Вмочиш в холодную росу ти
-Ти не лякайся, що змерзнеш ти
-Лебедонько
-
-Сядемо вкупочці
-Ми під калиною
-І над панами ти
+And on that hallelujah day,
+Lord, I want to be in that number
+on that hallelujah day.
 """
 
 text = text.replace("\n", " ")
@@ -52,4 +40,4 @@ for word, count in words_dict.items():
         target_word = word
         counter = count
 
-print(target_word, counter)  # під 3
+print(target_word, counter)  # when 8
