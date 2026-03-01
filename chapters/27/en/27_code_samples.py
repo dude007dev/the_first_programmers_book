@@ -1,7 +1,8 @@
 # 27. Song Words Counter
 
 # variable with song text
-text = """O, when the saints go marching in.
+text = """
+O, when the saints go marching in.
 Lord, I want to be in that number
 when the saints go marching in.
 
