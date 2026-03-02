@@ -1,6 +1,6 @@
 # 28. Functions
 
-# 28.1 Creating and Calling a Function
+# 28.1 Creating and calling a function
 
 # example of defining and calling a function
 def my_function():
@@ -9,7 +9,7 @@ def my_function():
 
 my_function()  # Hello, this is my first function!
 
-# 28.2 Creating and Calling a Function with Parameters
+# 28.2 Creating and calling a function with parameters
 
 # example of defining and calling a function with one parameter
 def my_second_function(first_name):
@@ -23,7 +23,7 @@ my_second_function("John")
 my_second_function("Jane")  # Hello, Jane! ...
 my_second_function("Jack")  # Hello, Jack! ...
 
-# 28.3 Function Name
+# 28.3 Function name
 
 # example of correct style
 def my_function(first_name):
@@ -61,7 +61,7 @@ def calc_1208():
 
 calc_1208()  # Do some calculations.
 
-# 28.4 Functions with Multiple Parameters
+# 28.4 Functions with multiple parameters
 
 # example of function with two parameters
 def my_function(first_name, last_name):
@@ -70,7 +70,7 @@ def my_function(first_name, last_name):
 
 my_function("Alice", "Smith")  # Hello, Alice Smith!
 
-# 28.5 Number of Arguments
+# 28.5 Number of arguments
 
 # example of defining and calling function with two parameters
 def my_function(first_name, last_name):
@@ -80,7 +80,7 @@ def my_function(first_name, last_name):
 my_function("Alice", "Smith")  # Hello, Alice Smith!
 my_function("Alice")  # TypeError: my_function() missing 1 required positional argument: 'last_name'
 
-# 28.6 Positional Arguments
+# 28.6 Positional arguments
 
 # function definition
 def my_function(first_name, last_name):
@@ -90,7 +90,7 @@ def my_function(first_name, last_name):
 # calling function with positional arguments
 my_function("Alice", "Smith")  # Hello, Alice Smith!
 
-# 28.7 Named Arguments
+# 28.7 Named arguments
 
 # defining function where first parameter is `last_name`
 def my_function(last_name, first_name):
@@ -103,7 +103,7 @@ my_function("Adams", "John")  # Hello, John Adams!
 # calling function using named arguments
 my_function(first_name="Adams", last_name="John")  # Hello, Adams John!
 
-# порядок передавання іменованих аргументів не має значення
+# the order of keyword arguments does not matter.
 def my_function(first_name, last_name):
     print(f"Hello, {first_name} {last_name}!")
 
@@ -166,7 +166,7 @@ my_contact(
     last_name="Smith",
 )
 
-# 28.8 Positional-Only Arguments (/)
+# 28.8 Positional-only arguments (/)
 
 def my_function(first_name, last_name, /):
     print(f"Hello, {first_name} {last_name}!")
@@ -177,7 +177,7 @@ my_function("Alice", "Smith")  # Hello, Alice Smith!
 # TypeError: my_function() got some positional-only arguments passed as keyword arguments: 'first_name, last_name'
 my_function(first_name="Alice", last_name="Smith")
 
-# 28.9 Keyword-Only Arguments (*)
+# 28.9 Keyword-only arguments (*)
 
 def my_function(*, first_name, last_name):
     print(f"Hello, {first_name} {last_name}!")
@@ -196,7 +196,7 @@ def my_function(*, first_name, last_name):
 input_data = {"first_name": "Alice", "last_name": "Smith"}
 my_function(**input_data)  # Hello, Alice Smith!
 
-# 28.10 Combined Parameters: Positional-Only (/) and Keyword-Only (*) Arguments
+# 28.10 Combined parameters: positional-only (/) and keyword-only (*) arguments
 
 def my_function(first_name, last_name, /, *, phone_number):
     print(f"Hello, {first_name} {last_name} {phone_number}!")
@@ -204,9 +204,9 @@ def my_function(first_name, last_name, /, *, phone_number):
 
 my_function("Alice", "Smith", phone_number="123-456-789")  # Hello, Alice Smith 123-456-789!
 
-# 28.11 Passing Variable as Function Parameter
+# 28.11 Passing variable as function parameter
 
-# передача змінної `input_name` у якості параметра функції
+# passing the variable `input_name` as a function parameter
 def my_function(first_name):
     print(f"Hello, {first_name}!")
 
@@ -215,7 +215,7 @@ input_name = input("What is your first name? ")  # Alice
 my_function(input_name)  # Hello, Alice!
 
 
-# передача змінної `first_name` у якості параметра функції
+# passing the variable `first_name`` as a function parameter
 def my_function(first_name):
     print(f"Hello, {first_name}!")
 
@@ -256,7 +256,7 @@ input_name = input("What is your first name? ")  # "Dude007dev"
 input_name = input_name.lower()  # "dude007dev"
 the_most_frequent_letter(input_name)  # The most frequent letter is ('d', 3)
 
-# 28.12 Parameter Default Value
+# 28.12 Parameter default value
 
 # correct working example
 def my_function(first_name, last_name, phone_number="123-456-789"):
@@ -284,7 +284,7 @@ def my_function(first_name, last_name="Example", phone_number="123-456-789"):
 
 my_function("John", phone_number="123-456-000")  # Hello, John Example 123-456-000!
 
-# 28.13 Returning Result of Function
+# 28.13 Returning result of function
 
 # example of built-in function that returns result
 print(len("456"))  # 3
@@ -373,7 +373,7 @@ def my_function(first_name, last_name, phone_number="123-456-789"):
 
 my_function("Alice", last_name="Smith", phone_number="123")  # The number is incorrect!
 
-# 28.14 Mutable Data Type in Function Parameter
+# 28.14 Mutable data type in function parameter
 
 # example of function with list data type as argument
 def my_function(friends):
@@ -529,7 +529,7 @@ buggy_function()
 buggy_function()
 print("----")
 buggy_function()
-# після третього виклику
+# after the 3-rd call:
 # ----
 # David
 # Eve
@@ -555,7 +555,7 @@ good_function()
 good_function()
 print("----")
 good_function()
-# після третього виклику
+# after the 3-rd call:
 # ---
 # David
 
@@ -584,7 +584,7 @@ def my_function(first_name, last_name, phone_number):
 
 my_function("Alice", last_name="Smith", phone_number="123")  # The function is not yet implemented
 
-# 28.16 Nested Functions
+# 28.16 Nested functions
 
 def the_most_frequent_letter(name):
     letters = {}
@@ -626,7 +626,7 @@ def main():
 
 main()  # The most frequent letter is ('r', 3)
 
-# 28.17 Function Documentation
+# 28.17 Function documentation
 
 def my_function(first_name, last_name, phone_number):
     """Prints the full name and phone number.
