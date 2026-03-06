@@ -1,4 +1,4 @@
-# 29. Word Game: Hangman with Functions
+# 29. Hangman: a word game using functions
 
 # template for main game function
 import random
@@ -10,8 +10,8 @@ def game_hangman():
 
 game_hangman()
 
-# 29.1 Function for Getting Hangman Drawing
 
+# 29.1 Function for retrieving the Hangman drawing
 
 def get_hangman_drawing(stage_number):
     """Return the hangman drawing for the given stage number.
@@ -59,8 +59,8 @@ print(get_hangman_drawing(-attempts))
 
 print(get_hangman_drawing(stage_number=-attempts))
 
-# 29.2 Updated Variant of Game Initialization
 
+# 29.2 Updated game initialization
 
 def game_hangman():
     """Play the hangman game."""
@@ -81,7 +81,7 @@ def game_hangman():
         pass
 
 
-# 29.3 Function for Initial Greetings
+# 29.3 Function for the welcome message
 
 # previous greeting code
 print("Welcome to the Word Game: Hangman!")
@@ -109,7 +109,7 @@ def print_welcome_message(num_attempts, word):
     print("_ " * len(word))
 
 
-# 29.4 Function for Validating Input
+# 29.4 Function for validating the input
 
 # previous code for checking input value
 # check if the input is a letter/word
@@ -186,7 +186,8 @@ def game_hangman():
 
 game_hangman()
 
-# 29.5 Function for Displaying Word Progress
+
+# 29.5 Function for displaying the current state of the word
 
 # previous code for displaying current word state
 # Display the current state of the word
@@ -219,8 +220,7 @@ def display_word_progress(word, guessed_values):
     print(display_word)
 
 
-# 29.6 Final Appearance of Main Function
-
+# 29.6 Final version of the main function
 
 def game_hangman():
     """Play the hangman game."""
