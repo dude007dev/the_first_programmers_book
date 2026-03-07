@@ -9,10 +9,12 @@ nickname = "dude007dev"
 # Приклад з першої програми
 input_value = input("What is your name? ")
 name = input_value.title()
+print(f"Hello {name}!")
 
 # Після введення, наприклад "some name", це виглядатиме так:
 input_value = "some name"
 name = input_value.title()  # "Some Name"
+print(f"Hello {name}!")  # Some Name
 
 # Або коротший варіант
 name = "some name".title()  # "Some Name"

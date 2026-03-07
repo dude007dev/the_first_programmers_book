@@ -1,6 +1,6 @@
-# 19. Гра “Вгадай число”
+# 19. Number Guessing Game
 
-# 19.2 Базовий варіант гри
+# 19.2 Basic version of the game
 
 import random
 
@@ -10,7 +10,7 @@ print("You have 5 attempts to guess it.")
 
 secret_number = random.randint(1, 100)
 
-for attempt in "12345":  # Надаємо гравцеві 5 спроб
+for attempt in "12345":  # Giving the player 5 attempts
     guess = int(input("Enter your guess: "))
 
     if guess < secret_number:
@@ -23,8 +23,8 @@ for attempt in "12345":  # Надаємо гравцеві 5 спроб
 
 print(f"Sorry, you've used all your attempts. The correct number was {secret_number}.")
 
-# 19.3 Обробка помилок вводу
-# Остаточний варіант гри
+# 19.3 Handling input errors 
+# Final version of the game
 
 import random
 
@@ -34,7 +34,7 @@ print("You have 5 attempts to guess it.")
 
 secret_number = random.randint(1, 100)
 
-for attempt in "12345":  # Надаємо гравцеві 5 спроб
+for attempt in "12345":  # Giving the player 5 attempts
     guess = None
     while guess is None:
         try:

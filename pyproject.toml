@@ -52,6 +52,7 @@ exclude = '''
   | _build
   | build
   | dist
+  | .*8_code_samples\.py
   | .*16_code_samples\.py
   | .*23_code_samples\.py
   | .*28_code_samples\.py
