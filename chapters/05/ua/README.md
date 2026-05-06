@@ -25,31 +25,26 @@
 - **5.2 Термінал для програміста — як пензель для художника**
   Запуск Python-програми:
   ```bash
-  python hello.py
+  python3 hello.py
   ```
 
   Інтерактивна консоль Python:
   ```bash
-  python
+  python3
   ```
 
-  або
-
-  ```bash
-  python3
-  ```  
 - **5.3 Робота в Linux або Unix-системі**
-  Встановлення Python 3.12 на Ubuntu 24.04:
+  Встановлення Python 3.13 на Ubuntu 26.04:
   ```bash
   sudo apt update
   sudo apt upgrade -y
 
-  sudo apt install -y python3.12 python3.12-venv python3.12-dev python3-pip
+  sudo apt install -y python3.13 python3.13-venv python3.13-dev python3-pip
 
-  python3.12 --version
+  python3.13 --version
   ```
   ```bash
-  python3.12 example.py
+  python3.13 example.py
   ```  
 ---
 
