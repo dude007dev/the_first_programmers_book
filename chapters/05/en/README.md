@@ -25,32 +25,26 @@ We get acquainted with the terminal and the interactive Python console.
 - **5.2 The terminal for a programmer — like a brush for an artist**
   Running a Python program:
   ```bash
-  python hello.py
+  python3 hello.py
   ```
 
   Interactive Python console:
-  ```bash
-  python
-  ```
-
-  or
-
   ```bash
   python3
   ```
 
 - **5.3 Working in Linux or Unix systems**
-  Installing Python 3.12 on Ubuntu 24.04:
+  Installing Python 3.13 on Ubuntu 26.04:
   ```bash
   sudo apt update
   sudo apt upgrade -y
 
-  sudo apt install -y python3.12 python3.12-venv python3.12-dev python3-pip
+  sudo apt install -y python3.13 python3.13-venv python3.13-dev python3-pip
 
-  python3.12 --version
+  python3.13 --version
   ```
   ```bash
-  python3.12 example.py
+  python3.13 example.py
   ```
 ---
 
