@@ -88,13 +88,17 @@ text.append("Anna")  # error, exception
 
 # Змінюємо тип даних
 text = "My name is"
+
+# Об'єднання рядків (конкатенація)
 text = text + " John"
 print(text)  # My name is John
-# or
+
+# або (рекомендований сучасний підхід)
 text = "My name is"
 text = f"{text} John"
 print(text)  # My name is John
-# or
+
+# або (старіший спосіб)
 text = "My name is %s"
 text = text % ("John")
 print(text)  # My name is John

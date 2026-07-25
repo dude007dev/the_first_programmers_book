@@ -95,13 +95,17 @@ text.append("Anna")  # error, exception
 
 # Changing the data
 text = "My name is"
+
+# String concatenation
 text = text + " John"
 print(text)  # My name is John
-# or using f-string
+
+# or (the recommended modern approach)
 text = "My name is"
 text = f"{text} John"
 print(text)  # My name is John
-# or using % operator
+
+# or (an older approach)
 text = "My name is %s"
 text = text % ("John")
 print(text)  # My name is John
