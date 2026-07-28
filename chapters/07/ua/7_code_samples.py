@@ -33,37 +33,17 @@ year2025 = 2025  # виглядає як число, плутає
 
 # 7.3 Типи змінної
 
-# Цілі числа (integers)
-age = 20
-temperature = -5
+# приклади
+name = "Maria"        # str
+age = 20              # int
+height = 1.65         # float
+is_student = True     # bool
+salary = None         # NoneType
 
-# Дійсні числа (float)
-height = 1.65
-pi = 3.14159
-
-# None (порожнє значення)
-x = None
-print(type(x))  # <class 'NoneType'>
-x = "John"  # Тепер x це рядок
-
-# Логічний тип (boolean)
-is_student = True
-has_access = False
-
-# Текстовий тип (str)
-name = "Maria"
-message = "Hello, world!"
-
-# Приклади всіх базових типів
-name = "Maria"  # str
-age = 20  # int
-height = 1.65  # float
-is_student = True  # bool
-salary = None  # NoneType
 print(type(name))  # <class 'str'>
 print(type(age))  # <class 'int'>
 
-# 7.4 Перевизначення змінної
+# 7.4 Линамічна типізація
 x = 5
 x = "п'ять"
 

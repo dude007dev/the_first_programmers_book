@@ -33,37 +33,17 @@ year2025 = 2025  # looks like a number, can be confusing
 
 # 7.3 Variable types
 
-# Integers
-age = 20
-temperature = -5
+# examples
+name = "Maria"        # str
+age = 20              # int
+height = 1.65         # float
+is_student = True     # bool
+salary = None         # NoneType
 
-# Floats
-height = 1.65
-pi = 3.14159
-
-# None (empty value)
-x = None
-print(type(x))  # <class 'NoneType'>
-x = "John"  # Now x is a string
-
-# Boolean
-is_student = True
-has_access = False
-
-# String (str)
-name = "Maria"
-message = "Hello, world!"
-
-# Examples of all basic types
-name = "Maria"  # str
-age = 20  # int
-height = 1.65  # float
-is_student = True  # bool
-salary = None  # NoneType
 print(type(name))  # <class 'str'>
 print(type(age))  # <class 'int'>
 
-# 7.4 Reassigning a variable
+# 7.4 Dynamic typing
 x = 5
 x = "five"
 
