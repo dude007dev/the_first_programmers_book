@@ -5,7 +5,9 @@
 /venv/
 /env/
 /.env/
+/.venv/
 /htmlcov/
 /tmp/
 .env
 .cache/
+sample.py

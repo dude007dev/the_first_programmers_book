@@ -47,8 +47,8 @@ i /= 100
 compound_rate = (1 + i) ** n - 1
 compound_interest = d * compound_rate
 
-result = round(d + compound_interest, 2)
-print(result)
+total_amount = round(d + compound_interest, 2)
+print(total_amount)
 
 # приклад помилки
 int("A1")  # ValueError: invalid literal for int() with base 10: 'A1'
