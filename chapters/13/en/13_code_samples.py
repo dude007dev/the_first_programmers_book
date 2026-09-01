@@ -95,6 +95,13 @@ x = 3
 y = 3
 print(x <= y)  # True
 
+# usage examples
+if x > 10:
+    print("The value exceeds 10")
+
+if speed > 180:
+    speed = 180
+
 # 13.4 Program using comparison operator
 programming_language = input("Enter the name of your favorite programming language: ")
 if programming_language.lower() != "python":
@@ -131,6 +138,7 @@ x = 3
 y = 3
 print(not (x != y))  # not(False) => True
 
+# practical example of usage of not operator
 empty_data = True
 print(not empty_data)  # False
 
@@ -148,16 +156,6 @@ city = "Amsterdam"
 minimum_population = 1_000_000
 big_city = True
 print((big_city and city == "Amsterdam") or minimum_population > 10_000)  # True
-
-# Code readability
-x = 3
-y = 5
-
-print(all([x, x > 1, y != 3]))  # True
-print(all([x > 5, y != 3]))  # False
-
-print(any([x > 10, y < 1]))  # False
-print(any([x > 5, y != 3]))  # True
 
 # 13.6 Program for Grading on an A–F Scale
 value = input("Enter the percentage of correct answers of the test: ")
@@ -205,28 +203,6 @@ if points == 100:
 if grade is None:
     print("Error")
 
-# Example with simple types
-x = "John"
-y = "John"
-print(x is y)  # True
-
-y = "Anna"
-print(x is y)  # False
-
-y = "John"
-print(x is y)  # True
-
-
-# Example with custom type
-class Person:
-    def __init__(self, name):
-        self.name = name
-
-
-a = Person(name="John")
-b = Person(name="John")
-print(a is b)  # False
-
 # 13.8 Membership Operators
 
 # in
@@ -239,20 +215,11 @@ print("Q" not in grades)  # True
 
 # 13.10 Operator Precedence
 print(5 * (3 + 6) - 10 / 2)  # 40.0
+
 print(2**3)  # 8
 
 x = 10
 print(x > 5 and x < 15 or str(x) == "10")  # True
-
-
-# short-circuit evaluation
-def my_func(a):
-    print("I am here")
-    print(a)
-
-
-x = 10
-print(x > 5 and x < 15 or my_func(x))  # True
 
 # 13.12 Independent Practice
 
@@ -274,3 +241,33 @@ languages = ["Python", "JavaScript", "C++"]
 # Predict the result of the expression
 result = 5 + 3 * 2**2
 print(result)
+
+# 13.13 For the Curious: Does in Always Work at the Same Speed?
+
+grades = ["A", "B", "C", "D", "F"]
+print("F" in grades) # True
+
+# 13.14 For the Curious: Why Does the is Operator Sometimes Behave Unexpectedly?
+
+x = "John"
+y = "John"
+
+print(x is y)
+
+
+a = ["John"]
+b = ["John"]
+
+print(a == b) # True
+print(a is b) # False
+
+# 13.15 For the Curious: Short-Circuit Evaluation
+
+x = 10
+print(x > 5 and x < 15 or str(x) == "10") # True
+
+x = 10
+print(x > 5 and x < 15 or print("I am here"))  # True
+
+x = 3
+print(x > 5 and print("I am here")) # False
