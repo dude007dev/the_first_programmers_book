@@ -1,6 +1,6 @@
 # 7. Variable
 
-# 7.1 What is a variable
+# 7.2 What is a variable
 
 # Creating a variable
 age = 20
@@ -21,53 +21,33 @@ name = "some name".title()  # "Some Name"
 # which is the same as
 name = "Some Name"
 
-# 7.2 How to choose a variable name
+# 7.3 How to choose a variable name
 
 # Good examples
 user_name = "Anna"
 current_year = 2025
 
 # Bad examples
-a = 17  # not descriptive
-year2025 = 2025  # looks like a number, can be confusing
+a = 17  # not clear at all
+year2025 = 2025  # works, but ties with a specific year
 
-# 7.3 Variable types
+# 7.4 Variable types
 
-# Integers
-age = 20
-temperature = -5
+# examples
+name = "Maria"        # str
+age = 20              # int
+height = 1.65         # float
+is_student = True     # bool
+salary = None         # NoneType
 
-# Floats
-height = 1.65
-pi = 3.14159
-
-# None (empty value)
-x = None
-print(type(x))  # <class 'NoneType'>
-x = "John"  # Now x is a string
-
-# Boolean
-is_student = True
-has_access = False
-
-# String (str)
-name = "Maria"
-message = "Hello, world!"
-
-# Examples of all basic types
-name = "Maria"  # str
-age = 20  # int
-height = 1.65  # float
-is_student = True  # bool
-salary = None  # NoneType
 print(type(name))  # <class 'str'>
 print(type(age))  # <class 'int'>
 
-# 7.4 Reassigning a variable
+# 7.5 Dynamic typing
 x = 5
 x = "five"
 
-# 7.5 Variable size
+# 7.9 Variable size
 
 # Option 1
 import sys

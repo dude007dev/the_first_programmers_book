@@ -59,7 +59,7 @@ x = 3
 y = 3
 print(x != y)  # False
 
-# > — більше (greater)
+# > — більше (greater than)
 x = 5
 y = 10
 print(x > y)  # False
@@ -68,7 +68,7 @@ x = 3
 y = 3
 print(x > y)  # False
 
-# < — менше (less)
+# < — менше (less than)
 x = 5
 y = 10
 print(x < y)  # True
@@ -77,7 +77,7 @@ x = 3
 y = 3
 print(x < y)  # False
 
-# >= — більше або дорівнює (greater or equal)
+# >= — більше або дорівнює (greater than or equal)
 x = 5
 y = 10
 print(x >= y)  # False
@@ -86,7 +86,7 @@ x = 3
 y = 3
 print(x >= y)  # True
 
-# <= — менше або дорівнює (less or equal)
+# <= — менше або дорівнює (less than or equal)
 x = 5
 y = 10
 print(x <= y)  # True
@@ -94,6 +94,13 @@ print(x <= y)  # True
 x = 3
 y = 3
 print(x <= y)  # True
+
+# приклади використання
+if x > 10:
+    print("Значення перевищує 10")
+
+if speed > 180:
+    speed = 180
 
 # 13.4 Програма з використанням оператора порівняння
 programming_language = input("Enter the name of your favorite programming language: ")
@@ -131,6 +138,8 @@ x = 3
 y = 3
 print(not (x != y))  # not(False) => True
 
+
+# практичний приклад використання оператора not
 empty_data = True
 print(not empty_data)  # False
 
@@ -149,16 +158,6 @@ minimum_population = 1_000_000
 big_city = True
 print((big_city and city == "Amsterdam") or minimum_population > 10_000)  # True
 
-# Читабельність коду
-x = 3
-y = 5
-
-print(all([x, x > 1, y != 3]))  # True
-print(all([x > 5, y != 3]))  # False
-
-print(any([x > 10, y < 1]))  # False
-print(any([x > 5, y != 3]))  # True
-
 # 13.6 Програма для оцінювання за шкалою A–F
 value = input("Enter the percentage of correct answers of the test: ")
 value = int(value)
@@ -175,7 +174,7 @@ else:
 
 print(f"Your grade is: {grade}")
 
-# 13.7 Оператори особистості (Identity Operators)
+# 13.7 Оператори ідентичності (Identity Operators)
 some_variable = "some text"
 print(some_variable is None)  # False
 
@@ -205,28 +204,6 @@ if points == 100:
 if grade is None:
     print("Error")
 
-# Приклад із простими типами
-x = "John"
-y = "John"
-print(x is y)  # True
-
-y = "Anna"
-print(x is y)  # False
-
-y = "John"
-print(x is y)  # True
-
-
-# Приклад із користувацьким типом
-class Person:
-    def __init__(self, name):
-        self.name = name
-
-
-a = Person(name="John")
-b = Person(name="John")
-print(a is b)  # False
-
 # 13.8 Оператори приналежності (Membership Operators)
 
 # in
@@ -238,21 +215,13 @@ grades = ["A", "B", "C", "D", "F"]
 print("Q" not in grades)  # True
 
 # 13.10 Оператори пріоритету
+
 print(5 * (3 + 6) - 10 / 2)  # 40.0
+
 print(2**3)  # 8
 
 x = 10
 print(x > 5 and x < 15 or str(x) == "10")  # True
-
-
-# коротке замикання
-def my_func(a):
-    print("I am here")
-    print(a)
-
-
-x = 10
-print(x > 5 and x < 15 or my_func(x))  # True
 
 # 13.12 Самостійна робота
 
@@ -274,3 +243,34 @@ languages = ["Python", "JavaScript", "C++"]
 # Передбачте результат виразу
 result = 5 + 3 * 2**2
 print(result)
+
+
+# 13.13 Для допитливих: чи завжди in працює однаково швидко?
+
+grades = ["A", "B", "C", "D", "F"]
+print("F" in grades)  # True
+
+# 13.14 Для допитливих: чому оператор is іноді поводиться несподівано?
+
+x = "John"
+y = "John"
+
+print(x is y)
+
+a = ["John"]
+b = ["John"]
+
+print(a == b)  # True
+print(a is b)  # False
+
+
+# 13.15 Для допитливих: коротке замикання
+
+x = 10
+print(x > 5 and x < 15 or str(x) == "10")  # True
+
+x = 10
+print(x > 5 and x < 15 or print("I am here"))  # True
+
+x = 3
+print(x > 5 and print("I am here"))  # False
