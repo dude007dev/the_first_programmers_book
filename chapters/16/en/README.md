@@ -1,44 +1,40 @@
-# Chapter 16. String Data Type
+# Chapter 16. The try..except Block
 
 This chapter contains examples from the book **"The First Programmer's Book"**.  
-We cover the string data type in Python in detail, including working with strings, slicing, formatting, and basic methods.
+It covers errors in Python and ways to handle them using the `try...except` and `finally` constructs.
 
 ---
 
-## Folder Structure
+## Folder structure
 
-- [**`16_code_samples.py`**](./16_code_samples.py) — all code snippets from the book sections collected in one file.  
-
----
-
-## Contents of Examples
-
-- **16. String Data Type** → examples of creating string variables, multi-line strings, and escape sequences.
-- **16.1 Text as a Sequence of Characters** → examples of indexing, checking character membership in a string (`in`, `not in`).
-- **16.2 String Slicing** → examples of slices and selecting parts of a string.
-- **16.3 Functions and Methods for Text** → examples of using the `len()` function and `str` type methods.
-- **16.4 Text Encoding and Decoding** → examples of using `encode()` and `decode()` methods.
-- **16.6 Preparation for the "Guess the Word" Game** → initial code block for the game demonstrating work with text strings.
+- [**`16_code_samples.py`**](./16_code_samples.py) — all code examples from the chapter's subsections collected into a single file.  
+  ⚠️ This file does not always run completely: some examples intentionally demonstrate errors.  
+- [**`16_deposit_profit_program.py`**](./16_deposit_profit_program.py) — a deposit calculation program with error handling using `try...except`.
 
 ---
 
-## How to Run Examples
+## Example contents
 
-This chapter contains only short examples, without complete programs.  
-To test them:  
+- **16.2 Early termination** → the example is based on the deposit calculation program from Chapter 11. The code for that program can be found in [`11_deposit_profit_program.py`](../../11/en/11_deposit_profit_program.py).
+- **16.4 Continue the program while handling an error** → an example of substituting a safe value.  
+- **16.5 The `try...except` block** → a basic example of exception handling.  
+- **16.6 Error details** → how to obtain the error type and message.  
+- **16.7 The `finally` block** → code that always runs.  
+- **16.8 Example: deposit with `try...except`** → a complete program handling invalid input.  
 
-1. Copy the required code block.  
-2. Paste it into a file (for example, `example.py`) or in an online interpreter.  
-3. Run the file in the terminal:  
-    ```bash
-    python3 example.py
-    ```
-    or run the program in an online interpreter.
+---
 
-## Useful Links
+## How to run the examples
 
-- [String methods](https://docs.python.org/3/library/stdtypes.html#string-methods)
-- [String `format` specification (Python docs)](https://docs.python.org/3/library/string.html#format-specification-mini-language)
+This chapter contains both short snippets and full programs.  
+To run them, use Python in a terminal (or an online interpreter).  
+
+⚠️ Not all examples print output. If you want to see results, add `print()` statements.
+
+Run the standalone program:
+```bash
+python3 16_deposit_profit_program.py
+```
 
 **Navigation**
 
