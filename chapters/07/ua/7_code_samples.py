@@ -1,6 +1,6 @@
 # 7. Змінна
 
-# 7.1 Що таке змінна
+# 7.2 Що таке змінна
 
 # Створення змінної
 age = 20
@@ -21,7 +21,7 @@ name = "some name".title()  # "Some Name"
 # те саме що й
 name = "Some Name"
 
-# 7.2 Як обрати ім’я змінної
+# 7.3 Як обрати ім’я змінної
 
 # Добрі приклади
 user_name = "Anna"
@@ -29,45 +29,25 @@ current_year = 2025
 
 # Погані приклади
 a = 17  # нічого не зрозуміло
-year2025 = 2025  # виглядає як число, плутає
+year2025 = 2025  # прив'язка до конкретного року, плутає
 
-# 7.3 Типи змінної
+# 7.4 Типи змінної
 
-# Цілі числа (integers)
-age = 20
-temperature = -5
+# приклади
+name = "Maria"        # str
+age = 20              # int
+height = 1.65         # float
+is_student = True     # bool
+salary = None         # NoneType
 
-# Дійсні числа (float)
-height = 1.65
-pi = 3.14159
-
-# None (порожнє значення)
-x = None
-print(type(x))  # <class 'NoneType'>
-x = "John"  # Тепер x це рядок
-
-# Логічний тип (boolean)
-is_student = True
-has_access = False
-
-# Текстовий тип (str)
-name = "Maria"
-message = "Hello, world!"
-
-# Приклади всіх базових типів
-name = "Maria"  # str
-age = 20  # int
-height = 1.65  # float
-is_student = True  # bool
-salary = None  # NoneType
 print(type(name))  # <class 'str'>
 print(type(age))  # <class 'int'>
 
-# 7.4 Перевизначення змінної
+# 7.5 Линамічна типізація
 x = 5
 x = "п'ять"
 
-# 7.5 Обʼєм змінної
+# 7.9 Обʼєм змінної
 
 # Варіант 1
 import sys

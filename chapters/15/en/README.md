@@ -16,6 +16,7 @@ We explore code blocks and indentation rules in Python in detail, explaining how
 
 - **15. Blocks and Indentation** → examples of creating code blocks (`if`, `try...except`) and indentation rules.
 - **15.1 Indentation Rules** → examples of correct and incorrect indentation, error explanations.
+- **15.2 Nested Blocks** → example of the nested block.
 
 ---
 

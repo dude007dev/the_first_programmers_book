@@ -13,6 +13,10 @@ elif "rain" in forecast:
     print("Take a jacket and an umbrella.")
 elif "sun" in forecast:
     print("Take sunglasses.")
+elif "clouds" in forecast:
+    print("Take a jacket.")
+else:
+    print("No special recommendations.")
 
 # 17.2 if...else... block in a program for grading on an A–F scale
 

@@ -2,17 +2,6 @@
 
 # 8.1 Data Types
 
-# Integers
-age = 20
-temperature = -5
-
-# Floats
-height = 1.65
-pi = 3.14159
-
-# Complex numbers
-x = 100 + 3j
-
 # Boolean
 is_student = True
 has_access = False
@@ -57,11 +46,6 @@ my_friends = {"John", "Andrew", "Anna"}
 
 my_set = {"apple", "banana", "cherry", "apple"}
 print(my_set)  # {"banana", "apple", "cherry"}
-
-# Frozen set (immutable set)
-my_set = frozenset({"apple", "banana", "cherry"})
-# {"apple", "banana", "cherry"}
-my_set2 = frozenset([1, 2, 5, 2])  # {1, 2, 5}
 
 # Dictionary
 my_dict = {
