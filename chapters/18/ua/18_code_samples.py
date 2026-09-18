@@ -158,7 +158,7 @@ for letter in word:
     else:
         print(f"The letter '{letter}' is not in the guessed letters '{guessed_letters}'.")
 
-# початковий приклад перевірки наявності всіх букв у вгаданих буквах
+# перевірка наявності всіх букв у вгаданих буквах
 word = "apple"
 guessed_letters = "rep"
 
@@ -167,23 +167,6 @@ all_letters_guessed = True
 for letter in word:
     if letter in guessed_letters:
         print(f"The letter '{letter}' is in the guessed letters '{guessed_letters}'.")
-    else:
-        print(f"The letter '{letter}' is not in the guessed letters '{guessed_letters}'.")
-        all_letters_guessed = False
-        break
-
-print("All letters guessed:", all_letters_guessed)
-
-# виправлений приклад перевірки наявності всіх букв у вгаданих буквах
-word = "apple"
-guessed_letters = "rep"
-
-print("The word is:", word)
-all_letters_guessed = False
-for letter in word:
-    if letter in guessed_letters:
-        print(f"The letter '{letter}' is in the guessed letters '{guessed_letters}'.")
-        all_letters_guessed = True
     else:
         print(f"The letter '{letter}' is not in the guessed letters '{guessed_letters}'.")
         all_letters_guessed = False
