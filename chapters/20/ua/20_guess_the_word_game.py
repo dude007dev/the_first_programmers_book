@@ -6,7 +6,7 @@ attempts = 6
 guessed_letters = ""
 
 print("Welcome to the Word Guessing Game!")
-print(f"You have {attempts} attempts to guess the word.")
+print(f"You have {attempts} incorrect guesses available.")
 print("Try to guess the word.")
 print("_ " * len(word))
 
@@ -24,7 +24,10 @@ while attempts > 0:
 
     if guess not in word:
         attempts -= 1
-        print(f"Oops! The letter '{guess}' is not in the word. You have {attempts} attempts left.")
+        print(
+            f"Oops! The letter '{guess}' is not in the word. "
+            f"You have {attempts} incorrect guesses available."
+        )
     else:
         print(f"Good guess! '{guess}' is in the word.")
 
@@ -36,11 +39,9 @@ while attempts > 0:
             display_word = f"{display_word}_ "
     print(display_word)
 
-    all_letters_guessed = False
+    all_letters_guessed = True
     for letter in word:
-        if letter in guessed_letters:
-            all_letters_guessed = True
-        else:
+        if letter not in guessed_letters:
             all_letters_guessed = False
             break
 
