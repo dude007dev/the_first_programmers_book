@@ -31,7 +31,7 @@ print(new_list)  # [2, 4, 6, 8, 10]
 new_list = [item for item in range(1, 11) if item % 2 == 0]
 print(new_list)  # [2, 4, 6, 8, 10]
 
-# фільтрація чисел: необов'язковий і неефективний спосіб використання range() та циклу for
+# фільтрація чисел: необов'язковий спосіб використання range() та циклу for
 init_range = range(1, 11)
 new_list = []
 for item in init_range:
@@ -40,42 +40,10 @@ for item in init_range:
 
 print(new_list)  # [2, 4, 6, 8, 10]
 
-# фільтрація чисел: ефективний спосіб, Pythonic way
+# фільтрація чисел: Pythonic way
 new_list = [item for item in range(2, 11, 2)]
 print(new_list)  # [2, 4, 6, 8, 10]
 
-# фільтрація чисел: ефективний спосіб, Pythonic way, альтернативний
+# фільтрація чисел: Pythonic way, альтернативний
 new_list = list(range(2, 11, 2))
 print(new_list)  # [2, 4, 6, 8, 10]
-
-# приклад з використанням іменованих аргументів (Python 3.8+)
-new_list = list(range(start=2, stop=11, step=2))
-print(new_list)  # [2, 4, 6, 8, 10]
-
-# 22.1 Приклад використання range для виконання N кроків
-
-# багаторазове повторення дій (наприклад, спроба підключення до сервера)
-from random import randint
-from time import sleep
-
-
-def try_action():
-    """Спроба виконати дію, яка може завершитися помилкою."""
-    if randint(0, 1):
-        raise Exception("Simulated error")
-    return "Success!"
-
-
-print("Program started")
-for i in range(3):
-    try:
-        result = try_action()
-    except Exception as e:
-        print(f"Attempt {i + 1} failed. Error: {e}")
-        sleep(1)
-        continue
-
-    print(result)
-    break
-
-print("Program finished")
