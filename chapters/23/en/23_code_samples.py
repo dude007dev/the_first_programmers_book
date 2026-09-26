@@ -39,6 +39,7 @@ print(my_tuple)  # (1, '2', [3, '4', 5])
 tuple_example = (1, "2", [3, 4], True, 3, "2")
 
 print(tuple_example.count(3))  # 1
+print(tuple_example.count([3, 4]))  # 1
 print(tuple_example.count("2"))  # 2
 print(tuple_example.count("test"))  # 0
 
