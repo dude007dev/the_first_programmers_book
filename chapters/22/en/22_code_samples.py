@@ -7,6 +7,10 @@ r = range(0, 5, 1)  # 0, 1, 2, 3, 4
 for i in range(0, 3, 1):
     print(i)  # 0, 1, 2
 
+# iterating through a range in reverse with a step of -1
+for i in range(5, 0, -1):
+    print(i)  # 5, 4, 3, 2, 1
+
 # same, but by default
 for i in range(3):
     print(i)  # 0, 1, 2
@@ -31,7 +35,7 @@ print(new_list)  # [2, 4, 6, 8, 10]
 new_list = [item for item in range(1, 11) if item % 2 == 0]
 print(new_list)  # [2, 4, 6, 8, 10]
 
-# filtering numbers: optional and inefficient way using range() and for loop
+# filtering numbers: optional way using range() and for loop
 init_range = range(1, 11)
 new_list = []
 for item in init_range:
@@ -40,42 +44,10 @@ for item in init_range:
 
 print(new_list)  # [2, 4, 6, 8, 10]
 
-# filtering numbers: efficient way, Pythonic way
+# filtering numbers: Pythonic way
 new_list = [item for item in range(2, 11, 2)]
 print(new_list)  # [2, 4, 6, 8, 10]
 
-# filtering numbers: efficient way, Pythonic way, alternative
+# filtering numbers: Pythonic way, alternative
 new_list = list(range(2, 11, 2))
 print(new_list)  # [2, 4, 6, 8, 10]
-
-# example using named arguments (Python 3.8+)
-new_list = list(range(start=2, stop=11, step=2))
-print(new_list)  # [2, 4, 6, 8, 10]
-
-# 22.1 Example of Using range for Performing N Steps
-
-# repeatedly performing actions (for example, trying to connect to server)
-from random import randint
-from time import sleep
-
-
-def try_action():
-    """Attempting to perform an action that may fail."""
-    if randint(0, 1):
-        raise Exception("Simulated error")
-    return "Success!"
-
-
-print("Program started")
-for i in range(3):
-    try:
-        result = try_action()
-    except Exception as e:
-        print(f"Attempt {i + 1} failed. Error: {e}")
-        sleep(1)
-        continue
-
-    print(result)
-    break
-
-print("Program finished")

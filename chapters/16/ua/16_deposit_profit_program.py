@@ -1,4 +1,4 @@
-# 14.8 Програма: розрахунок депозиту з використанням try..except...
+# 16.8 Програма: розрахунок депозиту з використанням try..except...
 
 try:
     d = int(input("Enter the deposit amount: "))
@@ -9,7 +9,7 @@ except ValueError:
 try:
     i = float(input("Enter the interest rate (example: 1.28): "))
 except ValueError:
-    print("Please enter a valid float number")
+    print("Please enter a valid number")
     i = float(input("Enter the interest rate (example: 1.28): "))
 
 try:
@@ -22,5 +22,5 @@ i /= 100
 compound_rate = (1 + i) ** n - 1
 compound_interest = d * compound_rate
 
-result = round(d + compound_interest, 2)
-print(result)
+total_amount = round(d + compound_interest, 2)
+print(total_amount)

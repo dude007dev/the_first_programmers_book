@@ -129,34 +129,6 @@ my_dict = {
 my_dict.clear()
 print(my_dict)  # {}
 
-# copy() - returns shallow copy of dictionary
-my_list = ["P", "y", "t", "h", "o", "n"]
-my_dict = {
-    "list": my_list,
-    (1, 2): "tuple",
-}
-new_dict = my_dict.copy()
-
-# 1) Modify the CONTENT of the shared list → visible in both dictionaries
-my_list.append("!")
-print(my_dict["list"])  # ['P', 'y', 't', 'h', 'o', 'n', '!']
-print(new_dict["list"])  # ['P', 'y', 't', 'h', 'o', 'n', '!']
-
-# 2) Remove a key only from the original → the copy does NOT change
-my_dict.pop((1, 2))
-print((1, 2) in my_dict)  # False
-print((1, 2) in new_dict)  # True
-
-# 3) Reassign a NEW list to the key only in the original
-my_dict["list"] = ["N", "e", "w"]
-print(my_dict["list"])  # ['N', 'e', 'w']
-print(new_dict["list"])  # ['P', 'y', 't', 'h', 'o', 'n', '!']
-
-# fromkeys() - creates new dictionary with given keys and default value
-friends = ["Alice", "Bob", "Charlie", "David", "Eve"]
-friends_init_score = dict.fromkeys(friends, 0)
-print(friends_init_score)  # {'Alice': 0, 'Bob': 0, 'Charlie': 0, 'David': 0, 'Eve': 0}
-
 # get() - returns value by key, if key doesn't exist - None or default value
 my_dict = {"UA": "Ukraine", "NL": "Netherlands"}
 
@@ -209,20 +181,6 @@ print(my_dict)  # {'experience': 'practical knowledge gained over time', 'skills
 print(my_dict.pop("knowledge", "N/A"))  # N/A (not available)
 print(my_dict.pop("knowledge"))  # KeyError: 'knowledge'
 
-# popitem() - removes and returns last added element of dictionary (key, value)
-my_dict = {"UA": "Ukraine", "NL": "Netherlands"}
-
-print(my_dict.popitem())  # ('NL', 'Netherlands')
-print(my_dict.popitem())  # ('UA', 'Ukraine')
-print(my_dict.popitem())  # KeyError: 'popitem(): dictionary is empty'
-
-# setdefault() - returns value by key, if key doesn't exist - adds key with default value
-my_dict = {"UA": "Ukraine", "NL": "Netherlands"}
-
-print(my_dict.setdefault("UA", "N/A"))  # Ukraine (already exists, so returns existing value)
-print(my_dict.setdefault("USA", "United States of America"))  # United States of America
-print(my_dict)  # {'UA': 'Ukraine', 'NL': 'Netherlands', 'USA': 'United States of America'}
-
 # update() - updates dictionary with elements from another dictionary or iterable object (list of tuples)
 my_dict = {"UA": "Ukraine", "NL": "Netherlands"}
 
@@ -272,3 +230,48 @@ dict2 = {"b": 3, "c": 4}
 
 # list of names
 names = ["Alice", "Bob", "Alice", "Eve", "Bob", "Alice"]
+
+
+# 26.5 For the curious: additional dict methods
+
+# copy() - returns shallow copy of dictionary
+my_list = ["P", "y", "t", "h", "o", "n"]
+my_dict = {
+    "list": my_list,
+    (1, 2): "tuple",
+}
+new_dict = my_dict.copy()
+
+# 1) Modify the CONTENT of the shared list → visible in both dictionaries
+my_list.append("!")
+print(my_dict["list"])  # ['P', 'y', 't', 'h', 'o', 'n', '!']
+print(new_dict["list"])  # ['P', 'y', 't', 'h', 'o', 'n', '!']
+
+# 2) Remove a key only from the original → the copy does NOT change
+my_dict.pop((1, 2))
+print((1, 2) in my_dict)  # False
+print((1, 2) in new_dict)  # True
+
+# 3) Reassign a NEW list to the key only in the original
+my_dict["list"] = ["N", "e", "w"]
+print(my_dict["list"])  # ['N', 'e', 'w']
+print(new_dict["list"])  # ['P', 'y', 't', 'h', 'o', 'n', '!']
+
+# fromkeys() - creates new dictionary with given keys and default value
+friends = ["Alice", "Bob", "Charlie", "David", "Eve"]
+friends_init_score = dict.fromkeys(friends, 0)
+print(friends_init_score)  # {'Alice': 0, 'Bob': 0, 'Charlie': 0, 'David': 0, 'Eve': 0}
+
+# popitem() - removes and returns last added element of dictionary (key, value)
+my_dict = {"UA": "Ukraine", "NL": "Netherlands"}
+
+print(my_dict.popitem())  # ('NL', 'Netherlands')
+print(my_dict.popitem())  # ('UA', 'Ukraine')
+print(my_dict.popitem())  # KeyError: 'popitem(): dictionary is empty'
+
+# setdefault() - returns value by key, if key doesn't exist - adds key with default value
+my_dict = {"UA": "Ukraine", "NL": "Netherlands"}
+
+print(my_dict.setdefault("UA", "N/A"))  # Ukraine (already exists, so returns existing value)
+print(my_dict.setdefault("USA", "United States of America"))  # United States of America
+print(my_dict)  # {'UA': 'Ukraine', 'NL': 'Netherlands', 'USA': 'United States of America'}

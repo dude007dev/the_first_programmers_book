@@ -3,7 +3,7 @@
 # приклади створення списків
 shopping_list = ["milk", "eggs", "meat"]
 
-my_list = ["milk", 21, True, ["eggs"]]
+my_list = ["eggs", 21, True, ["eggs"]]
 
 empty_list = []
 
@@ -93,28 +93,6 @@ shopping_list.append("bread")
 print(shopping_list_copy)  # ["milk", "eggs", "meat"]
 print(shopping_list)  # ['milk', 'eggs', 'meat', 'bread']
 
-# приклад неглибокого копіювання (shallow copy)
-sub_list = ["bread"]
-shopping_list = ["milk", "eggs", "meat", sub_list]
-shopping_list_copy = shopping_list.copy()
-print(shopping_list_copy)  # ["milk", "eggs", "meat", ["bread"]]
-
-sub_list.append("butter")
-print(shopping_list_copy)  # ["milk", "eggs", "meat", ["bread", "butter"]]
-print(shopping_list)  # ["milk", "eggs", "meat", ["bread", "butter"]]
-
-# глибоке копіювання (deep copy)
-from copy import deepcopy
-
-sub_list = ["bread"]
-shopping_list = ["milk", "eggs", "meat", sub_list]
-shopping_list_copy = deepcopy(shopping_list)
-print(shopping_list_copy)  # ["milk", "eggs", "meat", ["bread"]]
-
-sub_list.append("butter")
-print(shopping_list_copy)  # ["milk", "eggs", "meat", ["bread"]]
-print(shopping_list)  # ["milk", "eggs", "meat", ["bread", "butter"]]
-
 # count() — підрахунок кількості входжень елемента в список
 shopping_list = ["milk", "eggs", "meat", "milk"]
 print(shopping_list.count("milk"))  # 2
@@ -183,14 +161,14 @@ answers = [
 
 question = input("Enter your question: ")
 
-index = randint(0, 5)  # генерує ціле число від 0 до 5 включно
+index = randint(0, len(answers) - 1)
 print(answers[index])
 
 # Приклад 2: Список друзів + сортування
 friends = []
 
 while True:
-    name = input("Enter a name of your friend or type 'exit' to quit: ")
+    name = input("Enter your friend's name or type 'exit' to quit: ")
     name = name.title()
     if name.lower() == "exit":
         break
@@ -242,3 +220,28 @@ init_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 new_list = [item for item in init_list if item % 2 == 0]
 
 print(new_list)  # [2, 4, 6, 8, 10]
+
+
+# 21.8 Для допитливих: поверхневе та глибоке копіювання списків
+
+# приклад неглибокого копіювання (shallow copy)
+sub_list = ["bread"]
+shopping_list = ["milk", "eggs", "meat", sub_list]
+shopping_list_copy = shopping_list.copy()
+print(shopping_list_copy)  # ["milk", "eggs", "meat", ["bread"]]
+
+sub_list.append("butter")
+print(shopping_list_copy)  # ["milk", "eggs", "meat", ["bread", "butter"]]
+print(shopping_list)  # ["milk", "eggs", "meat", ["bread", "butter"]]
+
+# глибоке копіювання (deep copy)
+from copy import deepcopy
+
+sub_list = ["bread"]
+shopping_list = ["milk", "eggs", "meat", sub_list]
+shopping_list_copy = deepcopy(shopping_list)
+print(shopping_list_copy)  # ["milk", "eggs", "meat", ["bread"]]
+
+sub_list.append("butter")
+print(shopping_list_copy)  # ["milk", "eggs", "meat", ["bread"]]
+print(shopping_list)  # ["milk", "eggs", "meat", ["bread", "butter"]]

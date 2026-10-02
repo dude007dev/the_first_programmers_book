@@ -5,28 +5,43 @@ favorite_language = "Python"
 if favorite_language == "Python":
     print("Nice choice!")
 
-try:
-    d = int(input("Enter the deposit amount: "))
-except ValueError:
-    print("Please enter a valid number")
+favorite_language = "Python"
+if favorite_language == "Python":
+    print("Nice choice!")
+else:
+    print("You should try Python!")
 
-# syntax error: IndentationError: expected an indented block after 'try'
-try:
-d = int(input("Enter the deposit amount: "))
-except ValueError:
-    print("Please enter a valid number")
+# syntax error: IndentationError: expected an indented block after 'if' statement
+favorite_language = "Python"
+if favorite_language == "Python":
+print("Nice choice!")
+else:
+    print("You should try Python!")
 
 # 15.1 Indentation Rules
 
 # Indentation must consist of at least one space
-try:
- d = int(input("Enter the deposit amount: "))
-except ValueError:
-    print("Please enter a valid number")
+favorite_language = "Python"
+if favorite_language == "Python":
+ print("Nice choice!")
+else:
+    print("You should try Python!")
 
 # syntax error: IndentationError: unexpected indent
-try:
- d = int(input("Enter the deposit amount: "))
-     print(f"Deposit amount: {d}")  # IndentationError
-except ValueError:
-    print("Please enter a valid number")
+favorite_language = "Python"
+if favorite_language == "Python":
+ print("Nice choice!")
+    print("Python is a great programming language.")
+else:
+    print("You should try Python!")
+
+# 15.2 Nested blocks
+
+age = 20
+has_ticket = True
+
+if age >= 18:
+    print("Age is OK")
+
+    if has_ticket:
+        print("You can enter")

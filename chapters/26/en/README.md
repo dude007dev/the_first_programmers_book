@@ -18,6 +18,7 @@ We cover the **`dict`** data type in detail — how to create dictionaries, thei
 - **26.1 Dictionary Data Type Methods** → detailed examples of working with methods.
 - **26.2 Dict Comprehension** → creating dictionaries in compact form (dictionary comprehensions), filtering pairs by condition.
 - **26.4 Self-Check Work** → code elements from self-check assignments.
+- **26.5 For the curious: additional dict methods** → detailed examples of working with additional dict methods.
 
 ---
 
