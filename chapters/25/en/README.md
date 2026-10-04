@@ -21,7 +21,7 @@ We create the final version of the **"Hangman"** game — an expanded "Guess the
 - **25.3 Recording Entered Values** → using the `set` data type to store unique entered values (letters or words).
 - **25.4 Updated Way of Checking Game End** → applying **list comprehension** and the **`all()`** function to check if a word has been fully guessed.
 - **25.5 Full code of the Hangman game** → applying the **`all()`** function without square brackets.
-- **25.7 Self-Check Work** → exercises for expanding game functionality: changing word set, number of stages, using generator expressions, etc.
+- **25.7 Independent practice** → exercises for expanding game functionality: changing word set, number of stages, using generator expressions, etc.
 
 ---
 

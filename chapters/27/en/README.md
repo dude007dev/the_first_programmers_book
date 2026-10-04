@@ -17,12 +17,11 @@ This chapter demonstrates practical usage of dictionaries, loops, conditional st
 ## Contents of Examples
 
 - **27. Song Words Counter** → step-by-step creation of a program for counting words in song text "Nich yaka misyachna".
-- **27.1 Other Ways to Solve the Problem** → alternative solution options using:
+- **27.2 Independent practice** → exercises for improving the program.
+- **27.3 For the curious: other ways to solve similar tasks** → alternative solution options using:
   - **`defaultdict`** — automatic creation of initial values in a dictionary;
   - **`Counter`** — "counter" data type for simplifying counts;
-  - **`sorted()`** — sorting a dictionary by values;
   - **`re.findall()`** — using regular expressions to extract words from text.
-- **27.3 Self-Check Work** → exercises for improving the program.
 
 ---
 
@@ -40,7 +39,6 @@ python3 27_song_words_counter_program.py
 
 - [`collections.defaultdict` — Python Docs](https://docs.python.org/3/library/collections.html#collections.defaultdict)
 - [`collections.Counter` — Python Docs](https://docs.python.org/3/library/collections.html#collections.Counter)
-- [`sorted()` — Built-in Functions (Python Docs)](https://docs.python.org/3/library/functions.html#sorted)
 - [`re.findall()` — Regular Expressions (Python Docs)](https://docs.python.org/3/library/re.html#re.findall)
 - [`string` methods — Python Docs](https://docs.python.org/3/library/stdtypes.html#string-methods)
 
