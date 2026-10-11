@@ -14,22 +14,27 @@ We cover **functions in Python** in detail — how to create them, pass paramete
 
 ## Contents of Examples
 
-- **28.1 Function Creation and Calling** → basic syntax: the `def` keyword, function calls, examples without parameters.
-- **28.2 Function Creation and Calling with Parameters** → functions with one and multiple parameters.
-- **28.3 Function Name** → naming rules according to [PEP 8](https://peps.python.org/pep-0008/#function-and-variable-names).
-- **28.4–28.7** → positional and keyword arguments, their order and combination.  
-- **28.8 Positional-Only Arguments (/)** → functions that can only be called with positional arguments.
-- **28.9 Keyword-Only Arguments (*)** → functions that accept only keyword arguments.
-- **28.10 Combined Parameters: Positional-Only (/) and Keyword-Only (*) Arguments** → combining both approaches.
-- **28.11 Passing a Variable as a Function Parameter** → local and external variables, the principle of "what happens in a function stays in a function".
-- **28.12 Default Parameter Value** → creating parameters with default values and the rule "all parameters after default ones must also have defaults".
-- **28.13 Returning Function Result** → examples of returning values, multiple `return` statements in a function, and `return None`.
-- **28.14 Mutable Data Type in Function Parameter** → passing lists and dictionaries as arguments, the impact of mutability on the result.
-  ⚠️ Common mistake with mutable types as default parameters (`friends=[]`) and the correct approach using `None`.  
-- **28.15 Using pass** → creating "stubs" and empty functions.  
-- **28.16 Nested Functions** → functions inside functions, scope and access to external variables.
-- **28.17 Function Documentation** → documentation formatting in Google style, using IDE hints.
-- **28.18 `*args`, `**kwargs`** → arbitrary number of positional and keyword arguments, their practical usage in functions.
+- **28.1 Function Creation and Calling** → basic syntax: the `def` keyword, defining and calling functions without parameters.
+- **28.2 Function Creation and Calling with Parameters** → defining functions with parameters, passing arguments, and calling the same function with different values.
+- **28.3 Function Names** → naming conventions according to [PEP 8](https://peps.python.org/pep-0008/#function-and-variable-names), using lowercase letters, underscores, and numbers in function names.
+- **28.4 Functions with multiple parameters** → defining functions with multiple parameters and passing the corresponding arguments.
+- **28.5 Number of arguments** → matching arguments to required parameters and understanding errors caused by missing arguments (`TypeError`).
+- **28.6 Positional arguments** → passing arguments by position and understanding why their order matters.
+- **28.7 Keyword arguments** → passing arguments by parameter name, improving readability, and combining positional and keyword arguments correctly.
+- **28.8 Passing a variable as a function argument** → passing variables to functions, understanding local and outer variables, variable scope, and why reassigning a parameter does not change the original variable.
+- **28.9 Default parameter values** → defining parameters with default values, overriding them with arguments, and following the rule that regular parameters without defaults must come before those with defaults.
+- **28.10 Returning a function result** → returning values using `return`, storing returned results in variables, using multiple `return` statements, and understanding `return None` and implicit returns.
+- **28.11 Mutable data types as function arguments** → passing lists and dictionaries as arguments, understanding mutable and immutable objects, and distinguishing between modifying an object and reassigning a parameter.  
+  ⚠️ Common mistake with mutable default arguments (`friends=[]`) and the correct approach using `None`.
+- **28.12 Using pass** → creating placeholder functions with `pass` and understanding the difference between `pass` and `return`.
+- **28.13 Calling functions inside other functions** → calling one function from another, separating program logic into smaller tasks, and using `main()` to coordinate program execution.
+- **28.14 Function Documentation** → writing basic docstrings using triple quotes, accessing documentation through `__doc__`, and understanding when function documentation is useful.
+- **28.18 For the curious: `*args`, `**kwargs`** → accepting a variable number of positional and keyword arguments, collecting them into tuples and dictionaries, and unpacking dictionaries into function calls.
+- **28.19 For the curious: positional-only parameters (`/`)** → defining parameters that accept arguments only by position using the `/` separator.
+- **28.20 For the curious: keyword-only parameters (`*`)** → defining parameters that must be passed by keyword using the `*` separator and calling functions with unpacked dictionaries.
+- **28.21 For the curious: combining positional-only (`/`) and keyword-only (`*`) parameters** → combining positional-only, regular, and keyword-only parameters in a single function definition.
+- **28.22 For the curious: nested functions** → defining functions inside other functions, calling nested functions, and accessing variables from the enclosing function's scope.
+- **28.23 For the curious: Google style for function documentation** → writing structured docstrings with `Args:` and `Returns:` sections, documenting parameters and return values, and understanding how IDEs use docstrings.
 
 ---
 
