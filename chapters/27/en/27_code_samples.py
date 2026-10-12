@@ -103,7 +103,14 @@ for word, count in words_dict.items():
 
 print(target_word, counter)  # when 4
 
-# 27.1 Other Ways to Solve the Problem
+
+# 27.2 Independent practice
+
+# filtering of service words
+service_words = {"the", "and", "or", "but", "in", "on", "at", "to", "of", "a", "an", "when", "that"}
+
+
+# 27.3 For the curious: other ways to solve similar tasks
 
 # 1) using defaultdict
 from collections import defaultdict
@@ -158,7 +165,7 @@ print(target_word, counter)  # when 8
 
 # 2) using "Counter" data type
 
-from collections import Counter, defaultdict
+from collections import Counter
 
 text = """
 O, when the saints go marching in.
@@ -182,74 +189,21 @@ Lord, I want to be in that number
 on that hallelujah day.
 """
 text = text.replace("\n", " ")
-words_dict = defaultdict(int)
+words = []
+
 for word in text.split(" "):
     word = word.replace(",", "")
     word = word.strip()
     if len(word) > 2:
-        words_dict[word] += 1
+        words.append(word)
 
-counter = Counter(words_dict)
+counter = Counter(words)
 print(counter.most_common(3))  # [('when', 8), ('Lord', 7), ('that', 7)]
 
-# 3) using dictionary sorting
-
-# example of sorting function with tuple data type
-my_tuple = (5, 2, 1)
-print(sorted(my_tuple))  # [1, 2, 5]
-
-# example of sorting function using `key` parameter
-my_tuple = (("a", 33), ("b", 1), ("c", 2))
-print(sorted(my_tuple, key=lambda item: item[1]))  # [('b', 1), ('c', 2), ('a', 33)]
-
-# example of sorting dictionary by value
-sorted_words = sorted(words_dict.items(), key=lambda item: item[1], reverse=True)
-print(sorted_words[0])
-
-# full code of program using dictionary sorting
-from collections import defaultdict
-
-text = """
-O, when the saints go marching in.
-Lord, I want to be in that number
-when the saints go marching in.
-
-O when the sun refused to shine,
-Lord, I want to be in that number
-when the sun refused to shine.
-
-O when they gather 'round the throne,
-Lord, I want to be in that number
-when they gather 'round the throne.
-
-O when they crown Him Lord of all,
-Lord, I want to be in that number
-when they crown Him Lord of all.
-
-And on that hallelujah day,
-Lord, I want to be in that number
-on that hallelujah day.
-"""
-text = text.replace("\n", " ")
-words_dict = defaultdict(int)
-for word in text.split(" "):
-    word = word.replace(",", "")
-    word = word.strip()
-    if len(word) > 2:
-        words_dict[word] += 1
-
-sorted_words = sorted(words_dict.items(), key=lambda item: item[1], reverse=True)
-print(sorted_words[0])  # ('when', 8)
-
-# 4) extracting words using regular expressions
+# 3) extracting words using regular expressions
 
 import re
 
 text = """O, when the saints go marching in."""
 words_list = re.findall(r"\w+", text)
 print(words_list)  # ['O', 'when', 'the', 'saints', 'go', 'marching', 'in']
-
-# 27.3 Independent practice
-
-# filtering of service words
-service_words = {"the", "and", "or", "but", "in", "on", "at", "to", "of", "a", "an", "when", "that"}

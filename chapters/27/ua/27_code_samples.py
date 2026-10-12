@@ -103,7 +103,12 @@ for word, count in words_dict.items():
 
 print(target_word, counter)  # Ніч 1
 
-# 27.1 Інші способи вирішення задачі
+# 27.2 Самостійна робота
+
+# фільтрація службових слів
+service_words = {"і", "та", "але", "в", "на", "до", "що", "як"}
+
+# 27.3 Для допитливих: інші способи вирішення подібних задач
 
 # 1) використовуючи defaultdict
 from collections import defaultdict
@@ -170,7 +175,7 @@ print(target_word, counter)  # під 3
 
 # 2) за допомогою типу даних "лічильник"
 
-from collections import Counter, defaultdict
+from collections import Counter
 
 text = """
 Ніч яка місячна,
@@ -206,86 +211,22 @@ text = """
 І над панами ти
 """
 text = text.replace("\n", " ")
-words_dict = defaultdict(int)
+words = []
+
 for word in text.split(" "):
     word = word.replace(",", "")
     word = word.strip()
-    if len(word) > 2:
-        words_dict[word] += 1
 
-counter = Counter(words_dict)
+    if len(word) > 2:
+        words.append(word)
+
+counter = Counter(words)
 print(counter.most_common(3))  # [('під', 3), ('лякайся', 3), ('Сядемо', 2)]
 
-# 3) за допомогою сортування словника
-
-# приклад функції сортування з типом даних кортеж
-my_tuple = (5, 2, 1)
-print(sorted(my_tuple))  # [1, 2, 5]
-
-# приклад функції сортування з використанням параметру `key`
-my_tuple = (("a", 33), ("b", 1), ("c", 2))
-print(sorted(my_tuple, key=lambda item: item[1]))  # [('b', 1), ('c', 2), ('a', 33)]
-
-# приклад сортування словника за значенням
-sorted_words = sorted(words_dict.items(), key=lambda item: item[1], reverse=True)
-print(sorted_words[0])
-
-# повний код програми з використанням сортування словника
-from collections import defaultdict
-
-text = """
-Ніч яка місячна,
-Зоряна, ясная,
-Видно, хоч голки збирай
-
-Вийди, коханая
-Працею зморена
-Хоч на хвилиноньку в гай
-
-Сядемо вкупочці ми під калиною
-І над панами я пан
-Глянь, моя рибонько, срібною хвилею
-Стелиться в полі туман
-
-Ти не лякайся, що ніженьки босії
-Вмочиш в холодну росу
-Я ж тебе, вірную, аж до хатиноньки
-Сам на руках однесу
-
-Небо незміряне всипано зорями
-Перлами теж під тополями
-Що то за Божа краса?
-Грає перлиста роса
-
-Ти не лякайся, що ніженьки
-Вмочиш в холодную росу ти
-Ти не лякайся, що змерзнеш ти
-Лебедонько
-
-Сядемо вкупочці
-Ми під калиною
-І над панами ти
-"""
-text = text.replace("\n", " ")
-words_dict = defaultdict(int)
-for word in text.split(" "):
-    word = word.replace(",", "")
-    word = word.strip()
-    if len(word) > 2:
-        words_dict[word] += 1
-
-sorted_words = sorted(words_dict.items(), key=lambda item: item[1], reverse=True)
-print(sorted_words[0])  # ('під', 3)
-
-# 4) виділення слів за допомогою регулярних виразів
+# 3) виділення слів за допомогою регулярних виразів
 
 import re
 
 text = """Ніч яка місячна, Зоряна, ясная,"""
 words_list = re.findall(r"\w+", text)
 print(words_list)  # ['Ніч', 'яка', 'місячна', 'Зоряна', 'ясная']
-
-# 27.3 Самостійна робота
-
-# фільтрація службових слів
-service_words = {"і", "та", "але", "в", "на", "до", "що", "як"}

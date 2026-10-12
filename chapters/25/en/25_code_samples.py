@@ -2,12 +2,11 @@
 
 # Initial version of "Guess the Word" game (predecessor to Hangman)
 word = "apple"
-
 attempts = 6
 guessed_letters = ""
 
 print("Welcome to the Word Guessing Game!")
-print(f"You have {attempts} attempts to guess the word.")
+print(f"You have {attempts} incorrect guesses available.")
 print("Try to guess the word.")
 print("_ " * len(word))
 
@@ -22,10 +21,12 @@ while attempts > 0:
         continue
 
     guessed_letters = f"{guessed_letters}{guess}"  # or guessed_letters += guess
-
     if guess not in word:
         attempts -= 1
-        print(f"Oops! '{guess}' is not in the word. You have {attempts} attempts left.")
+        print(
+            f"Oops! The letter '{guess}' is not in the word. "
+            f"You have {attempts} incorrect guesses available."
+        )
     else:
         print(f"Good guess! '{guess}' is in the word.")
 
@@ -37,11 +38,9 @@ while attempts > 0:
             display_word = f"{display_word}_ "
     print(display_word)
 
-    all_letters_guessed = False
+    all_letters_guessed = True
     for letter in word:
-        if letter in guessed_letters:
-            all_letters_guessed = True
-        else:
+        if letter not in guessed_letters:
             all_letters_guessed = False
             break
 
@@ -123,14 +122,12 @@ guessed_values.add(guess)
 
 # 25.4 Updated Way to Check End of Game
 
-# попередня версія
+# previous version
 while attempts > 0:
     ...
-    all_letters_guessed = False
+    all_letters_guessed = True
     for letter in word:
-        if letter in guessed_letters:
-            all_letters_guessed = True
-        else:
+        if letter not in guessed_letters:
             all_letters_guessed = False
             break
 
@@ -162,6 +159,14 @@ word = "banana"
 guessed_values = {"c", "a", "n", "b"}
 if all([letter in guessed_values for letter in word]):
     print("Congratulations! You've guessed the word:", word)
+
+
+# 25.5 Full code of the Hangman game
+
+# square brackets not required for all() function
+if all(letter in guessed_values for letter in word):
+    print("Congratulations! You've guessed the word:", word)
+    break
 
 # 25.7 Independent practice
 

@@ -24,12 +24,36 @@ my_set = {"apple", ["banana", "kiwi"], "apple", "banana"}
 print(my_set)  # TypeError: unhashable type: 'list'
 
 # приклад множини з різними типами даних
-my_set = {"apple", 1, True, False, "apple", True, ("a", "b"), 5.33}
-print(my_set)  # {False, 1, 5.33, 'apple', ('a', 'b')}
+my_set = {"apple", 1, 5.33, ("a", "b")}
+print(my_set)  # {1, ('a', 'b'), 'apple', 5.33}
+
+# приклад множини з рівними значеннями різних типів
+my_set = {1, True, 0, False}
+print(my_set)  # {0, 1}
 
 # перевірка наявності елемента в множині (швидка операція, O(1))
 my_set = {"apple", "banana", "kiwi"}
 print("kiwi" in my_set)  # True
+
+# Доступ до елементів множини
+unique_elements = {"banana", "apple", "orange", "grape", "kiwi"}
+print(unique_elements[0])  # TypeError: 'set' object is not subscriptable
+
+unique_elements = {"banana", "apple", "orange", "grape", "kiwi"}
+for el in unique_elements:
+    print(el)
+
+# Приклад результату:
+# grape
+# orange
+# kiwi
+# apple
+# banana
+
+# перетворити на список або кортеж
+unique_elements = {"banana", "apple", "orange", "grape", "kiwi"}
+unique_elements = list(unique_elements)
+print(unique_elements[0])  # наприклад, "orange"
 
 # 24.1 Comprehension множин (set comprehension)
 
@@ -106,17 +130,6 @@ print(s4)  # {2, 3}
 s5 = s1 & s2 & s3
 print(s5)  # {2, 3}
 
-# intersection_update() - оновлення множини перетином з іншими
-s1 = {1, 2, 3}
-s2 = {2, 3, 4}
-s3 = {3, 2, 5}
-s1.intersection_update(s2, s3)
-print(s1)  # {2, 3}
-
-s4 = {5, 6, 7}
-s4 &= s3
-print(s4)  # {5}
-
 # difference() - різниця множин
 s1 = {1, 2, 3}
 s2 = {2, 3, 4}
@@ -127,6 +140,41 @@ s3 = {3, 4, 5}
 s4 = {2, 3, 4}
 s5 = s3 - s4
 print(s5)  # {5}
+
+
+# 24.3 Практичне використання множин
+
+my_list = [1, 2, 1, 3, 4, 5, 3, 5]
+my_set = set(my_list)
+
+print(my_set)  # {1, 2, 3, 4, 5}
+print(5 in my_set)  # True, перевірка виконується за O(1)
+
+for item in my_set:
+    # do something with item
+    pass
+
+# у грі “Вгадай слово”
+guessed_letters = set()
+
+guessed_letters.add("a")
+guessed_letters.add("b")
+guessed_letters.add("a")
+
+print(guessed_letters)  # {'a', 'b'}
+
+# 24.6 Для допитливих: додаткові методи множин (set)
+
+# intersection_update() - оновлення множини перетином з іншими
+s1 = {1, 2, 3}
+s2 = {2, 3, 4}
+s3 = {3, 2, 5}
+s1.intersection_update(s2, s3)
+print(s1)  # {2, 3}
+
+s4 = {5, 6, 7}
+s4 &= s3
+print(s4)  # {5}
 
 # difference_update() - оновлення множини різницею з іншою
 s1 = {1, 2, 3}
@@ -201,15 +249,3 @@ print(s1 >= s2)  # True
 s1 = {1, 2, 3}
 s2 = {4, 5, 6}
 print(s1.isdisjoint(s2))  # True
-
-# 24.3 Практичне використання множин
-
-my_list = [1, 2, 1, 3, 4, 5, 3, 5]
-my_set = set(my_list)
-
-print(my_set)  # {1, 2, 3, 4, 5}
-print(5 in my_set)  # True, перевірка виконується за O(1)
-
-for item in my_set:
-    # do something with item
-    pass

@@ -5,28 +5,43 @@ favorite_language = "Python"
 if favorite_language == "Python":
     print("Nice choice!")
 
-try:
-    d = int(input("Enter the deposit amount: "))
-except ValueError:
-    print("Please enter a valid number")
+favorite_language = "Python"
+if favorite_language == "Python":
+    print("Nice choice!")
+else:
+    print("You should try Python!")
 
-# помилка синтаксису: IndentationError: expected an indented block after 'try'
-try:
-d = int(input("Enter the deposit amount: "))
-except ValueError:
-    print("Please enter a valid number")
+# помилка синтаксису: IndentationError: expected an indented block after 'if' statement
+favorite_language = "Python"
+if favorite_language == "Python":
+print("Nice choice!")
+else:
+    print("You should try Python!")
 
 # 15.1 Правила відступів
 
 # Відступ має складатися щонайменше з одного пробілу
-try:
- d = int(input("Enter the deposit amount: "))
-except ValueError:
-    print("Please enter a valid number")
+favorite_language = "Python"
+if favorite_language == "Python":
+ print("Nice choice!")
+else:
+    print("You should try Python!")
 
 # помилка синтаксису: IndentationError: unexpected indent
-try:
- d = int(input("Enter the deposit amount: "))
-     print(f"Deposit amount: {d}")  # IndentationError
-except ValueError:
-    print("Please enter a valid number")
+favorite_language = "Python"
+if favorite_language == "Python":
+ print("Nice choice!")
+    print("Python is a great programming language.")
+else:
+    print("You should try Python!")
+
+# 15.2 Вкладені блоки
+
+age = 20
+has_ticket = True
+
+if age >= 18:
+    print("Age is OK")
+
+    if has_ticket:
+        print("You can enter")

@@ -17,35 +17,58 @@
 ## Зміст прикладів
 
 - **5.1 Різниця між терміналом і консоллю**
+
   ```bash
   pip install pandas
   python3 example.py
   ```
 
-- **5.2 Термінал для програміста — як пензель для художника**
-  Запуск Python-програми:
+- **5.3 Робота в Linux або Unix-системі**
+  
+  Python програма у файлі `hello.py`:
+  ```python
+  name = input("Введіть ваше ім'я: ")
+  print(f"Привіт, {name}!")
+  ```
+
+  Запуск програми::
   ```bash
   python3 hello.py
+  python hello.py
+  py hello.py
   ```
 
-  Інтерактивна консоль Python:
+- **5.4 Інтерактивна консоль Python**
+
+  Запуск інтерактивної консолі:
   ```bash
   python3
+  python
+  py
   ```
 
-- **5.3 Робота в Linux або Unix-системі**
-  Встановлення Python 3.13 на Ubuntu 26.04:
-  ```bash
-  sudo apt update
-  sudo apt upgrade -y
+- **5.6 Самостійна робота**
 
-  sudo apt install -y python3.13 python3.13-venv python3.13-dev python3-pip
-
-  python3.13 --version
+  Запустіть у своєму редакторі таку програму:
+  ```python
+  print("Моя перша програма запущена!")
   ```
+  
+  Запустіть програму, введіть своє ім’я, а потім змініть текст привітання:
+  ```python
+  name = input("Як вас звати? ")
+  print(f"Привіт, {name}!")
+  ```
+
+- **5.8 Команди `python`, `python3` і `py`**
+
+  Перевірка встановленої версії Python:
   ```bash
-  python3.13 example.py
-  ```  
+  python3 --version
+  python --version
+  py --version
+  ```
+  
 ---
 
 ## Як запускати приклади
@@ -54,6 +77,10 @@
 ```bash
 python3 4_the_first_program.py
 ```
+
+## Корисні посилання
+
+- [Офіційний сайт Python](https://python.org/)
 
 **Навігація**
 

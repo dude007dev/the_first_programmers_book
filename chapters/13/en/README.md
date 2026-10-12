@@ -23,7 +23,10 @@ We explore different types of operators in Python: arithmetic, assignment, compa
 - **13.7 Identity Operators** → examples with `is`, `is not`, including checks for `None`.  
 - **13.8 Membership Operators** → examples with `in`, `not in` for strings and lists.  
 - **13.10 Operator Precedence** → a table of execution order and examples with parentheses.  
-- **13.12 Self-Study** → code examples from the self-study section.  
+- **13.12 Self-Study** → code examples from the self-study section.
+- **13.13 For the Curious: Does in Always Work at the Same Speed?** → examples of the linear search complexity.
+- **13.14 For the Curious: Why Does the is Operator Sometimes Behave Unexpectedly?** → examples of objects comparisons.
+- **13.15 For the Curious: Short-Circuit Evaluation** → code examples of short-circuit evaluation in logical operators.
 
 ---
 

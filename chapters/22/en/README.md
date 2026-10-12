@@ -8,6 +8,7 @@ We cover the **`range`** data type in detail — how to create sequences of numb
 ## Folder Structure
 
 - [**`22_code_samples.py`**](./22_code_samples.py) — all code snippets from the book sections collected in one file.
+- [**`22_guess_the_word_game.py`**](./22_guess_the_word_game.py)  — final program code with `range` usage.
 
 ---
 
@@ -15,7 +16,6 @@ We cover the **`range`** data type in detail — how to create sequences of numb
 
 - **22. Range Data Type** → creating number ranges with `range(start, stop, step)`, iterating through them with a `for` loop.  
   Examples of building sequences, filtering even numbers, using `list(range())` and `start`, `stop`, `step` arguments.
-- **22.1 Example of Using range for Performing N Steps** → implementing repeated actions with pauses between attempts, using `range()` in combination with `try...except`, `continue`, `break`, `sleep()` and `randint()`.
 
 ---
 

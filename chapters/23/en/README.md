@@ -15,8 +15,9 @@ We cover the **`tuple`** data type in detail — how to create tuples, their imm
 
 - **23. Tuple Data Type** → creating tuples, parentheses properties, single-element tuples, modifying elements inside lists that are part of tuples.
 - **23.1 Tuple Data Type Methods** → examples of `count()` and `index()` methods, demonstrating `ValueError` when searching for missing elements.
-- **23.2 Example of Using Tuple** → example of the **"The Magic 8 Ball"** program using a tuple of answers instead of a list.
-- **23.4 Self-Check Work** → assignments for self-verification: working with tuples, counting elements, checking types, and practicing immutability.
+- **23.2 Example of using a tuple** → example of the **"The Magic 8 Ball"** program using a tuple of answers instead of a list.
+- **23.4 Independent practice** → assignments for independent practice: working with tuples, counting elements, checking types, and practicing immutability.
+- **23.5 For the curious: memory usage of tuples** → example of the tuple memory usage
 
 ---
 

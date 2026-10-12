@@ -22,29 +22,50 @@ We get acquainted with the terminal and the interactive Python console.
   python3 example.py
   ```
 
-- **5.2 The terminal for a programmer — like a brush for an artist**
-  Running a Python program:
+- **5.3 Running a Python Program in the Terminal**
+  
+  Program in `hello.py` file:
+  ```python
+  name = input("Enter your name: ")
+  print(f"Hello, {name}!")
+  ```
+
+  Running program:
   ```bash
   python3 hello.py
+  python hello.py
+  py hello.py
   ```
 
-  Interactive Python console:
+- **5.4 The Interactive Python Console**
+
+  Open the interactive Python console:
   ```bash
   python3
+  python
+  py
   ```
 
-- **5.3 Working in Linux or Unix systems**
-  Installing Python 3.13 on Ubuntu 26.04:
-  ```bash
-  sudo apt update
-  sudo apt upgrade -y
+- **5.6 Independent Practice**
 
-  sudo apt install -y python3.13 python3.13-venv python3.13-dev python3-pip
-
-  python3.13 --version
+  Run the following program in your editor:
+  ```python
+  print("My first program is running!")
   ```
+
+  Run the program, enter your name, and then change the greeting:
+  ```python
+  name = input("What is your name? ")
+  print(f"Hello, {name}!")
+  ```
+
+- **5.8 The `python`, `python3`, and `py` Commands**
+  
+  Check the installed Python version:
   ```bash
-  python3.13 example.py
+  python3 --version
+  python --version
+  py --version
   ```
 ---
 
@@ -52,8 +73,12 @@ We get acquainted with the terminal and the interactive Python console.
 
 Since this chapter is about the terminal, to test the examples you just need to run a Python program from a terminal:
 ```bash
-python3 example.py
+python3 4_the_first_program.py
 ```
+
+## Useful links
+
+- [Official Python Website](https://python.org/)
 
 **Navigation**
 
