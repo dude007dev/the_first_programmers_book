@@ -17,7 +17,7 @@ def get_hangman_drawing(stage_number):
     """Return the hangman drawing for the given stage number.
 
     Args:
-        stage_number (int): The stage number (index in the list) of the hangman drawing.
+        stage_number (int): The stage number (index in the tuple) of the hangman drawing.
 
     Returns:
         str: The hangman drawing.
@@ -72,7 +72,7 @@ def game_hangman():
     guessed_values = set()
 
     print("Welcome to the Word Game: Hangman!")
-    print(f"You have {attempts} attempts to guess the word.")
+    print(f"You have {attempts} incorrect guesses available.")
     print("Try to guess the word.")
     print(get_hangman_drawing(0))
     print("_ " * len(word))
@@ -85,7 +85,7 @@ def game_hangman():
 
 # попередній код привітання
 print("Welcome to the Word Game: Hangman!")
-print(f"You have {attempts} attempts to guess the word.")
+print(f"You have {attempts} incorrect guesses available.")
 print("Try to guess the word.")
 print(get_hangman_drawing(0))
 print("_ " * len(word))
@@ -96,14 +96,14 @@ def print_welcome_message(num_attempts, word):
     """Print welcome message for the Hangman game.
 
     Args:
-        num_attempts (int): Number of attempts the player has to guess the word.
+        num_attempts (int): Maximum number of incorrect guesses allowed.
         word (str): The secret word to be guessed.
 
     Returns:
         None
     """
     print("Welcome to the Word Game: Hangman!")
-    print(f"You have {num_attempts} attempts to guess the word.")
+    print(f"You have {num_attempts} incorrect guesses available.")
     print("Try to guess the word.")
     print(get_hangman_drawing(0))
     print("_ " * len(word))
@@ -247,7 +247,8 @@ def game_hangman():
         elif len(guess) > 1:
             current_attempt += 1
             print(get_hangman_drawing(stage_number=current_attempt))
-            print(f"Oops! '{guess}' is not the correct word. You have {attempts - current_attempt} attempts left.")
+            print(f"Oops! '{guess}' is not the correct word. You have {attempts - current_attempt} incorrect guesses available.")
+            display_word_progress(word=word, guessed_values=guessed_values)
             continue
 
         # Check if the entered (guessed) letter is in the word
@@ -256,7 +257,7 @@ def game_hangman():
             print(get_hangman_drawing(stage_number=current_attempt))
             print(
                 f"Oops! The letter '{guess}' is not in the word. "
-                f"You have {attempts - current_attempt} attempts left."
+                f"You have {attempts - current_attempt} incorrect guesses available."
             )
         else:
             print(f"Good guess! '{guess}' is in the word.")
@@ -278,7 +279,7 @@ from random import randint
 
 
 def the_magic_8_ball():
-    """Docstring example."""
+    """Simulate the Magic 8 Ball game."""
     pass
 
 
