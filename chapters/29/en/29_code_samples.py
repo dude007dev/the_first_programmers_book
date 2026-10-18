@@ -24,18 +24,18 @@ def get_hangman_drawing(stage_number):
     """
     hanged_man = (
         """
-       -----
-       |   |
-           |
-           |
-           |
-           |
-           |
-           |
-           |
-           |
-       -------
-       """,
+          -----
+          |   |
+              |
+              |
+              |
+              |
+              |
+              |
+              |
+              |
+        -------
+        """,
         # ... (other hangman drawings) ...
         """1""",
         """2""",
