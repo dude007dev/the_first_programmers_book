@@ -13,7 +13,7 @@ def get_hangman_drawing(stage_number):
         str: The hangman drawing.
     """
     hanged_man = (
-        """
+        r"""
           -----
           |   |
               |
@@ -26,7 +26,7 @@ def get_hangman_drawing(stage_number):
               |
         -------
         """,
-        """
+        r"""
           -----
           |   |
           O   |
@@ -39,7 +39,7 @@ def get_hangman_drawing(stage_number):
               |
         -------
         """,
-        """
+        r"""
           -----
           |   |
           O   |
@@ -52,7 +52,7 @@ def get_hangman_drawing(stage_number):
               |
         -------
         """,
-        """
+        r"""
           -----
           |   |
           O   |
@@ -65,7 +65,7 @@ def get_hangman_drawing(stage_number):
               |
         -------
         """,
-        """
+        r"""
           -----
           |   |
           O   |
@@ -78,7 +78,7 @@ def get_hangman_drawing(stage_number):
               |
         -------
         """,
-        """
+        r"""
           -----
           |   |
           O   |
@@ -91,7 +91,7 @@ def get_hangman_drawing(stage_number):
               |
         -------
         """,
-        """
+        r"""
           -----
           |   |
           O   |

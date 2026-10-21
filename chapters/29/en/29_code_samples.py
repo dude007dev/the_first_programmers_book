@@ -23,7 +23,7 @@ def get_hangman_drawing(stage_number):
         str: The hangman drawing.
     """
     hanged_man = (
-        """
+        r"""
           -----
           |   |
               |
@@ -37,12 +37,12 @@ def get_hangman_drawing(stage_number):
         -------
         """,
         # ... (other hangman drawings) ...
-        """1""",
-        """2""",
-        """3""",
-        """4""",
-        """5""",
-        """6""",
+        r"""1""",
+        r"""2""",
+        r"""3""",
+        r"""4""",
+        r"""5""",
+        r"""6""",
     )
     return hanged_man[stage_number]
 
