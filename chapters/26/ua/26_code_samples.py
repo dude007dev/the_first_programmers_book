@@ -41,7 +41,6 @@ print(my_en_ua_dict["experience"])  # нове значення
 
 # приклад звернення до неіснуючого ключа
 my_en_ua_dict = {
-    "knowledge": "досвід",
     "knowledge": "знання",
     True: "правда",
     "true": "правда",
@@ -133,34 +132,6 @@ my_dict = {
 my_dict.clear()
 print(my_dict)  # {}
 
-# copy() - повертає поверхневу копію словника
-my_list = ["P", "y", "t", "h", "o", "n"]
-my_dict = {
-    "список": my_list,
-    (1, 2): "кортеж",
-}
-new_dict = my_dict.copy()
-
-# 1) Модифікуємо ВМІСТ спільного списку → видно в обох
-my_list.append("!")
-print(my_dict["список"])  # ['P', 'y', 't', 'h', 'o', 'n', '!']
-print(new_dict["список"])  # ['P', 'y', 't', 'h', 'o', 'n', '!']
-
-# 2) Видаляємо ключ тільки з оригіналу → копія НЕ змінюється
-my_dict.pop((1, 2))
-print((1, 2) in my_dict)  # False
-print((1, 2) in new_dict)  # True
-
-# 3) Переприсвоюємо ключу НОВИЙ список лише в оригіналі
-my_dict["список"] = ["N", "e", "w"]
-print(my_dict["список"])  # ['N', 'e', 'w']
-print(new_dict["список"])  # ['P', 'y', 't', 'h', 'o', 'n', '!']
-
-# fromkeys() - створює новий словник із заданими ключами та значенням за замовчуванням
-friends = ["Alice", "Bob", "Charlie", "David", "Eve"]
-friends_init_score = dict.fromkeys(friends, 0)
-print(friends_init_score)  # {'Alice': 0, 'Bob': 0, 'Charlie': 0, 'David': 0, 'Eve': 0}
-
 # get() - повертає значення за ключем, якщо ключа немає - None або значення за замовчуванням
 my_en_ua_dict = {
     "knowledge": "знання",
@@ -224,20 +195,6 @@ print(my_en_ua_dict)  # {'truth': 'правда', 'example': 'приклад'}
 print(my_en_ua_dict.pop("knowledge", "N/A"))  # N/A (not available)
 print(my_en_ua_dict.pop("knowledge"))  # KeyError: 'knowledge'
 
-# popitem() - видаляє і повертає останній доданий елемент словника (ключ, значення)
-my_en_ua_dict = {"knowledge": "знання", "truth": "правда"}
-
-print(my_en_ua_dict.popitem())  # ('truth', 'правда')
-print(my_en_ua_dict.popitem())  # ('knowledge', 'знання')
-print(my_en_ua_dict.popitem())  # KeyError: 'popitem(): dictionary is empty'
-
-# setdefault() - повертає значення за ключем, якщо ключа немає - додає ключ зі значенням за замовчуванням
-my_en_ua_dict = {"knowledge": "знання", "truth": "правда"}
-
-print(my_en_ua_dict.setdefault("knowledge", "немає перекладу"))  # знання
-print(my_en_ua_dict.setdefault("wisdom", "мудрість"))  # мудрість
-print(my_en_ua_dict)  # {'knowledge': 'знання', 'truth': 'правда', 'wisdom': 'мудрість'}
-
 # update() - оновлює словник елементами з іншого словника або ітерабельного об'єкта (список кортежів)
 my_en_ua_dict = {"knowledge": "знання", "truth": "правда"}
 
@@ -271,7 +228,7 @@ print(my_dict)  # {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81, 1
 
 # приклад створення словника з умовою за допомогою dict comprehension
 my_dict = {x: x**2 for x in range(1, 11) if x % 2 == 0}
-print(my_dict)
+print(my_dict)  # {2: 4, 4: 16, 6: 36, 8: 64, 10: 100}
 
 # еквівалентний приклад без dict comprehension
 my_dict = {}
@@ -289,3 +246,48 @@ dict2 = {"b": 3, "c": 4}
 
 # список імен
 names = ["Alice", "Bob", "Alice", "Eve", "Bob", "Alice"]
+
+
+# 26.5 Для допитливих: додаткові методи й особливості словників
+
+# copy() - повертає поверхневу копію словника
+my_list = ["P", "y", "t", "h", "o", "n"]
+my_dict = {
+    "список": my_list,
+    (1, 2): "кортеж",
+}
+new_dict = my_dict.copy()
+
+# 1) Модифікуємо ВМІСТ спільного списку → видно в обох
+my_list.append("!")
+print(my_dict["список"])  # ['P', 'y', 't', 'h', 'o', 'n', '!']
+print(new_dict["список"])  # ['P', 'y', 't', 'h', 'o', 'n', '!']
+
+# 2) Видаляємо ключ тільки з оригіналу → копія НЕ змінюється
+my_dict.pop((1, 2))
+print((1, 2) in my_dict)  # False
+print((1, 2) in new_dict)  # True
+
+# 3) Переприсвоюємо ключу НОВИЙ список лише в оригіналі
+my_dict["список"] = ["N", "e", "w"]
+print(my_dict["список"])  # ['N', 'e', 'w']
+print(new_dict["список"])  # ['P', 'y', 't', 'h', 'o', 'n', '!']
+
+# fromkeys() - створює новий словник із заданими ключами та значенням за замовчуванням
+friends = ["Alice", "Bob", "Charlie", "David", "Eve"]
+friends_init_score = dict.fromkeys(friends, 0)
+print(friends_init_score)  # {'Alice': 0, 'Bob': 0, 'Charlie': 0, 'David': 0, 'Eve': 0}
+
+# popitem() - видаляє і повертає останній доданий елемент словника (ключ, значення)
+my_en_ua_dict = {"knowledge": "знання", "truth": "правда"}
+
+print(my_en_ua_dict.popitem())  # ('truth', 'правда')
+print(my_en_ua_dict.popitem())  # ('knowledge', 'знання')
+print(my_en_ua_dict.popitem())  # KeyError: 'popitem(): dictionary is empty'
+
+# setdefault() - повертає значення за ключем, якщо ключа немає - додає ключ зі значенням за замовчуванням
+my_en_ua_dict = {"knowledge": "знання", "truth": "правда"}
+
+print(my_en_ua_dict.setdefault("knowledge", "немає перекладу"))  # знання
+print(my_en_ua_dict.setdefault("wisdom", "мудрість"))  # мудрість
+print(my_en_ua_dict)  # {'knowledge': 'знання', 'truth': 'правда', 'wisdom': 'мудрість'}

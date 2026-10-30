@@ -17,12 +17,11 @@
 ## Зміст прикладів
 
 - **27. Song Words Counter** → покрокове створення програми для підрахунку слів у тексті пісні “Ніч яка місячна”.
-- **27.1 Інші способи вирішення задачі** → альтернативні варіанти розв’язку з використанням:
+- **27.2 Самостійна робота** → вправи для вдосконалення програми.
+- **27.3 Для допитливих: інші способи вирішення подібних задач** → альтернативні варіанти розв’язку з використанням:
   - **`defaultdict`** — автоматичне створення початкових значень у словнику;
   - **`Counter`** — тип даних “лічильник” для спрощення підрахунків;
-  - **`sorted()`** — сортування словника за значеннями;
   - **`re.findall()`** — застосування регулярних виразів для виділення слів із тексту.
-- **27.3 Самостійна робота** → вправи для вдосконалення програми.
 
 ---
 
@@ -40,7 +39,6 @@ python3 27_song_words_counter_program.py
 
 - [`collections.defaultdict` — Python Docs](https://docs.python.org/3/library/collections.html#collections.defaultdict)
 - [`collections.Counter` — Python Docs](https://docs.python.org/3/library/collections.html#collections.Counter)
-- [`sorted()` — Built-in Functions (Python Docs)](https://docs.python.org/3/library/functions.html#sorted)
 - [`re.findall()` — Regular Expressions (Python Docs)](https://docs.python.org/3/library/re.html#re.findall)
 - [`string` methods — Python Docs](https://docs.python.org/3/library/stdtypes.html#string-methods)
 

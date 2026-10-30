@@ -24,7 +24,7 @@ on that hallelujah day.
 
 text = text.replace("\n", " ")
 words_dict = {}
-for word in text.split(" "):
+for word in text.split():
     word = word.replace(",", "")
     word = word.strip()
     if len(word) > 2:

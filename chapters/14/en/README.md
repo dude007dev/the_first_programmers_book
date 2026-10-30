@@ -1,40 +1,39 @@
-# Chapter 14. The try..except Block
+# Chapter 14. if...else Block
 
 This chapter contains examples from the book **"The First Programmer's Book"**.  
-It covers errors in Python and ways to handle them using the `try...except` and `finally` constructs.
+We cover the `if...else` block in Python in detail.
 
 ---
 
-## Folder structure
+## Folder Structure
 
-- [**`14_code_samples.py`**](./14_code_samples.py) — all code examples from the chapter's subsections collected into a single file.  
-  ⚠️ This file does not always run completely: some examples intentionally demonstrate errors.  
-- [**`14_deposit_profit_program.py`**](./14_deposit_profit_program.py) — a deposit calculation program with error handling using `try...except`.
+- [**`14_code_samples.py`**](./14_code_samples.py) — all code snippets from the book sections collected in one file.  
 
 ---
 
-## Example contents
+## Contents of Examples
 
-- **14.2 Early termination** → the example is based on the deposit calculation program from Chapter 11. The code for that program can be found in [`11_deposit_profit_program.py`](../../11/en/11_deposit_profit_program.py).
-- **14.4 Continue the program while handling an error** → an example of substituting a safe value.  
-- **14.5 The `try...except` block** → a basic example of exception handling.  
-- **14.6 Error details** → how to obtain the error type and message.  
-- **14.7 The `finally` block** → code that always runs.  
-- **14.8 Example: deposit with `try...except`** → a complete program handling invalid input.  
+- **14.1 How the if...else Block Works in Python** → example of creating an `if...else` block.
+- **14.2 if...else Block in an A–F Grading Program** → example of using the `if...else` block in an A–F grading program.
 
 ---
 
-## How to run the examples
+## How to Run Examples
 
-This chapter contains both short snippets and full programs.  
-To run them, use Python in a terminal (or an online interpreter).  
+This chapter contains only short examples, without complete programs.  
+To test them:  
 
-⚠️ Not all examples print output. If you want to see results, add `print()` statements.
+1. Copy the required code block.  
+2. Paste it into a file (for example, `example.py`) or in an online interpreter.  
+3. Run the file in the terminal:  
+    ```bash
+    python3 example.py
+    ```
+    or run the program in an online interpreter.
 
-Run the standalone program:
-```bash
-python3 14_deposit_profit_program.py
-```
+## Useful Links
+
+- [`if` statements (Python tutorial)](https://docs.python.org/3/tutorial/controlflow.html#if-statements)
 
 **Navigation**
 
