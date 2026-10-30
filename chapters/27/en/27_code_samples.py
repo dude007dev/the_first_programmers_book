@@ -21,19 +21,19 @@ for el in text:
 
 # splitting text into words
 text = text.replace("\n", " ")
-words_list = text.split(" ")
+words_list = text.split()
 for word in words_list:
     print(word)  # O,
 
 # alternative option
 text = text.replace("\n", " ")
-for word in text.split(" "):
+for word in text.split():
     print(word)  # O,
 
 
 # printing word and its length
 text = text.replace("\n", " ")
-for word in text.split(" "):
+for word in text.split():
     print(word, len(word))  # O, 2
 
 # filtering unnecessary characters and empty lines
@@ -48,7 +48,7 @@ when the sun refused to shine.
 """
 
 text = text.replace("\n", " ")
-for word in text.split(" "):
+for word in text.split():
     word = word.replace(",", "")
     word = word.strip()
     if len(word) > 2:
@@ -82,7 +82,7 @@ when the sun refused to shine.
 
 text = text.replace("\n", " ")
 words_dict = {}
-for word in text.split(" "):
+for word in text.split():
     word = word.replace(",", "")
     word = word.strip()
     if len(word) > 2:
@@ -148,7 +148,7 @@ on that hallelujah day.
 """
 text = text.replace("\n", " ")
 words_dict = defaultdict(int)
-for word in text.split(" "):
+for word in text.split():
     word = word.replace(",", "")
     word = word.strip()
     if len(word) > 2:
@@ -191,7 +191,7 @@ on that hallelujah day.
 text = text.replace("\n", " ")
 words = []
 
-for word in text.split(" "):
+for word in text.split():
     word = word.replace(",", "")
     word = word.strip()
     if len(word) > 2:
