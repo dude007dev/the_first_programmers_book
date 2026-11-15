@@ -52,11 +52,16 @@ Choose a chapter directory below, then open `en/` for English or `ua/` for Ukrai
 
 ## Status
 
-🚀 Published (self-published). The Ukrainian edition was published in December 2025.
+🚀 **The First Programmer's Book** is published and available online in Ukrainian and English. An updated second edition of the Ukrainian version has recently been released.
+
+📖 **The second book** in the series is currently in development and nearing completion.
+
+For book details, purchasing options, and project updates, visit [dude007.dev](https://dude007.dev/).
 
 ## Future Plans
 
-- Online course based on the book
+- Publish the second book in Ukrainian and English.
+- Develop online courses and video lessons based on the books.
 
 ## Author
 
