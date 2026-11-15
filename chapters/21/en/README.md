@@ -20,6 +20,7 @@ We cover the list data type, its methods, and usage examples in detail.
 - **21.3 Operations on Lists. List Data Type Methods** → practical examples of `append()`, `remove()`, `insert()`, `pop()`, `sort()`, `reverse()`, `copy()`, `extend()`, `count()`, `index()` and more.
 - **21.4 Application Examples** → working examples of programs using lists: "The Magic 8 Ball", sorting friends, reversing a word, changing element order.
 - **21.5 List Comprehension** → examples of creating new lists in one line, filtering data in expressions.
+- **21.8 For the curious: shallow and deep copying of lists** → examples using `copy()` and `copy.deepcopy()`.
 
 ---
 

@@ -71,6 +71,8 @@ We get acquainted with the terminal and the interactive Python console.
 
 ## How to run the examples
 
+Run the command below from the [Chapter 4 English directory](../../04/en/README.md) (`chapters/04/en`).
+
 Since this chapter is about the terminal, to test the examples you just need to run a Python program from a terminal:
 ```bash
 python3 4_the_first_program.py

@@ -15,6 +15,7 @@ We write a "Guess the Number" game and cover all aspects of its implementation: 
 ## Contents of Examples
 
 - **19.2 Basic Game Version** → game implementation using a `for` loop and random numbers.
+- **19.3 Handling input errors** → the final game version with input validation and exception handling.
 
 ---
 

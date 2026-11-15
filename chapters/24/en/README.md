@@ -40,7 +40,7 @@ To test them:
 ## Useful Links
 
 - [`set`, `frozenset` — Python Docs](https://docs.python.org/3/library/stdtypes.html#set)
-- [Set Methods (Python Docs)](https://docs.python.org/3/library/stdtypes.html#frozenset.update)
+- [Set Methods (Python Docs)](https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset)
 - [`hash()` — Python Docs](https://docs.python.org/3/library/functions.html#hash)
 
 **Navigation**

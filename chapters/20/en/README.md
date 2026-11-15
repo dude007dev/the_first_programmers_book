@@ -35,7 +35,7 @@ We create a complete version of the "Guess the Word" game — a culminating proj
 
 ## Useful Links
 
-- [`while` statement (Python docs)](https://docs.python.org/3/tutorial/controlflow.html#for-statements)
+- [`while` statement (Python docs)](https://docs.python.org/3/reference/compound_stmts.html#the-while-statement)
 - [`break` and `continue` statements (Python docs)](https://docs.python.org/3/tutorial/controlflow.html#break-and-continue-statements)
 - [`input()` — reading user input (Python docs)](https://docs.python.org/3/library/functions.html#input)
 - [`f-string` — formatted string literals (Python docs)](https://docs.python.org/3/reference/lexical_analysis.html#f-strings)

@@ -8,7 +8,7 @@ We cover the **`range`** data type in detail — how to create sequences of numb
 ## Folder Structure
 
 - [**`22_code_samples.py`**](./22_code_samples.py) — all code snippets from the book sections collected in one file.
-- [**`22_guess_the_word_game.py`**](./22_guess_the_word_game.py)  — final program code with `range` usage.
+- [**`22_guess_the_number_game.py`**](./22_guess_the_number_game.py)  — complete "Guess the Number" game using `range`.
 
 ---
 
@@ -21,7 +21,7 @@ We cover the **`range`** data type in detail — how to create sequences of numb
 
 ## How to Run Examples
 
-This chapter contains only short examples, without complete programs.  
+This chapter contains short examples and a complete "Guess the Number" game.
 To test them:  
 
 1. Copy the required code block.  

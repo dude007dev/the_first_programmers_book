@@ -1,4 +1,4 @@
-# Chapter 16. The try..except Block
+# Chapter 16. The try...except Block
 
 This chapter contains examples from the book **"The First Programmer's Book"**.  
 It covers errors in Python and ways to handle them using the `try...except` and `finally` constructs.
