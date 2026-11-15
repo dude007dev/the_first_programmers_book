@@ -55,11 +55,10 @@ def 2_function(first_name):
 
 
 # correct and practical name
-def calc_1208():
-    print("Do some calculations.")
+def convert_to_24_hour_format():
+    print("Do some conversion.")
 
-
-calc_1208()  # Do some calculations.
+convert_to_24_hour_format()  # Do some conversion.
 
 # 28.4 Functions with multiple parameters
 
@@ -90,7 +89,7 @@ def my_function(first_name, last_name):
 # calling function with positional arguments
 my_function("Alice", "Smith")  # Hello, Alice Smith!
 
-# 28.7 Named arguments
+# 28.7 Keyword arguments
 
 # defining function where first parameter is `last_name`
 def my_function(last_name, first_name):
@@ -113,7 +112,7 @@ my_function(last_name="Smith", first_name="Alice")  # Hello, Alice Smith!
 
 # example when named arguments especially useful
 def my_contact(first_name, last_name, middle_name, phone, mobile, work_phone):
-    print(f"Person: {first_name} {middle_name} {last_name} ...")
+    print(f"Person: {first_name} {middle_name} {last_name} {phone} {mobile} {work_phone}")
 
 
 my_contact("John", "Adams", "Quincy", "123-456-7777", "123-456-9999", "123-456-8888")
@@ -166,45 +165,8 @@ my_contact(
     last_name="Smith",
 )
 
-# 28.8 Positional-only arguments (/)
 
-def my_function(first_name, last_name, /):
-    print(f"Hello, {first_name} {last_name}!")
-
-
-my_function("Alice", "Smith")  # Hello, Alice Smith!
-
-# TypeError: my_function() got some positional-only arguments passed as keyword arguments: 'first_name, last_name'
-my_function(first_name="Alice", last_name="Smith")
-
-# 28.9 Keyword-only arguments (*)
-
-def my_function(*, first_name, last_name):
-    print(f"Hello, {first_name} {last_name}!")
-
-
-my_function(first_name="Alice", last_name="Smith")  # Hello, Alice Smith!
-
-# TypeError: my_function() takes 0 positional arguments but 2 were given
-my_function("Alice", "Smith")
-
-# practical use of keyword-only arguments
-def my_function(*, first_name, last_name):
-    print(f"Hello, {first_name} {last_name}!")
-
-
-input_data = {"first_name": "Alice", "last_name": "Smith"}
-my_function(**input_data)  # Hello, Alice Smith!
-
-# 28.10 Combined parameters: positional-only (/) and keyword-only (*) arguments
-
-def my_function(first_name, last_name, /, *, phone_number):
-    print(f"Hello, {first_name} {last_name} {phone_number}!")
-
-
-my_function("Alice", "Smith", phone_number="123-456-789")  # Hello, Alice Smith 123-456-789!
-
-# 28.11 Passing variable as function parameter
+# 28.8 Passing a variable as a function argument
 
 # passing the variable `input_name` as a function parameter
 def my_function(first_name):
@@ -248,15 +210,20 @@ def the_most_frequent_letter(first_name):
         else:
             letters[letter] = 1
 
-    output = sorted(letters.items(), key=lambda item: item[1], reverse=True)
-    print(f"The most frequent letter is {output[0]}")
+    target_letter = ""
+    counter = 0
+    for letter, count in letters.items():
+        if count > counter:
+            target_letter = letter
+            counter = count
 
+    print(f"The most frequent letter is '{target_letter}' ({counter} times)")
 
 input_name = input("What is your first name? ")  # "Dude007dev"
 input_name = input_name.lower()  # "dude007dev"
-the_most_frequent_letter(input_name)  # The most frequent letter is ('d', 3)
+the_most_frequent_letter(input_name)  # The most frequent letter is 'd' (3 times)
 
-# 28.12 Parameter default value
+# 28.9 Default parameter values
 
 # correct working example
 def my_function(first_name, last_name, phone_number="123-456-789"):
@@ -274,7 +241,7 @@ def my_function(first_name, last_name="Example", phone_number):
    print(f"Hello, {first_name} {last_name} {phone_number}!")
 
 # will not be called
-my_function(...)
+my_function("John", "Adams", phone_number="123-456-000")
 
 ## correct version
 
@@ -284,7 +251,7 @@ def my_function(first_name, last_name="Example", phone_number="123-456-789"):
 
 my_function("John", phone_number="123-456-000")  # Hello, John Example 123-456-000!
 
-# 28.13 Returning result of function
+# 28.10 Returning a function result
 
 # example of built-in function that returns result
 print(len("456"))  # 3
@@ -347,16 +314,17 @@ print(result)  # None
 
 # example 1
 def my_custom_sum(a, b):
-    if a == 1:
-        return a
+    if a == 0:
+        return b
 
-    if b == 2:
-        return 9
+    if b == 0:
+        return a
 
     return a + b
 
-
-print(my_custom_sum(1, 2))  # 1
+print(my_custom_sum(0, 5))  # 5
+print(my_custom_sum(3, 0))  # 3
+print(my_custom_sum(2, 4))  # 6
 
 # example 2
 def my_function(first_name, last_name, phone_number="123-456-789"):
@@ -373,7 +341,7 @@ def my_function(first_name, last_name, phone_number="123-456-789"):
 
 my_function("Alice", last_name="Smith", phone_number="123")  # The number is incorrect!
 
-# 28.14 Mutable data type in function parameter
+# 28.11 Mutable data types as function arguments
 
 # example of function with list data type as argument
 def my_function(friends):
@@ -555,11 +523,13 @@ good_function()
 good_function()
 print("----")
 good_function()
-# after the 3-rd call:
-# ---
+# David
+# David
+# ----
 # David
 
-# 28.15 Using pass
+
+# 28.12 Using pass
 
 def my_function(first_name, last_name, phone_number):
     pass
@@ -576,103 +546,81 @@ my_function("Alice", last_name="Smith", phone_number="123")
 
 ## `pass` in any location
 
-def my_function(first_name, last_name, phone_number):
-    pass
-    print("The function is not yet implemented")
-    pass
+def my_function(first_name):
+    if first_name == "Admin":
+        pass
+    else:
+        print(f"Hello, {first_name}!")
+
+my_function("Admin")
+my_function("Alice")  # Hello, Alice!
 
 
-my_function("Alice", last_name="Smith", phone_number="123")  # The function is not yet implemented
+# 28.13 Calling functions inside other functions
 
-# 28.16 Nested functions
-
-def the_most_frequent_letter(name):
+def the_most_frequent_letter(value):
     letters = {}
-    for letter in name:
+    for letter in value:
         if letter in letters:
             letters[letter] += 1
         else:
             letters[letter] = 1
 
-    output = sorted(letters.items(), key=lambda item: item[1], reverse=True)
-    print(f"The most frequent letter is {output[0]}")
+    target_letter = ""
+    counter = 0
+    for letter, count in letters.items():
+        if count > counter:
+            target_letter = letter
+            counter = count
+
+    print(f"The most frequent letter is '{target_letter}' ({counter} times)")
 
 
 def main():
     value = "strawberry"
     the_most_frequent_letter(value)
 
-
-main()  # The most frequent letter is ('r', 3)
-
-## Defining functions inside other functions
-
-def main():
-    value = "strawberry"
-
-    def the_most_frequent_letter():
-        letters = {}
-        for letter in value:
-            if letter in letters:
-                letters[letter] += 1
-            else:
-                letters[letter] = 1
-
-        output = sorted(letters.items(), key=lambda item: item[1], reverse=True)
-        print(f"The most frequent letter is {output[0]}")
-
-    the_most_frequent_letter()
+main()  # The most frequent letter is 'r' (3 times)
 
 
-main()  # The most frequent letter is ('r', 3)
+# 28.14 Function documentation
 
-# 28.17 Function documentation
-
-def my_function(first_name, last_name, phone_number):
-    """Prints the full name and phone number.
-
-    Args:
-        first_name (str): The first name of the person.
-        last_name (str): The last name of the person.
-        phone_number (str): The phone number of the person.
-
-    Returns:
-        None: The function does not return anything.
-    """
-    print(f"Hello, {first_name} {last_name} {phone_number}!")
+def my_function(first_name, last_name):
+    """Print a greeting using the person's full name."""
+    print(f"Hello, {first_name} {last_name}!")
 
 
-my_function("Alice", last_name="Smith", phone_number="123")  # Hello, Alice Smith 123!
+my_function("Alice", "Smith")  # Hello, Alice Smith!
 
-# 28.18 *args, **kwargs
+print(my_function.__doc__)  # Print a greeting using the person's full name.
+
+# 28.18 For the curious: *args, **kwargs
 
 ## Arbitrary number of positional arguments: *args
 
 def custom_args(*args):
-    print(args[0], args[1])
+    print(args)
 
-
-custom_args("Alice", "Smith", "123-456-1111")  # Alice Smith
-
-# unpacking tuple
-args = ("Alice", "Smith", "123-456-1111")
-print(*args)  # Alice Smith 123-456-1111
+custom_args("Alice", "Smith")  # ('Alice', 'Smith')
+custom_args("Alice", "Smith", "123-456-1111")  # ('Alice', 'Smith', '123-456-1111')
 
 ## Arbitrary number of keyword arguments: **kwargs
 
 def custom_kwargs(**kwargs):
-    print(kwargs["first_name"], kwargs["last_name"])
+    print(kwargs)
 
-
-custom_kwargs(first_name="Alice", last_name="Smith", phone="123-456-1111")  # Alice Smith
+custom_kwargs(first_name="Alice", last_name="Smith")  # {'first_name': 'Alice', 'last_name': 'Smith'}
+custom_kwargs(first_name="Alice", last_name="Smith", phone="123-456-1111")  # {'first_name': 'Alice', 'last_name': 'Smith', 'phone': '123-456-1111'}
 
 ## Using together
 
 def my_custom_func(*args, **kwargs):
-    print(args[0], kwargs["phone"])
+    print(args)
+    print(kwargs)
 
-
-my_custom_func("Alice", "Smith", middle_name="John", phone="123-456-789")  # Alice 123-456-789
+my_custom_func("Alice", "Smith", middle_name="John", phone="123-456-789")
+# ('Alice', 'Smith')
+# {'middle_name': 'John', 'phone': '123-456-789'}
 
 ## Practical application
 
@@ -692,5 +640,87 @@ my_function(**new_data)
 # John Adams 123-456-000
 # Date of birth: 01-01-2000
 
-# *args, **kwargs in built-in function `print()``
-print("Hello", "world", sep=" - ", end="!\n")  # Hello - world!
+
+# 28.19 For the curious: positional-only parameters (/)
+
+def my_function(first_name, last_name, /):
+    print(f"Hello, {first_name} {last_name}!")
+
+
+my_function("Alice", "Smith")  # Hello, Alice Smith!
+
+# TypeError: my_function() got some positional-only arguments passed as keyword arguments: 'first_name, last_name'
+my_function(first_name="Alice", last_name="Smith")
+
+# 28.20 For the curious: keyword-only parameters (*)
+
+def my_function(*, first_name, last_name):
+    print(f"Hello, {first_name} {last_name}!")
+
+
+my_function(first_name="Alice", last_name="Smith")  # Hello, Alice Smith!
+
+# TypeError: my_function() takes 0 positional arguments but 2 were given
+my_function("Alice", "Smith")
+
+# practical use of keyword-only arguments
+def my_function(*, first_name, last_name):
+    print(f"Hello, {first_name} {last_name}!")
+
+
+input_data = {"first_name": "Alice", "last_name": "Smith"}
+my_function(**input_data)  # Hello, Alice Smith!
+
+# 28.21 For the curious: combining positional-only (/) and keyword-only (*) parameters
+
+def my_function(first_name, last_name, /, *, phone_number):
+    print(f"Hello, {first_name} {last_name} {phone_number}!")
+
+
+my_function("Alice", "Smith", phone_number="123-456-789")  # Hello, Alice Smith 123-456-789!
+
+
+# 28.22 For the curious: nested functions
+
+def main():
+    value = "strawberry"
+
+    def the_most_frequent_letter():
+        letters = {}
+        for letter in value:
+            if letter in letters:
+                letters[letter] += 1
+            else:
+                letters[letter] = 1
+
+        target_letter = ""
+        counter = 0
+        for letter, count in letters.items():
+            if count > counter:
+                target_letter = letter
+                counter = count
+
+        print(f"The most frequent letter is '{target_letter}' ({counter} times)")
+
+    the_most_frequent_letter()
+
+main()  # The most frequent letter is 'r' (3 times)
+
+
+# 28.23 For the curious: Google style for function documentation
+
+def my_function(first_name, last_name, phone_number):
+    """Print the full name and phone number.
+  
+    Args:
+        first_name (str): The first name of the person.
+        last_name (str): The last name of the person.
+        phone_number (str): The phone number of the person.
+
+    Returns:
+        None: The function returns None.
+    """
+    print(f"Hello, {first_name} {last_name} {phone_number}!")
+
+
+my_function("Alice", last_name="Smith", phone_number="123")  # Hello, Alice Smith 123!

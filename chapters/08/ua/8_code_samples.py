@@ -2,17 +2,6 @@
 
 # 8.1 Типи даних
 
-# Цілі числа (integers)
-age = 20
-temperature = -5
-
-# Дійсні числа (float)
-height = 1.65
-pi = 3.14159
-
-# Комплексні числа (complex)
-x = 100 + 3j
-
 # Логічний тип (boolean)
 is_student = True
 has_access = False
@@ -50,11 +39,6 @@ print(list(range(3)))  # [0, 1, 2]
 # Множина (set)
 my_set = {"apple", "banana", "cherry", "apple"}
 print(my_set)  # {"banana", "apple", "cherry"}
-
-# Незмінна (заморожена) множина (frozenset)
-my_set = frozenset({"apple", "banana", "cherry"})
-# {"apple", "banana", "cherry"}
-my_set2 = frozenset([1, 2, 5, 2])  # {1, 2, 5}
 
 # Словник (dictionary)
 my_eng_dict = {

@@ -22,7 +22,7 @@ We rewrite the **"Hangman"** game using functions — breaking the code into log
 - **29.4 Input Validation Function** → the `is_guess_valid(input_value, guessed_values)` function that checks the correctness of the player's input.
 - **29.5 Function for Displaying Current Word State** → the `display_word_progress(word, guessed_values)` function to show already guessed letters.
 - **29.6 Final Form of Main Function** → assembled game logic: user input, validation, state update, drawing display, and game completion.
-- **29.8 Self-Check Work** → code fragments from self-check assignments.
+- **29.8 Independent practice** → code fragments from self-check assignments.
 
 ---
 

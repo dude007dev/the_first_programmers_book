@@ -16,8 +16,9 @@ We cover the **`set`** data type in detail — how to create sets, their propert
 
 - **24. Set Data Type** → creating sets, properties of uniqueness and element order, mutability and restrictions on element types. Examples of empty sets (`set()`), membership checking (`in`), hashing (`hash()`), and demonstrating `TypeError` when adding mutable types.
 - **24.1 Set Comprehension** → examples of creating sets with comprehension, filtering elements, and generating unique values.
-- **24.2 Set Data Type Methods** → detailed examples of working with methods.
+- **24.2 Methods of the set data type** → detailed examples of working with the `set` methods.
 - **24.3 Practical Use of Sets** → examples of applying sets in real tasks.
+- **24.6 For the curious: additional set methods** → detailed examples of the additional `set` methods.
 
 ---
 
